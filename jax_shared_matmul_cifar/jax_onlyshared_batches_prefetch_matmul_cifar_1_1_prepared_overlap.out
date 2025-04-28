@@ -1,0 +1,677 @@
+2025-04-28 12:59:41.642181: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1745837982.135882   16212 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1745837982.465620   16212 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1745837983.778076   16212 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1745837983.779169   16212 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1745837983.779175   16212 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1745837983.779177   16212 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2025-04-28 13:03:21.987295: E external/xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2025-04-28 13:03:22.138899: E external/xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2025-04-28 13:03:22.306466: E external/xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2025-04-28 13:03:22.455570: E external/xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2025-04-28 13:03:22.606939: E external/xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2025-04-28 13:03:22.753807: E external/xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2025-04-28 13:03:22.904902: E external/xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2025-04-28 13:03:23.057698: E external/xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2025-04-28 13:03:23.209353: E external/xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2025-04-28 13:03:23.359922: E external/xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2025-04-28 13:03:23.507651: E external/xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2025-04-28 13:03:23.658973: E external/xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2025-04-28 13:03:23.804906: E external/xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2025-04-28 13:03:23.949222: E external/xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+
+=== Starting Enhanced CIFAR-100 CNN Training ===
+
+JAX version: 0.5.3
+JAX devices: [CudaDevice(id=0)]
+
+=== Phase 1: Model Initialization ===
+Model initialization time: 118.7677 seconds
+
+=== Phase 2: Dataset Loading ===
+Loading preprocessed dataset for evaluation...
+Dataset loading time: 32.9895 seconds
+
+=== Phase 3: Function Compilation ===
+Found existing compilation metadata from Mon Apr 28 11:49:47 2025
+Using previously compiled function from cache
+Previous compilation took 73.3985 seconds
+
+=== Phase 4: Initializing Cached Batch Loader ===
+
+=== Phase 5: Setting Up Overlapping Matrix Computations ===
+
+=== Phase 6: Training Loop with Overlapping Matrix Computations ===
+Warning: Batch queue is empty, waiting for loader...
+Epoch 0:
+  Learning rate: 0.01000
+  Total epoch time: 47.3143 sec
+  Training computation time: 35.5051 sec
+  Evaluation time: 10.9117 sec
+  Number of batches: 390
+  Test set accuracy: 0.012800 (1.28%)
+  Matrix computations: 1/200 completed
+  Average matrix computation time: 16.8091 sec
+  Average matrix performance: 0.01 TFLOPS
+
+Epoch 1: test_acc=0.0174, matrices=22/200, time=1.32s
+Epoch 2: test_acc=0.0204, matrices=25/200, time=1.13s
+Epoch 3: test_acc=0.0252, matrices=27/200, time=0.95s
+Epoch 4: test_acc=0.0298, matrices=29/200, time=1.00s
+Epoch 5:
+  Learning rate: 0.01000
+  Total epoch time: 1.0019 sec
+  Training computation time: 0.9918 sec
+  Evaluation time: 0.0098 sec
+  Number of batches: 390
+  Test set accuracy: 0.038600 (3.86%)
+  Matrix computations: 33/200 completed
+  Average matrix computation time: 1.4287 sec
+  Average matrix performance: 0.25 TFLOPS
+
+Epoch 6: test_acc=0.0378, matrices=37/200, time=0.98s
+Epoch 7: test_acc=0.0396, matrices=39/200, time=0.99s
+Epoch 8: test_acc=0.0432, matrices=45/200, time=1.86s
+Epoch 9: test_acc=0.0440, matrices=49/200, time=3.84s
+Epoch 10:
+  Learning rate: 0.00500
+  Total epoch time: 0.9272 sec
+  Training computation time: 0.8964 sec
+  Evaluation time: 0.0305 sec
+  Number of batches: 390
+  Test set accuracy: 0.043600 (4.36%)
+  Matrix computations: 49/200 completed
+  Average matrix computation time: 1.1153 sec
+  Average matrix performance: 0.26 TFLOPS
+
+Epoch 11: test_acc=0.0524, matrices=49/200, time=0.90s
+Epoch 12: test_acc=0.0538, matrices=49/200, time=0.90s
+Epoch 13: test_acc=0.0544, matrices=49/200, time=0.90s
+Epoch 14: test_acc=0.0518, matrices=49/200, time=0.91s
+Epoch 15:
+  Learning rate: 0.00500
+  Total epoch time: 0.8994 sec
+  Training computation time: 0.8894 sec
+  Evaluation time: 0.0097 sec
+  Number of batches: 390
+  Test set accuracy: 0.058600 (5.86%)
+  Matrix computations: 49/200 completed
+  Average matrix computation time: 1.1153 sec
+  Average matrix performance: 0.26 TFLOPS
+
+Epoch 16: test_acc=0.0596, matrices=49/200, time=1.23s
+Epoch 17: test_acc=0.0602, matrices=49/200, time=1.87s
+Epoch 18: test_acc=0.0554, matrices=49/200, time=0.93s
+Epoch 19: test_acc=0.0612, matrices=51/200, time=1.44s
+Epoch 20:
+  Learning rate: 0.00100
+  Total epoch time: 0.9022 sec
+  Training computation time: 0.8921 sec
+  Evaluation time: 0.0097 sec
+  Number of batches: 390
+  Test set accuracy: 0.066400 (6.64%)
+  Matrix computations: 51/200 completed
+  Average matrix computation time: 1.5390 sec
+  Average matrix performance: 0.25 TFLOPS
+
+Epoch 21: test_acc=0.0600, matrices=51/200, time=0.91s
+Epoch 22: test_acc=0.0616, matrices=51/200, time=0.94s
+Epoch 23: test_acc=0.0626, matrices=51/200, time=0.93s
+Epoch 24: test_acc=0.0620, matrices=53/200, time=1.54s
+Epoch 25:
+  Learning rate: 0.00100
+  Total epoch time: 1.0007 sec
+  Training computation time: 0.9903 sec
+  Evaluation time: 0.0100 sec
+  Number of batches: 390
+  Test set accuracy: 0.061200 (6.12%)
+  Matrix computations: 57/200 completed
+  Average matrix computation time: 1.5803 sec
+  Average matrix performance: 0.24 TFLOPS
+
+Epoch 26: test_acc=0.0642, matrices=59/200, time=0.96s
+Epoch 27: test_acc=0.0660, matrices=63/200, time=1.00s
+Epoch 28: test_acc=0.0628, matrices=65/200, time=0.94s
+Epoch 29: test_acc=0.0690, matrices=67/200, time=1.56s
+Epoch 30:
+  Learning rate: 0.00100
+  Total epoch time: 1.3667 sec
+  Training computation time: 1.2559 sec
+  Evaluation time: 0.0751 sec
+  Number of batches: 390
+  Test set accuracy: 0.061400 (6.14%)
+  Matrix computations: 67/200 completed
+  Average matrix computation time: 1.4093 sec
+  Average matrix performance: 0.25 TFLOPS
+
+Epoch 31: test_acc=0.0640, matrices=67/200, time=1.60s
+Epoch 32: test_acc=0.0648, matrices=67/200, time=0.89s
+Epoch 33: test_acc=0.0642, matrices=67/200, time=0.90s
+Epoch 34: test_acc=0.0636, matrices=67/200, time=0.94s
+Epoch 35:
+  Learning rate: 0.00100
+  Total epoch time: 1.6049 sec
+  Training computation time: 1.5936 sec
+  Evaluation time: 0.0108 sec
+  Number of batches: 390
+  Test set accuracy: 0.067000 (6.70%)
+  Matrix computations: 69/200 completed
+  Average matrix computation time: 1.6172 sec
+  Average matrix performance: 0.24 TFLOPS
+
+Epoch 36: test_acc=0.0666, matrices=69/200, time=2.96s
+Epoch 37: test_acc=0.0658, matrices=69/200, time=0.90s
+Epoch 38: test_acc=0.0660, matrices=69/200, time=0.91s
+Epoch 39: test_acc=0.0642, matrices=69/200, time=0.91s
+Epoch 40:
+  Learning rate: 0.00100
+  Total epoch time: 0.8997 sec
+  Training computation time: 0.8898 sec
+  Evaluation time: 0.0096 sec
+  Number of batches: 390
+  Test set accuracy: 0.068800 (6.88%)
+  Matrix computations: 69/200 completed
+  Average matrix computation time: 1.6172 sec
+  Average matrix performance: 0.24 TFLOPS
+
+Epoch 41: test_acc=0.0712, matrices=69/200, time=0.90s
+Epoch 42: test_acc=0.0650, matrices=69/200, time=0.91s
+Epoch 43: test_acc=0.0644, matrices=69/200, time=0.90s
+Epoch 44: test_acc=0.0616, matrices=71/200, time=2.27s
+Epoch 45:
+  Learning rate: 0.00100
+  Total epoch time: 0.9614 sec
+  Training computation time: 0.9513 sec
+  Evaluation time: 0.0098 sec
+  Number of batches: 390
+  Test set accuracy: 0.065600 (6.56%)
+  Matrix computations: 73/200 completed
+  Average matrix computation time: 1.8306 sec
+  Average matrix performance: 0.23 TFLOPS
+
+Epoch 46: test_acc=0.0658, matrices=77/200, time=1.00s
+Epoch 47: test_acc=0.0686, matrices=79/200, time=0.94s
+Epoch 48: test_acc=0.0654, matrices=83/200, time=2.43s
+Epoch 49: test_acc=0.0690, matrices=83/200, time=0.91s
+Epoch 50:
+  Learning rate: 0.00100
+  Total epoch time: 1.0186 sec
+  Training computation time: 1.0085 sec
+  Evaluation time: 0.0097 sec
+  Number of batches: 390
+  Test set accuracy: 0.073000 (7.30%)
+  Matrix computations: 83/200 completed
+  Average matrix computation time: 1.6591 sec
+  Average matrix performance: 0.24 TFLOPS
+
+Epoch 51: test_acc=0.0646, matrices=83/200, time=0.90s
+Epoch 52: test_acc=0.0678, matrices=83/200, time=0.90s
+Epoch 53: test_acc=0.0656, matrices=83/200, time=0.90s
+Epoch 54: test_acc=0.0668, matrices=83/200, time=0.94s
+Epoch 55:
+  Learning rate: 0.00100
+  Total epoch time: 1.3089 sec
+  Training computation time: 1.2984 sec
+  Evaluation time: 0.0101 sec
+  Number of batches: 390
+  Test set accuracy: 0.070800 (7.08%)
+  Matrix computations: 85/200 completed
+  Average matrix computation time: 1.8187 sec
+  Average matrix performance: 0.24 TFLOPS
+
+Epoch 56: test_acc=0.0698, matrices=85/200, time=1.87s
+Epoch 57: test_acc=0.0708, matrices=85/200, time=1.14s
+Epoch 58: test_acc=0.0690, matrices=87/200, time=2.43s
+Epoch 59: test_acc=0.0736, matrices=91/200, time=1.00s
+Epoch 60:
+  Learning rate: 0.00100
+  Total epoch time: 0.9983 sec
+  Training computation time: 0.9883 sec
+  Evaluation time: 0.0097 sec
+  Number of batches: 390
+  Test set accuracy: 0.070600 (7.06%)
+  Matrix computations: 95/200 completed
+  Average matrix computation time: 1.7462 sec
+  Average matrix performance: 0.24 TFLOPS
+
+Epoch 61: test_acc=0.0664, matrices=99/200, time=0.97s
+Epoch 62: test_acc=0.0714, matrices=101/200, time=0.98s
+Epoch 63: test_acc=0.0736, matrices=105/200, time=1.00s
+Epoch 64: test_acc=0.0738, matrices=107/200, time=0.97s
+Epoch 65:
+  Learning rate: 0.00100
+  Total epoch time: 1.0073 sec
+  Training computation time: 0.9972 sec
+  Evaluation time: 0.0097 sec
+  Number of batches: 390
+  Test set accuracy: 0.071600 (7.16%)
+  Matrix computations: 111/200 completed
+  Average matrix computation time: 1.5558 sec
+  Average matrix performance: 0.25 TFLOPS
+
+Epoch 66: test_acc=0.0714, matrices=115/200, time=0.98s
+Epoch 67: test_acc=0.0752, matrices=115/200, time=2.34s
+Epoch 68: test_acc=0.0730, matrices=117/200, time=1.93s
+Epoch 69: test_acc=0.0736, matrices=117/200, time=0.90s
+Epoch 70:
+  Learning rate: 0.00100
+  Total epoch time: 0.8970 sec
+  Training computation time: 0.8869 sec
+  Evaluation time: 0.0098 sec
+  Number of batches: 390
+  Test set accuracy: 0.073000 (7.30%)
+  Matrix computations: 117/200 completed
+  Average matrix computation time: 1.5249 sec
+  Average matrix performance: 0.25 TFLOPS
+
+Epoch 71: test_acc=0.0780, matrices=117/200, time=0.89s
+Epoch 72: test_acc=0.0722, matrices=117/200, time=0.90s
+Epoch 73: test_acc=0.0728, matrices=117/200, time=0.90s
+Epoch 74: test_acc=0.0772, matrices=117/200, time=0.92s
+Epoch 75:
+  Learning rate: 0.00100
+  Total epoch time: 1.8286 sec
+  Training computation time: 1.4986 sec
+  Evaluation time: 0.2971 sec
+  Number of batches: 390
+  Test set accuracy: 0.071000 (7.10%)
+  Matrix computations: 117/200 completed
+  Average matrix computation time: 1.5249 sec
+  Average matrix performance: 0.25 TFLOPS
+
+Epoch 76: test_acc=0.0748, matrices=117/200, time=0.91s
+Epoch 77: test_acc=0.0774, matrices=117/200, time=0.90s
+Epoch 78: test_acc=0.0758, matrices=117/200, time=0.92s
+Epoch 79: test_acc=0.0728, matrices=119/200, time=1.67s
+Epoch 80:
+  Learning rate: 0.00100
+  Total epoch time: 1.1467 sec
+  Training computation time: 1.1185 sec
+  Evaluation time: 0.0270 sec
+  Number of batches: 390
+  Test set accuracy: 0.073800 (7.38%)
+  Matrix computations: 119/200 completed
+  Average matrix computation time: 1.7081 sec
+  Average matrix performance: 0.24 TFLOPS
+
+Epoch 81: test_acc=0.0746, matrices=119/200, time=1.18s
+Epoch 82: test_acc=0.0786, matrices=119/200, time=1.05s
+Epoch 83: test_acc=0.0694, matrices=119/200, time=0.90s
+Epoch 84: test_acc=0.0772, matrices=119/200, time=1.72s
+Epoch 85:
+  Learning rate: 0.00100
+  Total epoch time: 0.9063 sec
+  Training computation time: 0.8964 sec
+  Evaluation time: 0.0096 sec
+  Number of batches: 390
+  Test set accuracy: 0.075200 (7.52%)
+  Matrix computations: 119/200 completed
+  Average matrix computation time: 1.7081 sec
+  Average matrix performance: 0.24 TFLOPS
+
+Epoch 86: test_acc=0.0780, matrices=121/200, time=1.62s
+Epoch 87: test_acc=0.0794, matrices=121/200, time=0.91s
+Epoch 88: test_acc=0.0730, matrices=121/200, time=0.91s
+Epoch 89: test_acc=0.0724, matrices=121/200, time=0.93s
+Epoch 90:
+  Learning rate: 0.00100
+  Total epoch time: 0.9303 sec
+  Training computation time: 0.9186 sec
+  Evaluation time: 0.0104 sec
+  Number of batches: 390
+  Test set accuracy: 0.077400 (7.74%)
+  Matrix computations: 121/200 completed
+  Average matrix computation time: 1.8081 sec
+  Average matrix performance: 0.24 TFLOPS
+
+Epoch 91: test_acc=0.0768, matrices=121/200, time=0.90s
+Epoch 92: test_acc=0.0786, matrices=123/200, time=1.42s
+Epoch 93: test_acc=0.0792, matrices=123/200, time=1.18s
+Epoch 94: test_acc=0.0804, matrices=127/200, time=0.99s
+Epoch 95:
+  Learning rate: 0.00100
+  Total epoch time: 0.9574 sec
+  Training computation time: 0.9474 sec
+  Evaluation time: 0.0096 sec
+  Number of batches: 390
+  Test set accuracy: 0.079600 (7.96%)
+  Matrix computations: 129/200 completed
+  Average matrix computation time: 1.8269 sec
+  Average matrix performance: 0.24 TFLOPS
+
+Epoch 96: test_acc=0.0812, matrices=131/200, time=2.32s
+Epoch 97: test_acc=0.0788, matrices=133/200, time=1.23s
+Epoch 98: test_acc=0.0770, matrices=133/200, time=0.90s
+Epoch 99: test_acc=0.0826, matrices=133/200, time=1.19s
+Epoch 100:
+  Learning rate: 0.00100
+  Total epoch time: 0.9960 sec
+  Training computation time: 0.9532 sec
+  Evaluation time: 0.0425 sec
+  Number of batches: 390
+  Test set accuracy: 0.079800 (7.98%)
+  Matrix computations: 133/200 completed
+  Average matrix computation time: 1.8103 sec
+  Average matrix performance: 0.23 TFLOPS
+
+Epoch 101: test_acc=0.0812, matrices=133/200, time=0.90s
+Epoch 102: test_acc=0.0780, matrices=133/200, time=1.10s
+Epoch 103: test_acc=0.0804, matrices=133/200, time=0.91s
+Epoch 104: test_acc=0.0852, matrices=135/200, time=3.44s
+Epoch 105:
+  Learning rate: 0.00100
+  Total epoch time: 0.9179 sec
+  Training computation time: 0.9078 sec
+  Evaluation time: 0.0097 sec
+  Number of batches: 390
+  Test set accuracy: 0.077000 (7.70%)
+  Matrix computations: 135/200 completed
+  Average matrix computation time: 1.9013 sec
+  Average matrix performance: 0.23 TFLOPS
+
+Epoch 106: test_acc=0.0824, matrices=135/200, time=0.90s
+Epoch 107: test_acc=0.0854, matrices=135/200, time=1.00s
+Epoch 108: test_acc=0.0756, matrices=135/200, time=1.55s
+Epoch 109: test_acc=0.0824, matrices=135/200, time=0.90s
+Epoch 110:
+  Learning rate: 0.00100
+  Total epoch time: 0.8976 sec
+  Training computation time: 0.8874 sec
+  Evaluation time: 0.0098 sec
+  Number of batches: 390
+  Test set accuracy: 0.088400 (8.84%)
+  Matrix computations: 135/200 completed
+  Average matrix computation time: 1.9013 sec
+  Average matrix performance: 0.23 TFLOPS
+
+Epoch 111: test_acc=0.0786, matrices=135/200, time=0.91s
+Epoch 112: test_acc=0.0768, matrices=135/200, time=0.93s
+Epoch 113: test_acc=0.0812, matrices=137/200, time=5.50s
+Epoch 114: test_acc=0.0808, matrices=137/200, time=0.91s
+Epoch 115:
+  Learning rate: 0.00100
+  Total epoch time: 1.2198 sec
+  Training computation time: 1.2010 sec
+  Evaluation time: 0.0184 sec
+  Number of batches: 390
+  Test set accuracy: 0.082200 (8.22%)
+  Matrix computations: 137/200 completed
+  Average matrix computation time: 2.0230 sec
+  Average matrix performance: 0.23 TFLOPS
+
+Epoch 116: test_acc=0.0840, matrices=137/200, time=1.59s
+Epoch 117: test_acc=0.0846, matrices=137/200, time=1.57s
+Epoch 118: test_acc=0.0804, matrices=137/200, time=0.90s
+Epoch 119: test_acc=0.0826, matrices=137/200, time=0.90s
+Epoch 120:
+  Learning rate: 0.00100
+  Total epoch time: 1.9276 sec
+  Training computation time: 1.7033 sec
+  Evaluation time: 0.1869 sec
+  Number of batches: 390
+  Test set accuracy: 0.082200 (8.22%)
+  Matrix computations: 137/200 completed
+  Average matrix computation time: 2.0230 sec
+  Average matrix performance: 0.23 TFLOPS
+
+Epoch 121: test_acc=0.0788, matrices=139/200, time=2.76s
+Epoch 122: test_acc=0.0840, matrices=139/200, time=1.15s
+Epoch 123: test_acc=0.0802, matrices=139/200, time=1.07s
+Epoch 124: test_acc=0.0844, matrices=139/200, time=0.92s
+Epoch 125:
+  Learning rate: 0.00100
+  Total epoch time: 0.9163 sec
+  Training computation time: 0.9061 sec
+  Evaluation time: 0.0098 sec
+  Number of batches: 390
+  Test set accuracy: 0.082000 (8.20%)
+  Matrix computations: 139/200 completed
+  Average matrix computation time: 2.1723 sec
+  Average matrix performance: 0.22 TFLOPS
+
+Epoch 126: test_acc=0.0840, matrices=139/200, time=0.91s
+Epoch 127: test_acc=0.0846, matrices=139/200, time=0.90s
+Epoch 128: test_acc=0.0866, matrices=139/200, time=1.18s
+Epoch 129: test_acc=0.0880, matrices=139/200, time=1.18s
+Epoch 130:
+  Learning rate: 0.00100
+  Total epoch time: 2.9102 sec
+  Training computation time: 2.9000 sec
+  Evaluation time: 0.0098 sec
+  Number of batches: 390
+  Test set accuracy: 0.091000 (9.10%)
+  Matrix computations: 141/200 completed
+  Average matrix computation time: 2.2848 sec
+  Average matrix performance: 0.22 TFLOPS
+
+Epoch 131: test_acc=0.0900, matrices=145/200, time=0.97s
+Epoch 132: test_acc=0.0836, matrices=147/200, time=0.97s
+Epoch 133: test_acc=0.0818, matrices=151/200, time=1.09s
+Epoch 134: test_acc=0.0842, matrices=153/200, time=1.49s
+Epoch 135:
+  Learning rate: 0.00100
+  Total epoch time: 1.4118 sec
+  Training computation time: 1.4016 sec
+  Evaluation time: 0.0096 sec
+  Number of batches: 390
+  Test set accuracy: 0.083600 (8.36%)
+  Matrix computations: 155/200 completed
+  Average matrix computation time: 2.1505 sec
+  Average matrix performance: 0.22 TFLOPS
+
+Epoch 136: test_acc=0.0888, matrices=159/200, time=0.98s
+Epoch 137: test_acc=0.0870, matrices=161/200, time=1.70s
+Epoch 138: test_acc=0.0856, matrices=165/200, time=2.82s
+Epoch 139: test_acc=0.0862, matrices=165/200, time=1.08s
+Epoch 140:
+  Learning rate: 0.00100
+  Total epoch time: 0.9055 sec
+  Training computation time: 0.8955 sec
+  Evaluation time: 0.0097 sec
+  Number of batches: 390
+  Test set accuracy: 0.087400 (8.74%)
+  Matrix computations: 165/200 completed
+  Average matrix computation time: 2.0509 sec
+  Average matrix performance: 0.22 TFLOPS
+
+Epoch 141: test_acc=0.0848, matrices=165/200, time=0.95s
+Epoch 142: test_acc=0.0904, matrices=165/200, time=0.91s
+Epoch 143: test_acc=0.0868, matrices=165/200, time=0.91s
+Epoch 144: test_acc=0.0870, matrices=167/200, time=1.26s
+Epoch 145:
+  Learning rate: 0.00100
+  Total epoch time: 1.5208 sec
+  Training computation time: 1.5098 sec
+  Evaluation time: 0.0106 sec
+  Number of batches: 390
+  Test set accuracy: 0.088600 (8.86%)
+  Matrix computations: 167/200 completed
+  Average matrix computation time: 2.1174 sec
+  Average matrix performance: 0.22 TFLOPS
+
+Epoch 146: test_acc=0.0856, matrices=167/200, time=0.91s
+Epoch 147: test_acc=0.0900, matrices=167/200, time=1.17s
+Epoch 148: test_acc=0.0906, matrices=169/200, time=1.55s
+Epoch 149: test_acc=0.0878, matrices=173/200, time=1.03s
+Epoch 150:
+  Learning rate: 0.00100
+  Total epoch time: 1.0159 sec
+  Training computation time: 1.0048 sec
+  Evaluation time: 0.0107 sec
+  Number of batches: 390
+  Test set accuracy: 0.083800 (8.38%)
+  Matrix computations: 177/200 completed
+  Average matrix computation time: 2.0632 sec
+  Average matrix performance: 0.22 TFLOPS
+
+Epoch 151: test_acc=0.0878, matrices=181/200, time=0.98s
+Epoch 152: test_acc=0.0876, matrices=183/200, time=0.98s
+Epoch 153: test_acc=0.0932, matrices=187/200, time=1.01s
+Epoch 154: test_acc=0.0880, matrices=191/200, time=1.01s
+Epoch 155:
+  Learning rate: 0.00100
+  Total epoch time: 1.0129 sec
+  Training computation time: 0.9726 sec
+  Evaluation time: 0.0400 sec
+  Number of batches: 390
+  Test set accuracy: 0.093800 (9.38%)
+  Matrix computations: 195/200 completed
+  Average matrix computation time: 1.9095 sec
+  Average matrix performance: 0.23 TFLOPS
+
+Epoch 156: test_acc=0.0858, matrices=197/200, time=1.09s
+Epoch 157: test_acc=0.0924, matrices=199/200, time=2.66s
+Epoch 158: test_acc=0.0904, matrices=199/200, time=0.92s
+Epoch 159: test_acc=0.0858, matrices=199/200, time=1.05s
+Epoch 160:
+  Learning rate: 0.00100
+  Total epoch time: 0.9188 sec
+  Training computation time: 0.9088 sec
+  Evaluation time: 0.0096 sec
+  Number of batches: 390
+  Test set accuracy: 0.095600 (9.56%)
+  Matrix computations: 199/200 completed
+  Average matrix computation time: 1.8947 sec
+  Average matrix performance: 0.23 TFLOPS
+
+Epoch 161: test_acc=0.0942, matrices=199/200, time=0.92s
+Epoch 162: test_acc=0.0858, matrices=199/200, time=0.92s
+Epoch 163: test_acc=0.0880, matrices=199/200, time=0.92s
+Epoch 164: test_acc=0.0876, matrices=199/200, time=1.05s
+Epoch 165:
+  Learning rate: 0.00100
+  Total epoch time: 0.9187 sec
+  Training computation time: 0.9085 sec
+  Evaluation time: 0.0097 sec
+  Number of batches: 390
+  Test set accuracy: 0.092600 (9.26%)
+  Matrix computations: 199/200 completed
+  Average matrix computation time: 1.8947 sec
+  Average matrix performance: 0.23 TFLOPS
+
+Epoch 166: test_acc=0.0932, matrices=199/200, time=0.94s
+Epoch 167: test_acc=0.0914, matrices=199/200, time=0.92s
+Epoch 168: test_acc=0.0922, matrices=200/200, time=2.26s
+Epoch 169: test_acc=0.0900, matrices=200/200, time=1.09s
+Epoch 170:
+  Learning rate: 0.00100
+  Total epoch time: 0.9197 sec
+  Training computation time: 0.9096 sec
+  Evaluation time: 0.0096 sec
+  Number of batches: 390
+  Test set accuracy: 0.099200 (9.92%)
+  Matrix computations: 200/200 completed
+  Average matrix computation time: 1.9395 sec
+  Average matrix performance: 0.23 TFLOPS
+
+Epoch 171: test_acc=0.0836, matrices=200/200, time=0.92s
+Epoch 172: test_acc=0.0894, matrices=200/200, time=0.92s
+Epoch 173: test_acc=0.0942, matrices=200/200, time=1.72s
+Epoch 174: test_acc=0.0940, matrices=200/200, time=0.92s
+Epoch 175:
+  Learning rate: 0.00100
+  Total epoch time: 0.9342 sec
+  Training computation time: 0.9103 sec
+  Evaluation time: 0.0236 sec
+  Number of batches: 390
+  Test set accuracy: 0.093400 (9.34%)
+  Matrix computations: 200/200 completed
+  Average matrix computation time: 1.9395 sec
+  Average matrix performance: 0.23 TFLOPS
+
+Epoch 176: test_acc=0.0964, matrices=200/200, time=0.92s
+Epoch 177: test_acc=0.0916, matrices=200/200, time=0.93s
+Epoch 178: test_acc=0.0906, matrices=200/200, time=1.17s
+Epoch 179: test_acc=0.0886, matrices=200/200, time=0.96s
+Epoch 180:
+  Learning rate: 0.00100
+  Total epoch time: 0.9215 sec
+  Training computation time: 0.9114 sec
+  Evaluation time: 0.0097 sec
+  Number of batches: 390
+  Test set accuracy: 0.095600 (9.56%)
+  Matrix computations: 200/200 completed
+  Average matrix computation time: 1.9395 sec
+  Average matrix performance: 0.23 TFLOPS
+
+Epoch 181: test_acc=0.0964, matrices=200/200, time=0.92s
+Epoch 182: test_acc=0.0928, matrices=200/200, time=0.92s
+Epoch 183: test_acc=0.0878, matrices=200/200, time=0.92s
+Epoch 184: test_acc=0.0988, matrices=200/200, time=0.94s
+Epoch 185:
+  Learning rate: 0.00100
+  Total epoch time: 1.8125 sec
+  Training computation time: 1.5815 sec
+  Evaluation time: 0.1391 sec
+  Number of batches: 390
+  Test set accuracy: 0.089200 (8.92%)
+  Matrix computations: 200/200 completed
+  Average matrix computation time: 1.9395 sec
+  Average matrix performance: 0.23 TFLOPS
+
+Epoch 186: test_acc=0.0970, matrices=200/200, time=0.94s
+Epoch 187: test_acc=0.0938, matrices=200/200, time=0.92s
+Epoch 188: test_acc=0.0962, matrices=200/200, time=0.92s
+Epoch 189: test_acc=0.0888, matrices=200/200, time=1.31s
+Epoch 190:
+  Learning rate: 0.00100
+  Total epoch time: 0.9202 sec
+  Training computation time: 0.9100 sec
+  Evaluation time: 0.0097 sec
+  Number of batches: 390
+  Test set accuracy: 0.093000 (9.30%)
+  Matrix computations: 200/200 completed
+  Average matrix computation time: 1.9395 sec
+  Average matrix performance: 0.23 TFLOPS
+
+Epoch 191: test_acc=0.0918, matrices=200/200, time=0.92s
+Epoch 192: test_acc=0.0908, matrices=200/200, time=0.92s
+Epoch 193: test_acc=0.0996, matrices=200/200, time=1.15s
+Epoch 194: test_acc=0.0920, matrices=200/200, time=0.93s
+Epoch 195:
+  Learning rate: 0.00100
+  Total epoch time: 0.9224 sec
+  Training computation time: 0.9124 sec
+  Evaluation time: 0.0096 sec
+  Number of batches: 390
+  Test set accuracy: 0.095400 (9.54%)
+  Matrix computations: 200/200 completed
+  Average matrix computation time: 1.9395 sec
+  Average matrix performance: 0.23 TFLOPS
+
+Epoch 196: test_acc=0.0906, matrices=200/200, time=0.92s
+Epoch 197: test_acc=0.0936, matrices=200/200, time=0.92s
+Warning: No cache file for epoch 200
+Epoch 198: test_acc=0.0972, matrices=200/200, time=0.92s
+Epoch 199:
+  Learning rate: 0.00100
+  Total epoch time: 0.9181 sec
+  Training computation time: 0.9082 sec
+  Evaluation time: 0.0095 sec
+  Number of batches: 390
+  Test set accuracy: 0.095200 (9.52%)
+  Matrix computations: 200/200 completed
+  Average matrix computation time: 1.9395 sec
+  Average matrix performance: 0.23 TFLOPS
+
+Waiting for remaining 0 matrix computations to complete...
+Batch loader shut down
+
+=== Matrix Computation Summary ===
+Completed 200/200 matrix computations
+Average transfer time: 0.033177 seconds
+Average compute time: 1.939511 seconds
+Average performance: 0.23 TFLOPS
+
+=== Training Summary ===
+Model initialization time: 118.7677 seconds
+Dataset loading time: 32.9895 seconds
+Function compilation time: 73.3985 seconds
+Training loop time: 286.0810 seconds
+  - Computation time: 266.6490 seconds
+  - Evaluation time: 17.1177 seconds
+Total time: 437.8381 seconds
+Final test accuracy: 0.095200 (9.52%)
+Best test accuracy: 0.099600 (9.96%)
+main executed in 443.852127 seconds

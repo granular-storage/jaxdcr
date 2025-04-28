@@ -1,0 +1,32 @@
+jax on meluxina
+
+#get a GPU and CPU
+srun --partition=gpu --account=p200633 --nodes=1 --ntasks=1 --ntasks-per-node=1 --gpus-per-task=1 --cpus-per-task=64 --time=05:45:00 --qos=default --pty /bin/bash -l
+
+#prerequisites
+
+pip install -U "jax[cuda12]"
+pip install tensorflow-datasets
+pip install tensorflow
+pip install nvidia-ml-py
+
+#monitoring GPU
+python3.12 gpumon.py --file
+
+#before running a script
+
+ml env/release/2024.1
+ml Python/3.12.3-GCCcore-13.3.0
+ml CUDA/12.6.0
+ml NCCL/2.22.3-GCCcore-13.3.0-CUDA-12.6.0
+ml cuDNN/9.5.0.50-CUDA-12.6.0
+
+
+#example to run a script
+python3.12 jax_onlyshared_batches_prefetch_matmul_cifar.py > jax_onlyshared_batches_prefetch_matmul_cifar.out 2>&1
+ 
+python3.12 jax_onlyshared_matmul_cifar.py > jax_onlyshared_matmul_cifar.out 2>&1
+
+python3.12 jax_notshared_matmul_cifar.py > jax_notshared_matmul_cifar.out 2>&1
+
+

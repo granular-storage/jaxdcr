@@ -1,0 +1,2229 @@
+2025-04-16 09:37:18.227077: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1744789038.770195   11080 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1744789039.151829   11080 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1744789040.286086   11080 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1744789040.286144   11080 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1744789040.286149   11080 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1744789040.286153   11080 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+WARNING:absl:Variant folder /tmp/tfds/cifar100/3.0.2 has no dataset_info.json
+
+=== Starting CIFAR-100 CNN with Compilation Caching ===
+
+JAX version: 0.5.3
+JAX devices: [CudaDevice(id=0)]
+
+=== Phase 1: Model Initialization ===
+Model initialization time: 20.5720 seconds
+
+=== Phase 2: Dataset Loading ===
+Downloading and preparing dataset Unknown size (download: Unknown size, generated: Unknown size, total: Unknown size) to /tmp/tfds/cifar100/3.0.2...
+Dl Completed...: 0 url [00:00, ? url/s]
+Dl Size...: 0 MiB [00:00, ? MiB/s][A
+
+Extraction completed...: 0 file [00:00, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:00<?, ? url/s]
+Dl Size...: 0 MiB [00:00, ? MiB/s][A
+
+Extraction completed...: 0 file [00:00, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:00<?, ? url/s]
+Dl Size...:   0%|          | 0/160 [00:00<?, ? MiB/s][A
+
+Extraction completed...: 0 file [00:00, ? file/s][A[A
+Dl Size...:   1%|          | 1/160 [00:01<02:45,  1.04s/ MiB][ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:   1%|          | 1/160 [00:01<02:45,  1.04s/ MiB][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:   1%|▏         | 2/160 [00:01<02:44,  1.04s/ MiB][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:   2%|▏         | 3/160 [00:01<02:43,  1.04s/ MiB][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:   2%|▎         | 4/160 [00:01<02:42,  1.04s/ MiB][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:   3%|▎         | 5/160 [00:01<02:41,  1.04s/ MiB][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:   4%|▍         | 6/160 [00:01<02:40,  1.04s/ MiB][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:   4%|▍         | 7/160 [00:01<02:39,  1.04s/ MiB][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:   5%|▌         | 8/160 [00:01<02:38,  1.04s/ MiB][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:   6%|▌         | 9/160 [00:01<02:37,  1.04s/ MiB][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:   6%|▋         | 10/160 [00:01<02:35,  1.04s/ MiB][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:   7%|▋         | 11/160 [00:01<02:34,  1.04s/ MiB][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:   8%|▊         | 12/160 [00:01<02:33,  1.04s/ MiB][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:   8%|▊         | 13/160 [00:01<02:32,  1.04s/ MiB][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:   9%|▉         | 14/160 [00:01<02:31,  1.04s/ MiB][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:   9%|▉         | 15/160 [00:01<02:30,  1.04s/ MiB][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:  10%|█         | 16/160 [00:01<02:29,  1.04s/ MiB][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:  11%|█         | 17/160 [00:01<02:28,  1.04s/ MiB][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:  11%|█▏        | 18/160 [00:01<02:27,  1.04s/ MiB][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:  12%|█▏        | 19/160 [00:01<02:26,  1.04s/ MiB][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:  12%|█▎        | 20/160 [00:01<02:25,  1.04s/ MiB][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:  13%|█▎        | 21/160 [00:01<02:24,  1.04s/ MiB][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:  14%|█▍        | 22/160 [00:01<02:23,  1.04s/ MiB][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:  14%|█▍        | 23/160 [00:01<02:22,  1.04s/ MiB][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:  15%|█▌        | 24/160 [00:01<02:21,  1.04s/ MiB][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:  16%|█▌        | 25/160 [00:01<02:20,  1.04s/ MiB][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  16%|█▋        | 26/160 [00:02<02:19,  1.04s/ MiB][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[A
+Dl Size...:  17%|█▋        | 27/160 [00:02<00:08, 15.03 MiB/s][ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  17%|█▋        | 27/160 [00:02<00:08, 15.03 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  18%|█▊        | 28/160 [00:02<00:08, 15.03 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  18%|█▊        | 29/160 [00:02<00:08, 15.03 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  19%|█▉        | 30/160 [00:02<00:08, 15.03 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  19%|█▉        | 31/160 [00:02<00:08, 15.03 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  20%|██        | 32/160 [00:02<00:08, 15.03 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  21%|██        | 33/160 [00:02<00:08, 15.03 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  21%|██▏       | 34/160 [00:02<00:08, 15.03 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  22%|██▏       | 35/160 [00:02<00:08, 15.03 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  22%|██▎       | 36/160 [00:02<00:08, 15.03 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  23%|██▎       | 37/160 [00:02<00:08, 15.03 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  24%|██▍       | 38/160 [00:02<00:08, 15.03 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  24%|██▍       | 39/160 [00:02<00:08, 15.03 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  25%|██▌       | 40/160 [00:02<00:07, 15.03 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  26%|██▌       | 41/160 [00:02<00:07, 15.03 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  26%|██▋       | 42/160 [00:02<00:07, 15.03 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  27%|██▋       | 43/160 [00:02<00:07, 15.03 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  28%|██▊       | 44/160 [00:02<00:07, 15.03 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  28%|██▊       | 45/160 [00:02<00:07, 15.03 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  29%|██▉       | 46/160 [00:02<00:07, 15.03 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  29%|██▉       | 47/160 [00:02<00:07, 15.03 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  30%|███       | 48/160 [00:02<00:07, 15.03 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  31%|███       | 49/160 [00:02<00:07, 15.03 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  31%|███▏      | 50/160 [00:02<00:07, 15.03 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  32%|███▏      | 51/160 [00:02<00:07, 15.03 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  32%|███▎      | 52/160 [00:02<00:07, 15.03 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  33%|███▎      | 53/160 [00:03<00:07, 15.03 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  34%|███▍      | 54/160 [00:03<00:07, 15.03 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[A
+Dl Size...:  34%|███▍      | 55/160 [00:03<00:05, 20.80 MiB/s][ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  34%|███▍      | 55/160 [00:03<00:05, 20.80 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  35%|███▌      | 56/160 [00:03<00:04, 20.80 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  36%|███▌      | 57/160 [00:03<00:04, 20.80 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  36%|███▋      | 58/160 [00:03<00:04, 20.80 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  37%|███▋      | 59/160 [00:03<00:04, 20.80 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  38%|███▊      | 60/160 [00:03<00:04, 20.80 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  38%|███▊      | 61/160 [00:03<00:04, 20.80 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  39%|███▉      | 62/160 [00:03<00:04, 20.80 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  39%|███▉      | 63/160 [00:03<00:04, 20.80 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  40%|████      | 64/160 [00:03<00:04, 20.80 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  41%|████      | 65/160 [00:03<00:04, 20.80 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  41%|████▏     | 66/160 [00:03<00:04, 20.80 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  42%|████▏     | 67/160 [00:03<00:04, 20.80 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  42%|████▎     | 68/160 [00:03<00:04, 20.80 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  43%|████▎     | 69/160 [00:03<00:04, 20.80 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  44%|████▍     | 70/160 [00:03<00:04, 20.80 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  44%|████▍     | 71/160 [00:03<00:04, 20.80 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  45%|████▌     | 72/160 [00:03<00:04, 20.80 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  46%|████▌     | 73/160 [00:03<00:04, 20.80 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  46%|████▋     | 74/160 [00:03<00:04, 20.80 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  47%|████▋     | 75/160 [00:03<00:04, 20.80 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  48%|████▊     | 76/160 [00:03<00:04, 20.80 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  48%|████▊     | 77/160 [00:03<00:03, 20.80 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  49%|████▉     | 78/160 [00:03<00:03, 20.80 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  49%|████▉     | 79/160 [00:03<00:03, 20.80 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  50%|█████     | 80/160 [00:04<00:03, 20.80 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  51%|█████     | 81/160 [00:04<00:03, 20.80 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  51%|█████▏    | 82/160 [00:04<00:03, 20.80 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[A
+Dl Size...:  52%|█████▏    | 83/160 [00:04<00:03, 23.29 MiB/s][ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  52%|█████▏    | 83/160 [00:04<00:03, 23.29 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  52%|█████▎    | 84/160 [00:04<00:03, 23.29 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  53%|█████▎    | 85/160 [00:04<00:03, 23.29 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  54%|█████▍    | 86/160 [00:04<00:03, 23.29 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  54%|█████▍    | 87/160 [00:04<00:03, 23.29 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  55%|█████▌    | 88/160 [00:04<00:03, 23.29 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  56%|█████▌    | 89/160 [00:04<00:03, 23.29 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  56%|█████▋    | 90/160 [00:04<00:03, 23.29 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  57%|█████▋    | 91/160 [00:04<00:02, 23.29 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  57%|█████▊    | 92/160 [00:04<00:02, 23.29 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  58%|█████▊    | 93/160 [00:04<00:02, 23.29 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  59%|█████▉    | 94/160 [00:04<00:02, 23.29 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  59%|█████▉    | 95/160 [00:04<00:02, 23.29 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  60%|██████    | 96/160 [00:04<00:02, 23.29 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  61%|██████    | 97/160 [00:04<00:02, 23.29 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  61%|██████▏   | 98/160 [00:04<00:02, 23.29 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  62%|██████▏   | 99/160 [00:04<00:02, 23.29 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  62%|██████▎   | 100/160 [00:04<00:02, 23.29 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  63%|██████▎   | 101/160 [00:04<00:02, 23.29 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  64%|██████▍   | 102/160 [00:04<00:02, 23.29 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  64%|██████▍   | 103/160 [00:04<00:02, 23.29 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  65%|██████▌   | 104/160 [00:04<00:02, 23.29 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  66%|██████▌   | 105/160 [00:04<00:02, 23.29 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  66%|██████▋   | 106/160 [00:04<00:02, 23.29 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  67%|██████▋   | 107/160 [00:04<00:02, 23.29 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  68%|██████▊   | 108/160 [00:04<00:02, 23.29 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  68%|██████▊   | 109/160 [00:05<00:02, 23.29 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  69%|██████▉   | 110/160 [00:05<00:02, 23.29 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  69%|██████▉   | 111/160 [00:05<00:02, 23.29 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  70%|███████   | 112/160 [00:05<00:02, 23.29 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[A
+Dl Size...:  71%|███████   | 113/160 [00:05<00:01, 25.30 MiB/s][ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  71%|███████   | 113/160 [00:05<00:01, 25.30 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  71%|███████▏  | 114/160 [00:05<00:01, 25.30 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  72%|███████▏  | 115/160 [00:05<00:01, 25.30 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  72%|███████▎  | 116/160 [00:05<00:01, 25.30 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  73%|███████▎  | 117/160 [00:05<00:01, 25.30 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  74%|███████▍  | 118/160 [00:05<00:01, 25.30 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  74%|███████▍  | 119/160 [00:05<00:01, 25.30 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  75%|███████▌  | 120/160 [00:05<00:01, 25.30 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  76%|███████▌  | 121/160 [00:05<00:01, 25.30 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  76%|███████▋  | 122/160 [00:05<00:01, 25.30 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  77%|███████▋  | 123/160 [00:05<00:01, 25.30 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  78%|███████▊  | 124/160 [00:05<00:01, 25.30 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  78%|███████▊  | 125/160 [00:05<00:01, 25.30 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  79%|███████▉  | 126/160 [00:05<00:01, 25.30 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  79%|███████▉  | 127/160 [00:05<00:01, 25.30 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  80%|████████  | 128/160 [00:05<00:01, 25.30 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  81%|████████  | 129/160 [00:05<00:01, 25.30 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  81%|████████▏ | 130/160 [00:05<00:01, 25.30 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  82%|████████▏ | 131/160 [00:05<00:01, 25.30 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  82%|████████▎ | 132/160 [00:05<00:01, 25.30 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  83%|████████▎ | 133/160 [00:05<00:01, 25.30 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  84%|████████▍ | 134/160 [00:05<00:01, 25.30 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  84%|████████▍ | 135/160 [00:05<00:00, 25.30 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  85%|████████▌ | 136/160 [00:05<00:00, 25.30 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  86%|████████▌ | 137/160 [00:06<00:00, 25.30 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  86%|████████▋ | 138/160 [00:06<00:00, 25.30 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  87%|████████▋ | 139/160 [00:06<00:00, 25.30 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  88%|████████▊ | 140/160 [00:06<00:00, 25.30 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[A
+Dl Size...:  88%|████████▊ | 141/160 [00:06<00:00, 26.16 MiB/s][ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  88%|████████▊ | 141/160 [00:06<00:00, 26.16 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  89%|████████▉ | 142/160 [00:06<00:00, 26.16 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  89%|████████▉ | 143/160 [00:06<00:00, 26.16 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  90%|█████████ | 144/160 [00:06<00:00, 26.16 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  91%|█████████ | 145/160 [00:06<00:00, 26.16 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  91%|█████████▏| 146/160 [00:06<00:00, 26.16 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  92%|█████████▏| 147/160 [00:06<00:00, 26.16 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  92%|█████████▎| 148/160 [00:06<00:00, 26.16 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  93%|█████████▎| 149/160 [00:06<00:00, 26.16 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  94%|█████████▍| 150/160 [00:06<00:00, 26.16 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  94%|█████████▍| 151/160 [00:06<00:00, 26.16 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  95%|█████████▌| 152/160 [00:06<00:00, 26.16 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  96%|█████████▌| 153/160 [00:06<00:00, 26.16 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  96%|█████████▋| 154/160 [00:06<00:00, 26.16 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  97%|█████████▋| 155/160 [00:06<00:00, 26.16 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  98%|█████████▊| 156/160 [00:06<00:00, 26.16 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  98%|█████████▊| 157/160 [00:06<00:00, 26.16 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  99%|█████████▉| 158/160 [00:06<00:00, 26.16 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  99%|█████████▉| 159/160 [00:06<00:00, 26.16 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...: 100%|██████████| 160/160 [00:06<00:00, 26.16 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...: 100%|██████████| 1/1 [00:06<00:00,  6.97s/ url]Dl Completed...: 100%|██████████| 1/1 [00:06<00:00,  6.97s/ url]
+Dl Size...: 100%|██████████| 160/160 [00:06<00:00, 26.16 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...: 100%|██████████| 1/1 [00:07<00:00,  6.97s/ url]
+Dl Size...: 100%|██████████| 160/160 [00:07<00:00, 26.16 MiB/s][A
+
+Extraction completed...:   0%|          | 0/1 [00:07<?, ? file/s][A[ADl Completed...: 100%|██████████| 1/1 [00:07<00:00,  6.97s/ url]
+Dl Size...: 100%|██████████| 160/160 [00:07<00:00, 26.16 MiB/s][A
+
+Extraction completed...:   0%|          | 0/2 [00:07<?, ? file/s][A[ADl Completed...: 100%|██████████| 1/1 [00:08<00:00,  6.97s/ url]
+Dl Size...: 100%|██████████| 160/160 [00:08<00:00, 26.16 MiB/s][A
+
+Extraction completed...:   0%|          | 0/3 [00:08<?, ? file/s][A[ADl Completed...: 100%|██████████| 1/1 [00:08<00:00,  6.97s/ url]
+Dl Size...: 100%|██████████| 160/160 [00:08<00:00, 26.16 MiB/s][A
+
+Extraction completed...:   0%|          | 0/4 [00:08<?, ? file/s][A[A
+
+Extraction completed...:  25%|██▌       | 1/4 [00:08<00:24,  8.23s/ file][A[ADl Completed...: 100%|██████████| 1/1 [00:08<00:00,  6.97s/ url]
+Dl Size...: 100%|██████████| 160/160 [00:08<00:00, 26.16 MiB/s][A
+
+Extraction completed...:  25%|██▌       | 1/4 [00:08<00:24,  8.23s/ file][A[ADl Completed...: 100%|██████████| 1/1 [00:08<00:00,  6.97s/ url]
+Dl Size...: 100%|██████████| 160/160 [00:08<00:00, 26.16 MiB/s][A
+
+Extraction completed...:  50%|█████     | 2/4 [00:08<00:16,  8.23s/ file][A[ADl Completed...: 100%|██████████| 1/1 [00:08<00:00,  6.97s/ url]
+Dl Size...: 100%|██████████| 160/160 [00:08<00:00, 26.16 MiB/s][A
+
+Extraction completed...:  75%|███████▌  | 3/4 [00:08<00:08,  8.23s/ file][A[ADl Completed...: 100%|██████████| 1/1 [00:08<00:00,  6.97s/ url]
+Dl Size...: 100%|██████████| 160/160 [00:08<00:00, 26.16 MiB/s][A
+
+Extraction completed...: 100%|██████████| 4/4 [00:08<00:00,  8.23s/ file][A[AExtraction completed...: 100%|██████████| 4/4 [00:08<00:00,  2.06s/ file]
+Dl Size...: 100%|██████████| 160/160 [00:08<00:00, 19.40 MiB/s]
+Dl Completed...: 100%|██████████| 1/1 [00:08<00:00,  8.25s/ url]
+Generating splits...:   0%|          | 0/2 [00:00<?, ? splits/s]
+Generating train examples...: 0 examples [00:00, ? examples/s][A
+Generating train examples...: 1 examples [00:02,  2.58s/ examples][A
+Generating train examples...: 2926 examples [00:03, 1043.31 examples/s][A
+Generating train examples...: 5970 examples [00:04, 1718.47 examples/s][A
+Generating train examples...: 9035 examples [00:05, 2156.40 examples/s][A
+Generating train examples...: 12085 examples [00:06, 2439.68 examples/s][A
+Generating train examples...: 15134 examples [00:07, 2629.59 examples/s][A
+Generating train examples...: 18199 examples [00:08, 2763.52 examples/s][A
+Generating train examples...: 21265 examples [00:09, 2855.81 examples/s][A
+Generating train examples...: 24307 examples [00:10, 2912.33 examples/s][A
+Generating train examples...: 27303 examples [00:11, 2921.35 examples/s][A
+Generating train examples...: 30371 examples [00:12, 2965.30 examples/s][A
+Generating train examples...: 33377 examples [00:13, 2855.23 examples/s][A
+Generating train examples...: 36432 examples [00:14, 2913.32 examples/s][A
+Generating train examples...: 39487 examples [00:15, 2954.78 examples/s][A
+Generating train examples...: 42541 examples [00:16, 2983.94 examples/s][A
+Generating train examples...: 45598 examples [00:17, 3005.41 examples/s][A
+Generating train examples...: 48656 examples [00:18, 3021.02 examples/s][A
+                                                                        [A
+Shuffling /tmp/tfds/cifar100/incomplete.TWF6A9_3.0.2/cifar100-train.tfrecord*...:   0%|          | 0/50000 [00:00<?, ? examples/s][A
+                                                                                                                                  [AGenerating splits...:  50%|█████     | 1/2 [00:19<00:19, 19.49s/ splits]
+Generating test examples...: 0 examples [00:00, ? examples/s][A
+Generating test examples...: 2914 examples [00:01, 2913.33 examples/s][A
+Generating test examples...: 5828 examples [00:02, 2865.56 examples/s][A
+Generating test examples...: 8878 examples [00:03, 2948.83 examples/s][A
+                                                                      [A
+Shuffling /tmp/tfds/cifar100/incomplete.TWF6A9_3.0.2/cifar100-test.tfrecord*...:   0%|          | 0/10000 [00:00<?, ? examples/s][A
+                                                                                                                                 [AGenerating splits...: 100%|██████████| 2/2 [00:22<00:00, 10.06s/ splits]                                                                        Dataset cifar100 downloaded and prepared to /tmp/tfds/cifar100/3.0.2. Subsequent calls will reuse this data.
+Dataset info:
+  Features: ['id', 'image', 'label', 'coarse_label']
+  Label classes: 100
+Train: (50000, 32, 32, 3) (50000, 100)
+Test: (10000, 32, 32, 3) (10000, 100)
+Dataset loading time: 54.9134 seconds
+
+=== Phase 3: Function Compilation ===
+No compilation metadata found, JIT-compiling update function...
+Compilation completed in 26.7941 seconds
+Saved compilation metadata to /tmp/jax_cifar100_cnn_aot_cache/96df6e2667db3178149bc9a8592b7c0e_metadata.pickle
+
+=== Phase 4: Training Loop ===
+Epoch 0:
+  Learning rate: 0.01000
+  Total epoch time: 17.2369 sec
+  Batch loading time: 0.7041 sec
+  Training computation time: 0.8802 sec
+  Evaluation time: 15.0567 sec
+  Number of batches: 390
+  Training set accuracy: 0.014200 (1.42%)
+  Test set accuracy: 0.012700 (1.27%)
+  Best test accuracy so far: 0.012700 (1.27%)
+
+Epoch 1:
+  Learning rate: 0.01000
+  Total epoch time: 1.3823 sec
+  Batch loading time: 0.2773 sec
+  Training computation time: 0.6952 sec
+  Evaluation time: 0.0232 sec
+  Number of batches: 390
+  Training set accuracy: 0.017600 (1.76%)
+  Test set accuracy: 0.017800 (1.78%)
+  Best test accuracy so far: 0.017800 (1.78%)
+
+Epoch 2:
+  Learning rate: 0.01000
+  Total epoch time: 0.9947 sec
+  Batch loading time: 0.2782 sec
+  Training computation time: 0.6518 sec
+  Evaluation time: 0.0204 sec
+  Number of batches: 390
+  Training set accuracy: 0.022200 (2.22%)
+  Test set accuracy: 0.020700 (2.07%)
+  Best test accuracy so far: 0.020700 (2.07%)
+
+Epoch 3:
+  Learning rate: 0.01000
+  Total epoch time: 1.0360 sec
+  Batch loading time: 0.3238 sec
+  Training computation time: 0.6485 sec
+  Evaluation time: 0.0200 sec
+  Number of batches: 390
+  Training set accuracy: 0.023400 (2.34%)
+  Test set accuracy: 0.024500 (2.45%)
+  Best test accuracy so far: 0.024500 (2.45%)
+
+Epoch 4:
+  Learning rate: 0.01000
+  Total epoch time: 1.0458 sec
+  Batch loading time: 0.3274 sec
+  Training computation time: 0.6516 sec
+  Evaluation time: 0.0222 sec
+  Number of batches: 390
+  Training set accuracy: 0.027000 (2.70%)
+  Test set accuracy: 0.029100 (2.91%)
+  Best test accuracy so far: 0.029100 (2.91%)
+
+Epoch 5:
+  Learning rate: 0.01000
+  Total epoch time: 1.4060 sec
+  Batch loading time: 0.3249 sec
+  Training computation time: 0.8835 sec
+  Evaluation time: 0.1279 sec
+  Number of batches: 390
+  Training set accuracy: 0.032000 (3.20%)
+  Test set accuracy: 0.033000 (3.30%)
+  Best test accuracy so far: 0.033000 (3.30%)
+
+Epoch 6:
+  Learning rate: 0.01000
+  Total epoch time: 0.9795 sec
+  Batch loading time: 0.2637 sec
+  Training computation time: 0.6499 sec
+  Evaluation time: 0.0204 sec
+  Number of batches: 390
+  Training set accuracy: 0.041200 (4.12%)
+  Test set accuracy: 0.036400 (3.64%)
+  Best test accuracy so far: 0.036400 (3.64%)
+
+Epoch 7:
+  Learning rate: 0.01000
+  Total epoch time: 0.9877 sec
+  Batch loading time: 0.2532 sec
+  Training computation time: 0.6696 sec
+  Evaluation time: 0.0199 sec
+  Number of batches: 390
+  Training set accuracy: 0.039600 (3.96%)
+  Test set accuracy: 0.040100 (4.01%)
+  Best test accuracy so far: 0.040100 (4.01%)
+
+Epoch 8:
+  Learning rate: 0.01000
+  Total epoch time: 0.9719 sec
+  Batch loading time: 0.2564 sec
+  Training computation time: 0.6494 sec
+  Evaluation time: 0.0204 sec
+  Number of batches: 390
+  Training set accuracy: 0.041000 (4.10%)
+  Test set accuracy: 0.043200 (4.32%)
+  Best test accuracy so far: 0.043200 (4.32%)
+
+Epoch 9:
+  Learning rate: 0.01000
+  Total epoch time: 0.9752 sec
+  Batch loading time: 0.2606 sec
+  Training computation time: 0.6498 sec
+  Evaluation time: 0.0199 sec
+  Number of batches: 390
+  Training set accuracy: 0.052000 (5.20%)
+  Test set accuracy: 0.047900 (4.79%)
+  Best test accuracy so far: 0.047900 (4.79%)
+
+Epoch 10:
+  Learning rate: 0.00500
+  Total epoch time: 1.2828 sec
+  Batch loading time: 0.3474 sec
+  Training computation time: 0.7305 sec
+  Evaluation time: 0.1386 sec
+  Number of batches: 390
+  Training set accuracy: 0.046000 (4.60%)
+  Test set accuracy: 0.049600 (4.96%)
+  Best test accuracy so far: 0.049600 (4.96%)
+
+Epoch 11:
+  Learning rate: 0.00500
+  Total epoch time: 0.9811 sec
+  Batch loading time: 0.2559 sec
+  Training computation time: 0.6610 sec
+  Evaluation time: 0.0200 sec
+  Number of batches: 390
+  Training set accuracy: 0.053400 (5.34%)
+  Test set accuracy: 0.050900 (5.09%)
+  Best test accuracy so far: 0.050900 (5.09%)
+
+Epoch 12:
+  Learning rate: 0.00500
+  Total epoch time: 0.9749 sec
+  Batch loading time: 0.2550 sec
+  Training computation time: 0.6540 sec
+  Evaluation time: 0.0205 sec
+  Number of batches: 390
+  Training set accuracy: 0.050600 (5.06%)
+  Test set accuracy: 0.053000 (5.30%)
+  Best test accuracy so far: 0.053000 (5.30%)
+
+Epoch 13:
+  Learning rate: 0.00500
+  Total epoch time: 0.9751 sec
+  Batch loading time: 0.2574 sec
+  Training computation time: 0.6533 sec
+  Evaluation time: 0.0201 sec
+  Number of batches: 390
+  Training set accuracy: 0.059200 (5.92%)
+  Test set accuracy: 0.054300 (5.43%)
+  Best test accuracy so far: 0.054300 (5.43%)
+
+Epoch 14:
+  Learning rate: 0.00500
+  Total epoch time: 0.9728 sec
+  Batch loading time: 0.2531 sec
+  Training computation time: 0.6535 sec
+  Evaluation time: 0.0204 sec
+  Number of batches: 390
+  Training set accuracy: 0.054600 (5.46%)
+  Test set accuracy: 0.055400 (5.54%)
+  Best test accuracy so far: 0.055400 (5.54%)
+
+Epoch 15:
+  Learning rate: 0.00500
+  Total epoch time: 0.9759 sec
+  Batch loading time: 0.2564 sec
+  Training computation time: 0.6542 sec
+  Evaluation time: 0.0201 sec
+  Number of batches: 390
+  Training set accuracy: 0.059400 (5.94%)
+  Test set accuracy: 0.057600 (5.76%)
+  Best test accuracy so far: 0.057600 (5.76%)
+
+Epoch 16:
+  Learning rate: 0.00500
+  Total epoch time: 1.1608 sec
+  Batch loading time: 0.2526 sec
+  Training computation time: 0.7587 sec
+  Evaluation time: 0.0963 sec
+  Number of batches: 390
+  Training set accuracy: 0.059600 (5.96%)
+  Test set accuracy: 0.058800 (5.88%)
+  Best test accuracy so far: 0.058800 (5.88%)
+
+Epoch 17:
+  Learning rate: 0.00500
+  Total epoch time: 0.9762 sec
+  Batch loading time: 0.2589 sec
+  Training computation time: 0.6530 sec
+  Evaluation time: 0.0201 sec
+  Number of batches: 390
+  Training set accuracy: 0.060600 (6.06%)
+  Test set accuracy: 0.059400 (5.94%)
+  Best test accuracy so far: 0.059400 (5.94%)
+
+Epoch 18:
+  Learning rate: 0.00500
+  Total epoch time: 0.9789 sec
+  Batch loading time: 0.2578 sec
+  Training computation time: 0.6553 sec
+  Evaluation time: 0.0205 sec
+  Number of batches: 390
+  Training set accuracy: 0.060400 (6.04%)
+  Test set accuracy: 0.060800 (6.08%)
+  Best test accuracy so far: 0.060800 (6.08%)
+
+Epoch 19:
+  Learning rate: 0.00500
+  Total epoch time: 0.9741 sec
+  Batch loading time: 0.2562 sec
+  Training computation time: 0.6535 sec
+  Evaluation time: 0.0201 sec
+  Number of batches: 390
+  Training set accuracy: 0.066000 (6.60%)
+  Test set accuracy: 0.062400 (6.24%)
+  Best test accuracy so far: 0.062400 (6.24%)
+
+Epoch 20:
+  Learning rate: 0.00100
+  Total epoch time: 0.9763 sec
+  Batch loading time: 0.2544 sec
+  Training computation time: 0.6558 sec
+  Evaluation time: 0.0205 sec
+  Number of batches: 390
+  Training set accuracy: 0.060000 (6.00%)
+  Test set accuracy: 0.062000 (6.20%)
+  Best test accuracy so far: 0.062400 (6.24%)
+
+Epoch 21:
+  Learning rate: 0.00100
+  Total epoch time: 1.0856 sec
+  Batch loading time: 0.2670 sec
+  Training computation time: 0.7450 sec
+  Evaluation time: 0.0288 sec
+  Number of batches: 390
+  Training set accuracy: 0.057800 (5.78%)
+  Test set accuracy: 0.061900 (6.19%)
+  Best test accuracy so far: 0.062400 (6.24%)
+
+Epoch 22:
+  Learning rate: 0.00100
+  Total epoch time: 0.9739 sec
+  Batch loading time: 0.2550 sec
+  Training computation time: 0.6530 sec
+  Evaluation time: 0.0205 sec
+  Number of batches: 390
+  Training set accuracy: 0.060000 (6.00%)
+  Test set accuracy: 0.062000 (6.20%)
+  Best test accuracy so far: 0.062400 (6.24%)
+
+Epoch 23:
+  Learning rate: 0.00100
+  Total epoch time: 0.9958 sec
+  Batch loading time: 0.2583 sec
+  Training computation time: 0.6730 sec
+  Evaluation time: 0.0201 sec
+  Number of batches: 390
+  Training set accuracy: 0.060400 (6.04%)
+  Test set accuracy: 0.062200 (6.22%)
+  Best test accuracy so far: 0.062400 (6.24%)
+
+Epoch 24:
+  Learning rate: 0.00100
+  Total epoch time: 0.9763 sec
+  Batch loading time: 0.2570 sec
+  Training computation time: 0.6535 sec
+  Evaluation time: 0.0206 sec
+  Number of batches: 390
+  Training set accuracy: 0.060400 (6.04%)
+  Test set accuracy: 0.062700 (6.27%)
+  Best test accuracy so far: 0.062700 (6.27%)
+
+Epoch 25:
+  Learning rate: 0.00100
+  Total epoch time: 0.9753 sec
+  Batch loading time: 0.2568 sec
+  Training computation time: 0.6541 sec
+  Evaluation time: 0.0200 sec
+  Number of batches: 390
+  Training set accuracy: 0.067200 (6.72%)
+  Test set accuracy: 0.062700 (6.27%)
+  Best test accuracy so far: 0.062700 (6.27%)
+
+Epoch 26:
+  Learning rate: 0.00100
+  Total epoch time: 0.9771 sec
+  Batch loading time: 0.2563 sec
+  Training computation time: 0.6553 sec
+  Evaluation time: 0.0205 sec
+  Number of batches: 390
+  Training set accuracy: 0.063000 (6.30%)
+  Test set accuracy: 0.062900 (6.29%)
+  Best test accuracy so far: 0.062900 (6.29%)
+
+Epoch 27:
+  Learning rate: 0.00100
+  Total epoch time: 1.1053 sec
+  Batch loading time: 0.2527 sec
+  Training computation time: 0.7286 sec
+  Evaluation time: 0.0717 sec
+  Number of batches: 390
+  Training set accuracy: 0.068400 (6.84%)
+  Test set accuracy: 0.063000 (6.30%)
+  Best test accuracy so far: 0.063000 (6.30%)
+
+Epoch 28:
+  Learning rate: 0.00100
+  Total epoch time: 0.9976 sec
+  Batch loading time: 0.2659 sec
+  Training computation time: 0.6664 sec
+  Evaluation time: 0.0204 sec
+  Number of batches: 390
+  Training set accuracy: 0.061200 (6.12%)
+  Test set accuracy: 0.063100 (6.31%)
+  Best test accuracy so far: 0.063100 (6.31%)
+
+Epoch 29:
+  Learning rate: 0.00100
+  Total epoch time: 1.2437 sec
+  Batch loading time: 0.4568 sec
+  Training computation time: 0.7018 sec
+  Evaluation time: 0.0326 sec
+  Number of batches: 390
+  Training set accuracy: 0.064800 (6.48%)
+  Test set accuracy: 0.063600 (6.36%)
+  Best test accuracy so far: 0.063600 (6.36%)
+
+Epoch 30:
+  Learning rate: 0.00100
+  Total epoch time: 0.9932 sec
+  Batch loading time: 0.2801 sec
+  Training computation time: 0.6474 sec
+  Evaluation time: 0.0203 sec
+  Number of batches: 390
+  Training set accuracy: 0.065600 (6.56%)
+  Test set accuracy: 0.063800 (6.38%)
+  Best test accuracy so far: 0.063800 (6.38%)
+
+Epoch 31:
+  Learning rate: 0.00100
+  Total epoch time: 1.0891 sec
+  Batch loading time: 0.2553 sec
+  Training computation time: 0.7579 sec
+  Evaluation time: 0.0306 sec
+  Number of batches: 390
+  Training set accuracy: 0.064200 (6.42%)
+  Test set accuracy: 0.064100 (6.41%)
+  Best test accuracy so far: 0.064100 (6.41%)
+
+Epoch 32:
+  Learning rate: 0.00100
+  Total epoch time: 0.9882 sec
+  Batch loading time: 0.2522 sec
+  Training computation time: 0.6703 sec
+  Evaluation time: 0.0204 sec
+  Number of batches: 390
+  Training set accuracy: 0.069600 (6.96%)
+  Test set accuracy: 0.064100 (6.41%)
+  Best test accuracy so far: 0.064100 (6.41%)
+
+Epoch 33:
+  Learning rate: 0.00100
+  Total epoch time: 0.9754 sec
+  Batch loading time: 0.2571 sec
+  Training computation time: 0.6524 sec
+  Evaluation time: 0.0212 sec
+  Number of batches: 390
+  Training set accuracy: 0.064200 (6.42%)
+  Test set accuracy: 0.064300 (6.43%)
+  Best test accuracy so far: 0.064300 (6.43%)
+
+Epoch 34:
+  Learning rate: 0.00100
+  Total epoch time: 1.0636 sec
+  Batch loading time: 0.2976 sec
+  Training computation time: 0.7008 sec
+  Evaluation time: 0.0204 sec
+  Number of batches: 390
+  Training set accuracy: 0.065400 (6.54%)
+  Test set accuracy: 0.064300 (6.43%)
+  Best test accuracy so far: 0.064300 (6.43%)
+
+Epoch 35:
+  Learning rate: 0.00100
+  Total epoch time: 1.0273 sec
+  Batch loading time: 0.3110 sec
+  Training computation time: 0.6515 sec
+  Evaluation time: 0.0200 sec
+  Number of batches: 390
+  Training set accuracy: 0.066400 (6.64%)
+  Test set accuracy: 0.064300 (6.43%)
+  Best test accuracy so far: 0.064300 (6.43%)
+
+Epoch 36:
+  Learning rate: 0.00100
+  Total epoch time: 1.0358 sec
+  Batch loading time: 0.3192 sec
+  Training computation time: 0.6509 sec
+  Evaluation time: 0.0203 sec
+  Number of batches: 390
+  Training set accuracy: 0.070800 (7.08%)
+  Test set accuracy: 0.065100 (6.51%)
+  Best test accuracy so far: 0.065100 (6.51%)
+
+Epoch 37:
+  Learning rate: 0.00100
+  Total epoch time: 1.1776 sec
+  Batch loading time: 0.3284 sec
+  Training computation time: 0.7272 sec
+  Evaluation time: 0.0705 sec
+  Number of batches: 390
+  Training set accuracy: 0.062600 (6.26%)
+  Test set accuracy: 0.065200 (6.52%)
+  Best test accuracy so far: 0.065200 (6.52%)
+
+Epoch 38:
+  Learning rate: 0.00100
+  Total epoch time: 1.0256 sec
+  Batch loading time: 0.2962 sec
+  Training computation time: 0.6636 sec
+  Evaluation time: 0.0206 sec
+  Number of batches: 390
+  Training set accuracy: 0.062000 (6.20%)
+  Test set accuracy: 0.065300 (6.53%)
+  Best test accuracy so far: 0.065300 (6.53%)
+
+Epoch 39:
+  Learning rate: 0.00100
+  Total epoch time: 1.0399 sec
+  Batch loading time: 0.2799 sec
+  Training computation time: 0.6955 sec
+  Evaluation time: 0.0199 sec
+  Number of batches: 390
+  Training set accuracy: 0.063000 (6.30%)
+  Test set accuracy: 0.065600 (6.56%)
+  Best test accuracy so far: 0.065600 (6.56%)
+
+Epoch 40:
+  Learning rate: 0.00100
+  Total epoch time: 0.9824 sec
+  Batch loading time: 0.2649 sec
+  Training computation time: 0.6522 sec
+  Evaluation time: 0.0203 sec
+  Number of batches: 390
+  Training set accuracy: 0.069200 (6.92%)
+  Test set accuracy: 0.065700 (6.57%)
+  Best test accuracy so far: 0.065700 (6.57%)
+
+Epoch 41:
+  Learning rate: 0.00100
+  Total epoch time: 1.0330 sec
+  Batch loading time: 0.3189 sec
+  Training computation time: 0.6497 sec
+  Evaluation time: 0.0199 sec
+  Number of batches: 390
+  Training set accuracy: 0.060800 (6.08%)
+  Test set accuracy: 0.066100 (6.61%)
+  Best test accuracy so far: 0.066100 (6.61%)
+
+Epoch 42:
+  Learning rate: 0.00100
+  Total epoch time: 0.9772 sec
+  Batch loading time: 0.2599 sec
+  Training computation time: 0.6516 sec
+  Evaluation time: 0.0205 sec
+  Number of batches: 390
+  Training set accuracy: 0.066600 (6.66%)
+  Test set accuracy: 0.066300 (6.63%)
+  Best test accuracy so far: 0.066300 (6.63%)
+
+Epoch 43:
+  Learning rate: 0.00100
+  Total epoch time: 0.9676 sec
+  Batch loading time: 0.2507 sec
+  Training computation time: 0.6498 sec
+  Evaluation time: 0.0216 sec
+  Number of batches: 390
+  Training set accuracy: 0.070800 (7.08%)
+  Test set accuracy: 0.066200 (6.62%)
+  Best test accuracy so far: 0.066300 (6.63%)
+
+Epoch 44:
+  Learning rate: 0.00100
+  Total epoch time: 0.9852 sec
+  Batch loading time: 0.2632 sec
+  Training computation time: 0.6559 sec
+  Evaluation time: 0.0205 sec
+  Number of batches: 390
+  Training set accuracy: 0.069800 (6.98%)
+  Test set accuracy: 0.066300 (6.63%)
+  Best test accuracy so far: 0.066300 (6.63%)
+
+Epoch 45:
+  Learning rate: 0.00100
+  Total epoch time: 1.0056 sec
+  Batch loading time: 0.2639 sec
+  Training computation time: 0.6770 sec
+  Evaluation time: 0.0200 sec
+  Number of batches: 390
+  Training set accuracy: 0.069200 (6.92%)
+  Test set accuracy: 0.066800 (6.68%)
+  Best test accuracy so far: 0.066800 (6.68%)
+
+Epoch 46:
+  Learning rate: 0.00100
+  Total epoch time: 0.9822 sec
+  Batch loading time: 0.2637 sec
+  Training computation time: 0.6525 sec
+  Evaluation time: 0.0204 sec
+  Number of batches: 390
+  Training set accuracy: 0.067000 (6.70%)
+  Test set accuracy: 0.067100 (6.71%)
+  Best test accuracy so far: 0.067100 (6.71%)
+
+Epoch 47:
+  Learning rate: 0.00100
+  Total epoch time: 0.9760 sec
+  Batch loading time: 0.2610 sec
+  Training computation time: 0.6502 sec
+  Evaluation time: 0.0200 sec
+  Number of batches: 390
+  Training set accuracy: 0.060800 (6.08%)
+  Test set accuracy: 0.067300 (6.73%)
+  Best test accuracy so far: 0.067300 (6.73%)
+
+Epoch 48:
+  Learning rate: 0.00100
+  Total epoch time: 1.2123 sec
+  Batch loading time: 0.3030 sec
+  Training computation time: 0.7576 sec
+  Evaluation time: 0.0896 sec
+  Number of batches: 390
+  Training set accuracy: 0.070600 (7.06%)
+  Test set accuracy: 0.067600 (6.76%)
+  Best test accuracy so far: 0.067600 (6.76%)
+
+Epoch 49:
+  Learning rate: 0.00100
+  Total epoch time: 1.1257 sec
+  Batch loading time: 0.2825 sec
+  Training computation time: 0.7224 sec
+  Evaluation time: 0.0696 sec
+  Number of batches: 390
+  Training set accuracy: 0.066400 (6.64%)
+  Test set accuracy: 0.067800 (6.78%)
+  Best test accuracy so far: 0.067800 (6.78%)
+
+Epoch 50:
+  Learning rate: 0.00100
+  Total epoch time: 1.0923 sec
+  Batch loading time: 0.2822 sec
+  Training computation time: 0.7369 sec
+  Evaluation time: 0.0279 sec
+  Number of batches: 390
+  Training set accuracy: 0.067400 (6.74%)
+  Test set accuracy: 0.068200 (6.82%)
+  Best test accuracy so far: 0.068200 (6.82%)
+
+Epoch 51:
+  Learning rate: 0.00100
+  Total epoch time: 0.9678 sec
+  Batch loading time: 0.2558 sec
+  Training computation time: 0.6477 sec
+  Evaluation time: 0.0199 sec
+  Number of batches: 390
+  Training set accuracy: 0.071800 (7.18%)
+  Test set accuracy: 0.068300 (6.83%)
+  Best test accuracy so far: 0.068300 (6.83%)
+
+Epoch 52:
+  Learning rate: 0.00100
+  Total epoch time: 1.0387 sec
+  Batch loading time: 0.3224 sec
+  Training computation time: 0.6509 sec
+  Evaluation time: 0.0203 sec
+  Number of batches: 390
+  Training set accuracy: 0.071200 (7.12%)
+  Test set accuracy: 0.068500 (6.85%)
+  Best test accuracy so far: 0.068500 (6.85%)
+
+Epoch 53:
+  Learning rate: 0.00100
+  Total epoch time: 0.9851 sec
+  Batch loading time: 0.2694 sec
+  Training computation time: 0.6511 sec
+  Evaluation time: 0.0200 sec
+  Number of batches: 390
+  Training set accuracy: 0.068800 (6.88%)
+  Test set accuracy: 0.068900 (6.89%)
+  Best test accuracy so far: 0.068900 (6.89%)
+
+Epoch 54:
+  Learning rate: 0.00100
+  Total epoch time: 1.0305 sec
+  Batch loading time: 0.3092 sec
+  Training computation time: 0.6560 sec
+  Evaluation time: 0.0203 sec
+  Number of batches: 390
+  Training set accuracy: 0.073200 (7.32%)
+  Test set accuracy: 0.069000 (6.90%)
+  Best test accuracy so far: 0.069000 (6.90%)
+
+Epoch 55:
+  Learning rate: 0.00100
+  Total epoch time: 1.0191 sec
+  Batch loading time: 0.2595 sec
+  Training computation time: 0.6949 sec
+  Evaluation time: 0.0200 sec
+  Number of batches: 390
+  Training set accuracy: 0.072200 (7.22%)
+  Test set accuracy: 0.069200 (6.92%)
+  Best test accuracy so far: 0.069200 (6.92%)
+
+Epoch 56:
+  Learning rate: 0.00100
+  Total epoch time: 1.0016 sec
+  Batch loading time: 0.2848 sec
+  Training computation time: 0.6515 sec
+  Evaluation time: 0.0203 sec
+  Number of batches: 390
+  Training set accuracy: 0.068800 (6.88%)
+  Test set accuracy: 0.069400 (6.94%)
+  Best test accuracy so far: 0.069400 (6.94%)
+
+Epoch 57:
+  Learning rate: 0.00100
+  Total epoch time: 0.9764 sec
+  Batch loading time: 0.2612 sec
+  Training computation time: 0.6507 sec
+  Evaluation time: 0.0198 sec
+  Number of batches: 390
+  Training set accuracy: 0.071400 (7.14%)
+  Test set accuracy: 0.069700 (6.97%)
+  Best test accuracy so far: 0.069700 (6.97%)
+
+Epoch 58:
+  Learning rate: 0.00100
+  Total epoch time: 1.0332 sec
+  Batch loading time: 0.2875 sec
+  Training computation time: 0.6787 sec
+  Evaluation time: 0.0206 sec
+  Number of batches: 390
+  Training set accuracy: 0.072800 (7.28%)
+  Test set accuracy: 0.069700 (6.97%)
+  Best test accuracy so far: 0.069700 (6.97%)
+
+Epoch 59:
+  Learning rate: 0.00100
+  Total epoch time: 1.0030 sec
+  Batch loading time: 0.2881 sec
+  Training computation time: 0.6507 sec
+  Evaluation time: 0.0199 sec
+  Number of batches: 390
+  Training set accuracy: 0.071800 (7.18%)
+  Test set accuracy: 0.070300 (7.03%)
+  Best test accuracy so far: 0.070300 (7.03%)
+
+Epoch 60:
+  Learning rate: 0.00100
+  Total epoch time: 1.1002 sec
+  Batch loading time: 0.2615 sec
+  Training computation time: 0.7160 sec
+  Evaluation time: 0.0707 sec
+  Number of batches: 390
+  Training set accuracy: 0.067600 (6.76%)
+  Test set accuracy: 0.070200 (7.02%)
+  Best test accuracy so far: 0.070300 (7.03%)
+
+Epoch 61:
+  Learning rate: 0.00100
+  Total epoch time: 1.0441 sec
+  Batch loading time: 0.3146 sec
+  Training computation time: 0.6647 sec
+  Evaluation time: 0.0200 sec
+  Number of batches: 390
+  Training set accuracy: 0.070200 (7.02%)
+  Test set accuracy: 0.070400 (7.04%)
+  Best test accuracy so far: 0.070400 (7.04%)
+
+Epoch 62:
+  Learning rate: 0.00100
+  Total epoch time: 1.0429 sec
+  Batch loading time: 0.3280 sec
+  Training computation time: 0.6491 sec
+  Evaluation time: 0.0203 sec
+  Number of batches: 390
+  Training set accuracy: 0.072600 (7.26%)
+  Test set accuracy: 0.070500 (7.05%)
+  Best test accuracy so far: 0.070500 (7.05%)
+
+Epoch 63:
+  Learning rate: 0.00100
+  Total epoch time: 1.0188 sec
+  Batch loading time: 0.2995 sec
+  Training computation time: 0.6529 sec
+  Evaluation time: 0.0216 sec
+  Number of batches: 390
+  Training set accuracy: 0.074800 (7.48%)
+  Test set accuracy: 0.070700 (7.07%)
+  Best test accuracy so far: 0.070700 (7.07%)
+
+Epoch 64:
+  Learning rate: 0.00100
+  Total epoch time: 1.0398 sec
+  Batch loading time: 0.3043 sec
+  Training computation time: 0.6699 sec
+  Evaluation time: 0.0203 sec
+  Number of batches: 390
+  Training set accuracy: 0.072600 (7.26%)
+  Test set accuracy: 0.071300 (7.13%)
+  Best test accuracy so far: 0.071300 (7.13%)
+
+Epoch 65:
+  Learning rate: 0.00100
+  Total epoch time: 1.0353 sec
+  Batch loading time: 0.2895 sec
+  Training computation time: 0.6796 sec
+  Evaluation time: 0.0199 sec
+  Number of batches: 390
+  Training set accuracy: 0.072800 (7.28%)
+  Test set accuracy: 0.071700 (7.17%)
+  Best test accuracy so far: 0.071700 (7.17%)
+
+Epoch 66:
+  Learning rate: 0.00100
+  Total epoch time: 1.0044 sec
+  Batch loading time: 0.2903 sec
+  Training computation time: 0.6486 sec
+  Evaluation time: 0.0201 sec
+  Number of batches: 390
+  Training set accuracy: 0.072200 (7.22%)
+  Test set accuracy: 0.072100 (7.21%)
+  Best test accuracy so far: 0.072100 (7.21%)
+
+Epoch 67:
+  Learning rate: 0.00100
+  Total epoch time: 1.1015 sec
+  Batch loading time: 0.2911 sec
+  Training computation time: 0.7024 sec
+  Evaluation time: 0.0289 sec
+  Number of batches: 390
+  Training set accuracy: 0.074400 (7.44%)
+  Test set accuracy: 0.072500 (7.25%)
+  Best test accuracy so far: 0.072500 (7.25%)
+
+Epoch 68:
+  Learning rate: 0.00100
+  Total epoch time: 1.0034 sec
+  Batch loading time: 0.2684 sec
+  Training computation time: 0.6687 sec
+  Evaluation time: 0.0205 sec
+  Number of batches: 390
+  Training set accuracy: 0.065800 (6.58%)
+  Test set accuracy: 0.073000 (7.30%)
+  Best test accuracy so far: 0.073000 (7.30%)
+
+Epoch 69:
+  Learning rate: 0.00100
+  Total epoch time: 0.9850 sec
+  Batch loading time: 0.2634 sec
+  Training computation time: 0.6570 sec
+  Evaluation time: 0.0200 sec
+  Number of batches: 390
+  Training set accuracy: 0.074800 (7.48%)
+  Test set accuracy: 0.073400 (7.34%)
+  Best test accuracy so far: 0.073400 (7.34%)
+
+Epoch 70:
+  Learning rate: 0.00100
+  Total epoch time: 1.0483 sec
+  Batch loading time: 0.2611 sec
+  Training computation time: 0.7083 sec
+  Evaluation time: 0.0296 sec
+  Number of batches: 390
+  Training set accuracy: 0.074800 (7.48%)
+  Test set accuracy: 0.073500 (7.35%)
+  Best test accuracy so far: 0.073500 (7.35%)
+
+Epoch 71:
+  Learning rate: 0.00100
+  Total epoch time: 1.1780 sec
+  Batch loading time: 0.3464 sec
+  Training computation time: 0.7305 sec
+  Evaluation time: 0.0493 sec
+  Number of batches: 390
+  Training set accuracy: 0.071200 (7.12%)
+  Test set accuracy: 0.073800 (7.38%)
+  Best test accuracy so far: 0.073800 (7.38%)
+
+Epoch 72:
+  Learning rate: 0.00100
+  Total epoch time: 0.9954 sec
+  Batch loading time: 0.2720 sec
+  Training computation time: 0.6571 sec
+  Evaluation time: 0.0205 sec
+  Number of batches: 390
+  Training set accuracy: 0.078800 (7.88%)
+  Test set accuracy: 0.074200 (7.42%)
+  Best test accuracy so far: 0.074200 (7.42%)
+
+Epoch 73:
+  Learning rate: 0.00100
+  Total epoch time: 0.9887 sec
+  Batch loading time: 0.2681 sec
+  Training computation time: 0.6560 sec
+  Evaluation time: 0.0201 sec
+  Number of batches: 390
+  Training set accuracy: 0.081800 (8.18%)
+  Test set accuracy: 0.074400 (7.44%)
+  Best test accuracy so far: 0.074400 (7.44%)
+
+Epoch 74:
+  Learning rate: 0.00100
+  Total epoch time: 1.0111 sec
+  Batch loading time: 0.2948 sec
+  Training computation time: 0.6506 sec
+  Evaluation time: 0.0204 sec
+  Number of batches: 390
+  Training set accuracy: 0.073400 (7.34%)
+  Test set accuracy: 0.074500 (7.45%)
+  Best test accuracy so far: 0.074500 (7.45%)
+
+Epoch 75:
+  Learning rate: 0.00100
+  Total epoch time: 1.0591 sec
+  Batch loading time: 0.2989 sec
+  Training computation time: 0.6951 sec
+  Evaluation time: 0.0201 sec
+  Number of batches: 390
+  Training set accuracy: 0.078200 (7.82%)
+  Test set accuracy: 0.074500 (7.45%)
+  Best test accuracy so far: 0.074500 (7.45%)
+
+Epoch 76:
+  Learning rate: 0.00100
+  Total epoch time: 1.0246 sec
+  Batch loading time: 0.3001 sec
+  Training computation time: 0.6583 sec
+  Evaluation time: 0.0205 sec
+  Number of batches: 390
+  Training set accuracy: 0.075800 (7.58%)
+  Test set accuracy: 0.074800 (7.48%)
+  Best test accuracy so far: 0.074800 (7.48%)
+
+Epoch 77:
+  Learning rate: 0.00100
+  Total epoch time: 1.0199 sec
+  Batch loading time: 0.2982 sec
+  Training computation time: 0.6567 sec
+  Evaluation time: 0.0202 sec
+  Number of batches: 390
+  Training set accuracy: 0.072400 (7.24%)
+  Test set accuracy: 0.074900 (7.49%)
+  Best test accuracy so far: 0.074900 (7.49%)
+
+Epoch 78:
+  Learning rate: 0.00100
+  Total epoch time: 1.0127 sec
+  Batch loading time: 0.2719 sec
+  Training computation time: 0.6746 sec
+  Evaluation time: 0.0206 sec
+  Number of batches: 390
+  Training set accuracy: 0.070800 (7.08%)
+  Test set accuracy: 0.075300 (7.53%)
+  Best test accuracy so far: 0.075300 (7.53%)
+
+Epoch 79:
+  Learning rate: 0.00100
+  Total epoch time: 0.9984 sec
+  Batch loading time: 0.2748 sec
+  Training computation time: 0.6571 sec
+  Evaluation time: 0.0201 sec
+  Number of batches: 390
+  Training set accuracy: 0.086200 (8.62%)
+  Test set accuracy: 0.075700 (7.57%)
+  Best test accuracy so far: 0.075700 (7.57%)
+
+Epoch 80:
+  Learning rate: 0.00100
+  Total epoch time: 1.0296 sec
+  Batch loading time: 0.2849 sec
+  Training computation time: 0.6785 sec
+  Evaluation time: 0.0207 sec
+  Number of batches: 390
+  Training set accuracy: 0.079400 (7.94%)
+  Test set accuracy: 0.075900 (7.59%)
+  Best test accuracy so far: 0.075900 (7.59%)
+
+Epoch 81:
+  Learning rate: 0.00100
+  Total epoch time: 1.2585 sec
+  Batch loading time: 0.2962 sec
+  Training computation time: 0.8323 sec
+  Evaluation time: 0.0780 sec
+  Number of batches: 390
+  Training set accuracy: 0.080600 (8.06%)
+  Test set accuracy: 0.075800 (7.58%)
+  Best test accuracy so far: 0.075900 (7.59%)
+
+Epoch 82:
+  Learning rate: 0.00100
+  Total epoch time: 1.0342 sec
+  Batch loading time: 0.2867 sec
+  Training computation time: 0.6797 sec
+  Evaluation time: 0.0220 sec
+  Number of batches: 390
+  Training set accuracy: 0.077600 (7.76%)
+  Test set accuracy: 0.076000 (7.60%)
+  Best test accuracy so far: 0.076000 (7.60%)
+
+Epoch 83:
+  Learning rate: 0.00100
+  Total epoch time: 1.0032 sec
+  Batch loading time: 0.2828 sec
+  Training computation time: 0.6557 sec
+  Evaluation time: 0.0199 sec
+  Number of batches: 390
+  Training set accuracy: 0.082200 (8.22%)
+  Test set accuracy: 0.076300 (7.63%)
+  Best test accuracy so far: 0.076300 (7.63%)
+
+Epoch 84:
+  Learning rate: 0.00100
+  Total epoch time: 0.9946 sec
+  Batch loading time: 0.2721 sec
+  Training computation time: 0.6563 sec
+  Evaluation time: 0.0205 sec
+  Number of batches: 390
+  Training set accuracy: 0.072600 (7.26%)
+  Test set accuracy: 0.076600 (7.66%)
+  Best test accuracy so far: 0.076600 (7.66%)
+
+Epoch 85:
+  Learning rate: 0.00100
+  Total epoch time: 1.0830 sec
+  Batch loading time: 0.2940 sec
+  Training computation time: 0.7238 sec
+  Evaluation time: 0.0199 sec
+  Number of batches: 390
+  Training set accuracy: 0.076000 (7.60%)
+  Test set accuracy: 0.077100 (7.71%)
+  Best test accuracy so far: 0.077100 (7.71%)
+
+Epoch 86:
+  Learning rate: 0.00100
+  Total epoch time: 1.3538 sec
+  Batch loading time: 0.3203 sec
+  Training computation time: 0.8984 sec
+  Evaluation time: 0.0815 sec
+  Number of batches: 390
+  Training set accuracy: 0.080400 (8.04%)
+  Test set accuracy: 0.076900 (7.69%)
+  Best test accuracy so far: 0.077100 (7.71%)
+
+Epoch 87:
+  Learning rate: 0.00100
+  Total epoch time: 1.0456 sec
+  Batch loading time: 0.2768 sec
+  Training computation time: 0.7038 sec
+  Evaluation time: 0.0202 sec
+  Number of batches: 390
+  Training set accuracy: 0.082200 (8.22%)
+  Test set accuracy: 0.077000 (7.70%)
+  Best test accuracy so far: 0.077100 (7.71%)
+
+Epoch 88:
+  Learning rate: 0.00100
+  Total epoch time: 1.0056 sec
+  Batch loading time: 0.2868 sec
+  Training computation time: 0.6530 sec
+  Evaluation time: 0.0203 sec
+  Number of batches: 390
+  Training set accuracy: 0.076800 (7.68%)
+  Test set accuracy: 0.077200 (7.72%)
+  Best test accuracy so far: 0.077200 (7.72%)
+
+Epoch 89:
+  Learning rate: 0.00100
+  Total epoch time: 1.0129 sec
+  Batch loading time: 0.2933 sec
+  Training computation time: 0.6541 sec
+  Evaluation time: 0.0200 sec
+  Number of batches: 390
+  Training set accuracy: 0.074000 (7.40%)
+  Test set accuracy: 0.077400 (7.74%)
+  Best test accuracy so far: 0.077400 (7.74%)
+
+Epoch 90:
+  Learning rate: 0.00100
+  Total epoch time: 0.9928 sec
+  Batch loading time: 0.2716 sec
+  Training computation time: 0.6551 sec
+  Evaluation time: 0.0205 sec
+  Number of batches: 390
+  Training set accuracy: 0.080800 (8.08%)
+  Test set accuracy: 0.077500 (7.75%)
+  Best test accuracy so far: 0.077500 (7.75%)
+
+Epoch 91:
+  Learning rate: 0.00100
+  Total epoch time: 1.1893 sec
+  Batch loading time: 0.2722 sec
+  Training computation time: 0.7131 sec
+  Evaluation time: 0.1554 sec
+  Number of batches: 390
+  Training set accuracy: 0.076000 (7.60%)
+  Test set accuracy: 0.077500 (7.75%)
+  Best test accuracy so far: 0.077500 (7.75%)
+
+Epoch 92:
+  Learning rate: 0.00100
+  Total epoch time: 0.9997 sec
+  Batch loading time: 0.2681 sec
+  Training computation time: 0.6641 sec
+  Evaluation time: 0.0223 sec
+  Number of batches: 390
+  Training set accuracy: 0.081800 (8.18%)
+  Test set accuracy: 0.077900 (7.79%)
+  Best test accuracy so far: 0.077900 (7.79%)
+
+Epoch 93:
+  Learning rate: 0.00100
+  Total epoch time: 1.0418 sec
+  Batch loading time: 0.3247 sec
+  Training computation time: 0.6518 sec
+  Evaluation time: 0.0201 sec
+  Number of batches: 390
+  Training set accuracy: 0.077800 (7.78%)
+  Test set accuracy: 0.078000 (7.80%)
+  Best test accuracy so far: 0.078000 (7.80%)
+
+Epoch 94:
+  Learning rate: 0.00100
+  Total epoch time: 1.0313 sec
+  Batch loading time: 0.3139 sec
+  Training computation time: 0.6513 sec
+  Evaluation time: 0.0205 sec
+  Number of batches: 390
+  Training set accuracy: 0.075400 (7.54%)
+  Test set accuracy: 0.078300 (7.83%)
+  Best test accuracy so far: 0.078300 (7.83%)
+
+Epoch 95:
+  Learning rate: 0.00100
+  Total epoch time: 1.0079 sec
+  Batch loading time: 0.2870 sec
+  Training computation time: 0.6559 sec
+  Evaluation time: 0.0199 sec
+  Number of batches: 390
+  Training set accuracy: 0.085800 (8.58%)
+  Test set accuracy: 0.078200 (7.82%)
+  Best test accuracy so far: 0.078300 (7.83%)
+
+Epoch 96:
+  Learning rate: 0.00100
+  Total epoch time: 1.0635 sec
+  Batch loading time: 0.2834 sec
+  Training computation time: 0.7136 sec
+  Evaluation time: 0.0209 sec
+  Number of batches: 390
+  Training set accuracy: 0.082600 (8.26%)
+  Test set accuracy: 0.078500 (7.85%)
+  Best test accuracy so far: 0.078500 (7.85%)
+
+Epoch 97:
+  Learning rate: 0.00100
+  Total epoch time: 1.0030 sec
+  Batch loading time: 0.2711 sec
+  Training computation time: 0.6673 sec
+  Evaluation time: 0.0199 sec
+  Number of batches: 390
+  Training set accuracy: 0.092400 (9.24%)
+  Test set accuracy: 0.078500 (7.85%)
+  Best test accuracy so far: 0.078500 (7.85%)
+
+Epoch 98:
+  Learning rate: 0.00100
+  Total epoch time: 0.9989 sec
+  Batch loading time: 0.2818 sec
+  Training computation time: 0.6518 sec
+  Evaluation time: 0.0204 sec
+  Number of batches: 390
+  Training set accuracy: 0.082200 (8.22%)
+  Test set accuracy: 0.078800 (7.88%)
+  Best test accuracy so far: 0.078800 (7.88%)
+
+Epoch 99:
+  Learning rate: 0.00100
+  Total epoch time: 1.0415 sec
+  Batch loading time: 0.3231 sec
+  Training computation time: 0.6524 sec
+  Evaluation time: 0.0200 sec
+  Number of batches: 390
+  Training set accuracy: 0.083600 (8.36%)
+  Test set accuracy: 0.079200 (7.92%)
+  Best test accuracy so far: 0.079200 (7.92%)
+
+=== Training Summary ===
+Model initialization time: 20.5720 seconds
+Initial dataset loading time: 54.9134 seconds
+Function compilation time: 26.7941 seconds
+Training loop time: 120.4395 seconds
+  - Batch loading time: 28.7168 seconds
+  - Computation time: 68.0136 seconds
+  - Evaluation time: 17.9855 seconds
+Total time: 222.7190 seconds
+Final test accuracy: 0.079200 (7.92%)
+Best test accuracy: 0.079200 (7.92%)
+=== JAX XLA Timing Test with Focused PJRT StreamExecutor Logging ===
+JAX version: 0.5.3
+JAX backend: gpu
+JAX devices: [CudaDevice(id=0)]
+Log settings:
+  TF_CPP_MIN_LOG_LEVEL: 1
+  TF_CPP_VMODULE: None
+  JAX_LOG_COMPILES: None
+Precompiling function...
+Saved compilation metadata to /tmp/jax_direct_aot_cache/cb95baccffc13f9fc0b69993d8d568b6_metadata.pickle
+
+=== Testing Matrix Multiplication with Advanced Overlapped Data Transfer and Computation ===
+Matrix size: 4000x4000 (0.06 GB each)
+Number of matrix pairs to process: 100
+Maximum concurrent transfers: 4
+Worker 1: Generating matrix pair 1/100
+Worker 2: Generating matrix pair 2/100
+Worker 3: Generating matrix pair 3/100
+Worker 4: Generating matrix pair 4/100
+Worker 1: Matrix pair 1 transferred in 0.016086 seconds
+Worker 5: Generating matrix pair 5/100
+Compute: Processing matrix pair 1/100
+Worker 2: Matrix pair 2 transferred in 0.076874 seconds
+Worker 6: Generating matrix pair 6/100
+Worker 3: Matrix pair 3 transferred in 0.015733 seconds
+Worker 7: Generating matrix pair 7/100
+Worker 4: Matrix pair 4 transferred in 0.022338 seconds
+Worker 8: Generating matrix pair 8/100
+Worker 5: Matrix pair 5 transferred in 0.065953 seconds
+Worker 9: Generating matrix pair 9/100
+Compute: Matrix pair 1 computed in 4.104926 seconds (0.03 TFLOPS)
+Compute: Result transferred in 0.063392 seconds
+Compute: Processing matrix pair 2/100
+Compute: Matrix pair 2 computed in 0.009366 seconds (13.67 TFLOPS)
+Compute: Result transferred in 0.055089 seconds
+Compute: Processing matrix pair 3/100
+Compute: Matrix pair 3 computed in 0.006104 seconds (20.97 TFLOPS)
+Compute: Result transferred in 0.053571 seconds
+Compute: Processing matrix pair 4/100
+Compute: Matrix pair 4 computed in 0.006047 seconds (21.17 TFLOPS)
+Compute: Result transferred in 0.053788 seconds
+Compute: Processing matrix pair 5/100
+Compute: Matrix pair 5 computed in 0.005843 seconds (21.91 TFLOPS)
+Compute: Result transferred in 0.053646 seconds
+Worker 6: Matrix pair 6 transferred in 0.010992 seconds
+Worker 10: Generating matrix pair 10/100
+Compute: Processing matrix pair 6/100
+Compute: Matrix pair 6 computed in 0.010043 seconds (12.75 TFLOPS)
+Compute: Result transferred in 0.050905 seconds
+Worker 7: Matrix pair 7 transferred in 0.010999 seconds
+Worker 11: Generating matrix pair 11/100
+Compute: Processing matrix pair 7/100
+Compute: Matrix pair 7 computed in 0.010026 seconds (12.77 TFLOPS)
+Compute: Result transferred in 0.051798 seconds
+Worker 8: Matrix pair 8 transferred in 0.010962 seconds
+Worker 12: Generating matrix pair 12/100
+Compute: Processing matrix pair 8/100
+Compute: Matrix pair 8 computed in 0.010043 seconds (12.75 TFLOPS)
+Compute: Result transferred in 0.051400 seconds
+Worker 9: Matrix pair 9 transferred in 0.010992 seconds
+Worker 13: Generating matrix pair 13/100
+Compute: Processing matrix pair 9/100
+Compute: Matrix pair 9 computed in 0.010521 seconds (12.17 TFLOPS)
+Compute: Result transferred in 0.051607 seconds
+Worker 10: Matrix pair 10 transferred in 0.010988 seconds
+Worker 14: Generating matrix pair 14/100
+Compute: Processing matrix pair 10/100
+Compute: Matrix pair 10 computed in 0.009956 seconds (12.86 TFLOPS)
+Compute: Result transferred in 0.051890 seconds
+Worker 11: Matrix pair 11 transferred in 0.010948 seconds
+Worker 15: Generating matrix pair 15/100
+Compute: Processing matrix pair 11/100
+Compute: Matrix pair 11 computed in 0.010573 seconds (12.11 TFLOPS)
+Compute: Result transferred in 0.051267 seconds
+Worker 12: Matrix pair 12 transferred in 0.010962 seconds
+Worker 16: Generating matrix pair 16/100
+Compute: Processing matrix pair 12/100
+Compute: Matrix pair 12 computed in 0.010344 seconds (12.37 TFLOPS)
+Compute: Result transferred in 0.051692 seconds
+Worker 13: Matrix pair 13 transferred in 0.041822 seconds
+Worker 17: Generating matrix pair 17/100
+Compute: Processing matrix pair 13/100
+Compute: Matrix pair 13 computed in 0.048810 seconds (2.62 TFLOPS)
+Compute: Result transferred in 0.065409 seconds
+Worker 14: Matrix pair 14 transferred in 0.012492 seconds
+Worker 18: Generating matrix pair 18/100
+Compute: Processing matrix pair 14/100
+Compute: Matrix pair 14 computed in 0.030642 seconds (4.18 TFLOPS)
+Compute: Result transferred in 0.052133 seconds
+Worker 15: Matrix pair 15 transferred in 0.010857 seconds
+Worker 19: Generating matrix pair 19/100
+Compute: Processing matrix pair 15/100
+Compute: Matrix pair 15 computed in 0.010666 seconds (12.00 TFLOPS)
+Compute: Result transferred in 0.052395 seconds
+Worker 16: Matrix pair 16 transferred in 0.010908 seconds
+Worker 20: Generating matrix pair 20/100
+Compute: Processing matrix pair 16/100
+Compute: Matrix pair 16 computed in 0.010958 seconds (11.68 TFLOPS)
+Compute: Result transferred in 0.052267 seconds
+Worker 17: Matrix pair 17 transferred in 0.010959 seconds
+Worker 21: Generating matrix pair 21/100
+Compute: Processing matrix pair 17/100
+Compute: Matrix pair 17 computed in 0.010652 seconds (12.02 TFLOPS)
+Compute: Result transferred in 0.052503 seconds
+Worker 18: Matrix pair 18 transferred in 0.010925 seconds
+Worker 22: Generating matrix pair 22/100
+Compute: Processing matrix pair 18/100
+Compute: Matrix pair 18 computed in 0.010784 seconds (11.87 TFLOPS)
+Compute: Result transferred in 0.052275 seconds
+Worker 19: Matrix pair 19 transferred in 0.010764 seconds
+Worker 23: Generating matrix pair 23/100
+Compute: Processing matrix pair 19/100
+Compute: Matrix pair 19 computed in 0.010810 seconds (11.84 TFLOPS)
+Compute: Result transferred in 0.052389 seconds
+Worker 20: Matrix pair 20 transferred in 0.068227 seconds
+Worker 24: Generating matrix pair 24/100
+Compute: Processing matrix pair 20/100
+Compute: Matrix pair 20 computed in 0.020141 seconds (6.36 TFLOPS)
+Compute: Result transferred in 0.062831 seconds
+Worker 21: Matrix pair 21 transferred in 0.011084 seconds
+Worker 25: Generating matrix pair 25/100
+Compute: Processing matrix pair 21/100
+Compute: Matrix pair 21 computed in 0.010593 seconds (12.08 TFLOPS)
+Compute: Result transferred in 0.052558 seconds
+Worker 22: Matrix pair 22 transferred in 0.011031 seconds
+Worker 26: Generating matrix pair 26/100
+Compute: Processing matrix pair 22/100
+Compute: Matrix pair 22 computed in 0.010551 seconds (12.13 TFLOPS)
+Compute: Result transferred in 0.051883 seconds
+Worker 23: Matrix pair 23 transferred in 0.011031 seconds
+Worker 27: Generating matrix pair 27/100
+Compute: Processing matrix pair 23/100
+Compute: Matrix pair 23 computed in 0.010725 seconds (11.93 TFLOPS)
+Compute: Result transferred in 0.052203 seconds
+Worker 24: Matrix pair 24 transferred in 0.012611 seconds
+Worker 28: Generating matrix pair 28/100
+Compute: Processing matrix pair 24/100
+Compute: Matrix pair 24 computed in 0.010763 seconds (11.89 TFLOPS)
+Compute: Result transferred in 0.052202 seconds
+Worker 25: Matrix pair 25 transferred in 0.039250 seconds
+Worker 29: Generating matrix pair 29/100
+Compute: Processing matrix pair 25/100
+Compute: Matrix pair 25 computed in 0.036208 seconds (3.54 TFLOPS)
+Compute: Result transferred in 0.061023 seconds
+Worker 26: Matrix pair 26 transferred in 0.010786 seconds
+Worker 30: Generating matrix pair 30/100
+Compute: Processing matrix pair 26/100
+Compute: Matrix pair 26 computed in 0.010698 seconds (11.97 TFLOPS)
+Compute: Result transferred in 0.052595 seconds
+Worker 27: Matrix pair 27 transferred in 0.011070 seconds
+Worker 31: Generating matrix pair 31/100
+Compute: Processing matrix pair 27/100
+Compute: Matrix pair 27 computed in 0.010593 seconds (12.08 TFLOPS)
+Compute: Result transferred in 0.052261 seconds
+Worker 28: Matrix pair 28 transferred in 0.011071 seconds
+Worker 32: Generating matrix pair 32/100
+Compute: Processing matrix pair 28/100
+Compute: Matrix pair 28 computed in 0.010689 seconds (11.97 TFLOPS)
+Compute: Result transferred in 0.052423 seconds
+Worker 29: Matrix pair 29 transferred in 0.012776 seconds
+Worker 33: Generating matrix pair 33/100
+Compute: Processing matrix pair 29/100
+Compute: Matrix pair 29 computed in 0.044566 seconds (2.87 TFLOPS)
+Compute: Result transferred in 0.053462 seconds
+Worker 30: Matrix pair 30 transferred in 0.010983 seconds
+Worker 34: Generating matrix pair 34/100
+Compute: Processing matrix pair 30/100
+Compute: Matrix pair 30 computed in 0.010623 seconds (12.05 TFLOPS)
+Compute: Result transferred in 0.052329 seconds
+Worker 31: Matrix pair 31 transferred in 0.010803 seconds
+Worker 35: Generating matrix pair 35/100
+Compute: Processing matrix pair 31/100
+Compute: Matrix pair 31 computed in 0.010469 seconds (12.23 TFLOPS)
+Compute: Result transferred in 0.052419 seconds
+Worker 32: Matrix pair 32 transferred in 0.010989 seconds
+Worker 36: Generating matrix pair 36/100
+Compute: Processing matrix pair 32/100
+Compute: Matrix pair 32 computed in 0.010752 seconds (11.90 TFLOPS)
+Compute: Result transferred in 0.052601 seconds
+Worker 33: Matrix pair 33 transferred in 0.010977 seconds
+Worker 37: Generating matrix pair 37/100
+Compute: Processing matrix pair 33/100
+Compute: Matrix pair 33 computed in 0.010569 seconds (12.11 TFLOPS)
+Compute: Result transferred in 0.051867 seconds
+Worker 34: Matrix pair 34 transferred in 0.010941 seconds
+Worker 38: Generating matrix pair 38/100
+Compute: Processing matrix pair 34/100
+Compute: Matrix pair 34 computed in 0.010317 seconds (12.41 TFLOPS)
+Compute: Result transferred in 0.052282 seconds
+Worker 35: Matrix pair 35 transferred in 0.010873 seconds
+Worker 39: Generating matrix pair 39/100
+Compute: Processing matrix pair 35/100
+Compute: Matrix pair 35 computed in 0.010982 seconds (11.66 TFLOPS)
+Compute: Result transferred in 0.051794 seconds
+Worker 36: Matrix pair 36 transferred in 0.041060 seconds
+Worker 40: Generating matrix pair 40/100
+Compute: Processing matrix pair 36/100
+Compute: Matrix pair 36 computed in 0.043160 seconds (2.97 TFLOPS)
+Compute: Result transferred in 0.061061 seconds
+Worker 37: Matrix pair 37 transferred in 0.062302 seconds
+Worker 41: Generating matrix pair 41/100
+Compute: Processing matrix pair 37/100
+Compute: Matrix pair 37 computed in 0.020455 seconds (6.26 TFLOPS)
+Compute: Result transferred in 0.065854 seconds
+Worker 38: Matrix pair 38 transferred in 0.012047 seconds
+Worker 42: Generating matrix pair 42/100
+Compute: Processing matrix pair 38/100
+Compute: Matrix pair 38 computed in 0.067639 seconds (1.89 TFLOPS)
+Compute: Result transferred in 0.052237 seconds
+Worker 39: Matrix pair 39 transferred in 0.011110 seconds
+Worker 43: Generating matrix pair 43/100
+Compute: Processing matrix pair 39/100
+Compute: Matrix pair 39 computed in 0.009566 seconds (13.38 TFLOPS)
+Compute: Result transferred in 0.055786 seconds
+Worker 40: Matrix pair 40 transferred in 0.010845 seconds
+Worker 44: Generating matrix pair 44/100
+Compute: Processing matrix pair 40/100
+Compute: Matrix pair 40 computed in 0.010498 seconds (12.19 TFLOPS)
+Compute: Result transferred in 0.051964 seconds
+Worker 41: Matrix pair 41 transferred in 0.012934 seconds
+Worker 45: Generating matrix pair 45/100
+Compute: Processing matrix pair 41/100
+Compute: Matrix pair 41 computed in 0.010487 seconds (12.21 TFLOPS)
+Compute: Result transferred in 0.052031 seconds
+Worker 42: Matrix pair 42 transferred in 0.011040 seconds
+Worker 46: Generating matrix pair 46/100
+Compute: Processing matrix pair 42/100
+Compute: Matrix pair 42 computed in 0.012606 seconds (10.15 TFLOPS)
+Compute: Result transferred in 0.055707 seconds
+Worker 43: Matrix pair 43 transferred in 0.010822 seconds
+Worker 47: Generating matrix pair 47/100
+Compute: Processing matrix pair 43/100
+Compute: Matrix pair 43 computed in 0.012180 seconds (10.51 TFLOPS)
+Compute: Result transferred in 0.055521 seconds
+Worker 44: Matrix pair 44 transferred in 0.011099 seconds
+Worker 48: Generating matrix pair 48/100
+Compute: Processing matrix pair 44/100
+Compute: Matrix pair 44 computed in 0.010662 seconds (12.01 TFLOPS)
+Compute: Result transferred in 0.052323 seconds
+Worker 45: Matrix pair 45 transferred in 0.011056 seconds
+Worker 49: Generating matrix pair 49/100
+Compute: Processing matrix pair 45/100
+Compute: Matrix pair 45 computed in 0.010665 seconds (12.00 TFLOPS)
+Compute: Result transferred in 0.072572 seconds
+Worker 46: Matrix pair 46 transferred in 0.046787 seconds
+Worker 50: Generating matrix pair 50/100
+Compute: Processing matrix pair 46/100
+Compute: Matrix pair 46 computed in 0.042055 seconds (3.04 TFLOPS)
+Compute: Result transferred in 0.060733 seconds
+Worker 47: Matrix pair 47 transferred in 0.011534 seconds
+Worker 51: Generating matrix pair 51/100
+Compute: Processing matrix pair 47/100
+Compute: Matrix pair 47 computed in 0.011005 seconds (11.63 TFLOPS)
+Compute: Result transferred in 0.052078 seconds
+Worker 48: Matrix pair 48 transferred in 0.012864 seconds
+Worker 52: Generating matrix pair 52/100
+Compute: Processing matrix pair 48/100
+Compute: Matrix pair 48 computed in 0.062241 seconds (2.06 TFLOPS)
+Compute: Result transferred in 0.052585 seconds
+Worker 49: Matrix pair 49 transferred in 0.011126 seconds
+Worker 53: Generating matrix pair 53/100
+Compute: Processing matrix pair 49/100
+Compute: Matrix pair 49 computed in 0.010489 seconds (12.20 TFLOPS)
+Compute: Result transferred in 0.051865 seconds
+Worker 50: Matrix pair 50 transferred in 0.010749 seconds
+Worker 54: Generating matrix pair 54/100
+Compute: Processing matrix pair 50/100
+Compute: Matrix pair 50 computed in 0.012321 seconds (10.39 TFLOPS)
+Compute: Result transferred in 0.055663 seconds
+Worker 51: Matrix pair 51 transferred in 0.010889 seconds
+Worker 55: Generating matrix pair 55/100
+Compute: Processing matrix pair 51/100
+Compute: Matrix pair 51 computed in 0.010447 seconds (12.25 TFLOPS)
+Compute: Result transferred in 0.051819 seconds
+Worker 52: Matrix pair 52 transferred in 0.010974 seconds
+Worker 56: Generating matrix pair 56/100
+Compute: Processing matrix pair 52/100
+Compute: Matrix pair 52 computed in 0.010470 seconds (12.23 TFLOPS)
+Compute: Result transferred in 0.052017 seconds
+Worker 53: Matrix pair 53 transferred in 0.010846 seconds
+Worker 57: Generating matrix pair 57/100
+Compute: Processing matrix pair 53/100
+Compute: Matrix pair 53 computed in 0.010614 seconds (12.06 TFLOPS)
+Compute: Result transferred in 0.051820 seconds
+Worker 54: Matrix pair 54 transferred in 0.010840 seconds
+Worker 58: Generating matrix pair 58/100
+Compute: Processing matrix pair 54/100
+Compute: Matrix pair 54 computed in 0.010748 seconds (11.91 TFLOPS)
+Compute: Result transferred in 0.052190 seconds
+Worker 55: Matrix pair 55 transferred in 0.215405 seconds
+Worker 59: Generating matrix pair 59/100
+Compute: Processing matrix pair 55/100
+Compute: Matrix pair 55 computed in 0.070372 seconds (1.82 TFLOPS)
+Compute: Result transferred in 0.074710 seconds
+Worker 56: Matrix pair 56 transferred in 0.011056 seconds
+Worker 60: Generating matrix pair 60/100
+Compute: Processing matrix pair 56/100
+Compute: Matrix pair 56 computed in 0.010711 seconds (11.95 TFLOPS)
+Compute: Result transferred in 0.051383 seconds
+Worker 57: Matrix pair 57 transferred in 0.041047 seconds
+Worker 61: Generating matrix pair 61/100
+Compute: Processing matrix pair 57/100
+Compute: Matrix pair 57 computed in 0.071059 seconds (1.80 TFLOPS)
+Compute: Result transferred in 0.065127 seconds
+Worker 58: Matrix pair 58 transferred in 0.010894 seconds
+Worker 62: Generating matrix pair 62/100
+Compute: Processing matrix pair 58/100
+Compute: Matrix pair 58 computed in 0.011887 seconds (10.77 TFLOPS)
+Compute: Result transferred in 0.055092 seconds
+Worker 59: Matrix pair 59 transferred in 0.010856 seconds
+Worker 63: Generating matrix pair 63/100
+Compute: Processing matrix pair 59/100
+Compute: Matrix pair 59 computed in 0.010534 seconds (12.15 TFLOPS)
+Compute: Result transferred in 0.051893 seconds
+Worker 60: Matrix pair 60 transferred in 0.012859 seconds
+Worker 64: Generating matrix pair 64/100
+Compute: Processing matrix pair 60/100
+Compute: Matrix pair 60 computed in 0.010641 seconds (12.03 TFLOPS)
+Compute: Result transferred in 0.051512 seconds
+Worker 61: Matrix pair 61 transferred in 0.010951 seconds
+Worker 65: Generating matrix pair 65/100
+Compute: Processing matrix pair 61/100
+Compute: Matrix pair 61 computed in 0.010525 seconds (12.16 TFLOPS)
+Compute: Result transferred in 0.052066 seconds
+Worker 62: Matrix pair 62 transferred in 0.010920 seconds
+Worker 66: Generating matrix pair 66/100
+Compute: Processing matrix pair 62/100
+Compute: Matrix pair 62 computed in 0.012540 seconds (10.21 TFLOPS)
+Compute: Result transferred in 0.055345 seconds
+Worker 63: Matrix pair 63 transferred in 0.010857 seconds
+Worker 67: Generating matrix pair 67/100
+Compute: Processing matrix pair 63/100
+Compute: Matrix pair 63 computed in 0.010564 seconds (12.12 TFLOPS)
+Compute: Result transferred in 0.051848 seconds
+Worker 64: Matrix pair 64 transferred in 0.010869 seconds
+Worker 68: Generating matrix pair 68/100
+Compute: Processing matrix pair 64/100
+Compute: Matrix pair 64 computed in 0.010580 seconds (12.10 TFLOPS)
+Compute: Result transferred in 0.052148 seconds
+Worker 65: Matrix pair 65 transferred in 0.010997 seconds
+Worker 69: Generating matrix pair 69/100
+Compute: Processing matrix pair 65/100
+Compute: Matrix pair 65 computed in 0.010603 seconds (12.07 TFLOPS)
+Compute: Result transferred in 0.052334 seconds
+Worker 66: Matrix pair 66 transferred in 0.011102 seconds
+Worker 70: Generating matrix pair 70/100
+Compute: Processing matrix pair 66/100
+Compute: Matrix pair 66 computed in 0.010772 seconds (11.88 TFLOPS)
+Compute: Result transferred in 0.052238 seconds
+Worker 67: Matrix pair 67 transferred in 0.039369 seconds
+Worker 71: Generating matrix pair 71/100
+Compute: Processing matrix pair 67/100
+Compute: Matrix pair 67 computed in 0.035219 seconds (3.63 TFLOPS)
+Compute: Result transferred in 0.064031 seconds
+Worker 68: Matrix pair 68 transferred in 0.011523 seconds
+Worker 72: Generating matrix pair 72/100
+Compute: Processing matrix pair 68/100
+Compute: Matrix pair 68 computed in 0.010875 seconds (11.77 TFLOPS)
+Compute: Result transferred in 0.051942 seconds
+Worker 69: Matrix pair 69 transferred in 0.011011 seconds
+Worker 73: Generating matrix pair 73/100
+Compute: Processing matrix pair 69/100
+Compute: Matrix pair 69 computed in 0.010823 seconds (11.83 TFLOPS)
+Compute: Result transferred in 0.052258 seconds
+Worker 70: Matrix pair 70 transferred in 0.010832 seconds
+Worker 74: Generating matrix pair 74/100
+Compute: Processing matrix pair 70/100
+Compute: Matrix pair 70 computed in 0.010262 seconds (12.47 TFLOPS)
+Compute: Result transferred in 0.051995 seconds
+Worker 71: Matrix pair 71 transferred in 0.010877 seconds
+Worker 75: Generating matrix pair 75/100
+Compute: Processing matrix pair 71/100
+Compute: Matrix pair 71 computed in 0.010817 seconds (11.83 TFLOPS)
+Compute: Result transferred in 0.052392 seconds
+Worker 72: Matrix pair 72 transferred in 0.010911 seconds
+Worker 76: Generating matrix pair 76/100
+Compute: Processing matrix pair 72/100
+Compute: Matrix pair 72 computed in 0.010600 seconds (12.08 TFLOPS)
+Compute: Result transferred in 0.052403 seconds
+Worker 73: Matrix pair 73 transferred in 0.089190 seconds
+Worker 77: Generating matrix pair 77/100
+Compute: Processing matrix pair 73/100
+Compute: Matrix pair 73 computed in 0.024092 seconds (5.31 TFLOPS)
+Compute: Result transferred in 0.065909 seconds
+Worker 74: Matrix pair 74 transferred in 0.011558 seconds
+Worker 78: Generating matrix pair 78/100
+Compute: Processing matrix pair 74/100
+Compute: Matrix pair 74 computed in 0.010984 seconds (11.65 TFLOPS)
+Compute: Result transferred in 0.053096 seconds
+Worker 75: Matrix pair 75 transferred in 0.011993 seconds
+Worker 79: Generating matrix pair 79/100
+Compute: Processing matrix pair 75/100
+Compute: Matrix pair 75 computed in 0.070546 seconds (1.81 TFLOPS)
+Compute: Result transferred in 0.052975 seconds
+Worker 76: Matrix pair 76 transferred in 0.011077 seconds
+Worker 80: Generating matrix pair 80/100
+Compute: Processing matrix pair 76/100
+Compute: Matrix pair 76 computed in 0.011004 seconds (11.63 TFLOPS)
+Compute: Result transferred in 0.051825 seconds
+Worker 77: Matrix pair 77 transferred in 0.067886 seconds
+Worker 81: Generating matrix pair 81/100
+Compute: Processing matrix pair 77/100
+Compute: Matrix pair 77 computed in 0.037563 seconds (3.41 TFLOPS)
+Compute: Result transferred in 0.065467 seconds
+Worker 78: Matrix pair 78 transferred in 0.010932 seconds
+Worker 82: Generating matrix pair 82/100
+Compute: Processing matrix pair 78/100
+Compute: Matrix pair 78 computed in 0.010491 seconds (12.20 TFLOPS)
+Compute: Result transferred in 0.051768 seconds
+Worker 79: Matrix pair 79 transferred in 0.011012 seconds
+Worker 83: Generating matrix pair 83/100
+Compute: Processing matrix pair 79/100
+Compute: Matrix pair 79 computed in 0.010232 seconds (12.51 TFLOPS)
+Compute: Result transferred in 0.051669 seconds
+Worker 80: Matrix pair 80 transferred in 0.011089 seconds
+Worker 84: Generating matrix pair 84/100
+Compute: Processing matrix pair 80/100
+Compute: Matrix pair 80 computed in 0.010676 seconds (11.99 TFLOPS)
+Compute: Result transferred in 0.052098 seconds
+Worker 81: Matrix pair 81 transferred in 0.010975 seconds
+Worker 85: Generating matrix pair 85/100
+Compute: Processing matrix pair 81/100
+Compute: Matrix pair 81 computed in 0.010770 seconds (11.89 TFLOPS)
+Compute: Result transferred in 0.051575 seconds
+Worker 82: Matrix pair 82 transferred in 0.010969 seconds
+Worker 86: Generating matrix pair 86/100
+Compute: Processing matrix pair 82/100
+Compute: Matrix pair 82 computed in 0.010176 seconds (12.58 TFLOPS)
+Compute: Result transferred in 0.052049 seconds
+Worker 83: Matrix pair 83 transferred in 0.010892 seconds
+Worker 87: Generating matrix pair 87/100
+Compute: Processing matrix pair 83/100
+Compute: Matrix pair 83 computed in 0.010796 seconds (11.86 TFLOPS)
+Compute: Result transferred in 0.051957 seconds
+Worker 84: Matrix pair 84 transferred in 0.011018 seconds
+Worker 88: Generating matrix pair 88/100
+Compute: Processing matrix pair 84/100
+Compute: Matrix pair 84 computed in 0.010797 seconds (11.86 TFLOPS)
+Compute: Result transferred in 0.052290 seconds
+Worker 85: Matrix pair 85 transferred in 0.010901 seconds
+Worker 89: Generating matrix pair 89/100
+Compute: Processing matrix pair 85/100
+Compute: Matrix pair 85 computed in 0.012422 seconds (10.30 TFLOPS)
+Compute: Result transferred in 0.055923 seconds
+Worker 86: Matrix pair 86 transferred in 0.010986 seconds
+Worker 90: Generating matrix pair 90/100
+Compute: Processing matrix pair 86/100
+Compute: Matrix pair 86 computed in 0.010796 seconds (11.86 TFLOPS)
+Compute: Result transferred in 0.052289 seconds
+Worker 87: Matrix pair 87 transferred in 0.041990 seconds
+Worker 91: Generating matrix pair 91/100
+Compute: Processing matrix pair 87/100
+Compute: Matrix pair 87 computed in 0.036446 seconds (3.51 TFLOPS)
+Compute: Result transferred in 0.062037 seconds
+Worker 88: Matrix pair 88 transferred in 0.011193 seconds
+Worker 92: Generating matrix pair 92/100
+Compute: Processing matrix pair 88/100
+Compute: Matrix pair 88 computed in 0.010689 seconds (11.97 TFLOPS)
+Compute: Result transferred in 0.051857 seconds
+Worker 89: Matrix pair 89 transferred in 0.010929 seconds
+Worker 93: Generating matrix pair 93/100
+Compute: Processing matrix pair 89/100
+Compute: Matrix pair 89 computed in 0.010736 seconds (11.92 TFLOPS)
+Compute: Result transferred in 0.052366 seconds
+Worker 90: Matrix pair 90 transferred in 0.073362 seconds
+Worker 94: Generating matrix pair 94/100
+Compute: Processing matrix pair 90/100
+Compute: Matrix pair 90 computed in 0.030753 seconds (4.16 TFLOPS)
+Compute: Result transferred in 0.062969 seconds
+Worker 91: Matrix pair 91 transferred in 0.010899 seconds
+Worker 95: Generating matrix pair 95/100
+Compute: Processing matrix pair 91/100
+Compute: Matrix pair 91 computed in 0.010895 seconds (11.75 TFLOPS)
+Compute: Result transferred in 0.051774 seconds
+Worker 92: Matrix pair 92 transferred in 0.011192 seconds
+Worker 96: Generating matrix pair 96/100
+Compute: Processing matrix pair 92/100
+Compute: Matrix pair 92 computed in 0.010960 seconds (11.68 TFLOPS)
+Compute: Result transferred in 0.052095 seconds
+Worker 93: Matrix pair 93 transferred in 0.080710 seconds
+Worker 97: Generating matrix pair 97/100
+Compute: Processing matrix pair 93/100
+Compute: Matrix pair 93 computed in 0.057670 seconds (2.22 TFLOPS)
+Compute: Result transferred in 0.053544 seconds
+Worker 94: Matrix pair 94 transferred in 0.010950 seconds
+Worker 98: Generating matrix pair 98/100
+Compute: Processing matrix pair 94/100
+Compute: Matrix pair 94 computed in 0.011103 seconds (11.53 TFLOPS)
+Compute: Result transferred in 0.053098 seconds
+Worker 95: Matrix pair 95 transferred in 0.010877 seconds
+Worker 99: Generating matrix pair 99/100
+Compute: Processing matrix pair 95/100
+Compute: Matrix pair 95 computed in 0.011681 seconds (10.96 TFLOPS)
+Compute: Result transferred in 0.051878 seconds
+Worker 96: Matrix pair 96 transferred in 0.012944 seconds
+Worker 100: Generating matrix pair 100/100
+Compute: Processing matrix pair 96/100
+Compute: Matrix pair 96 computed in 0.011317 seconds (11.31 TFLOPS)
+Compute: Result transferred in 0.052121 seconds
+Worker 97: Matrix pair 97 transferred in 0.039348 seconds
+Compute: Processing matrix pair 97/100
+Compute: Matrix pair 97 computed in 0.035795 seconds (3.58 TFLOPS)
+Compute: Result transferred in 0.062264 seconds
+Worker 98: Matrix pair 98 transferred in 0.010948 seconds
+Compute: Processing matrix pair 98/100
+Compute: Matrix pair 98 computed in 0.011626 seconds (11.01 TFLOPS)
+Compute: Result transferred in 0.053411 seconds
+Worker 99: Matrix pair 99 transferred in 0.010817 seconds
+Compute: Processing matrix pair 99/100
+Compute: Matrix pair 99 computed in 0.010674 seconds (11.99 TFLOPS)
+Compute: Result transferred in 0.051697 seconds
+Worker 100: Matrix pair 100 transferred in 0.010990 seconds
+Compute: Processing matrix pair 100/100
+Compute: Matrix pair 100 computed in 0.010836 seconds (11.81 TFLOPS)
+Compute: Result transferred in 0.052247 seconds
+
+=== Advanced Overlapped Execution Summary ===
+Total time for 100 matrix pairs: 113.646948 seconds
+Average time per matrix pair: 1.136469 seconds
+Average input transfer time: 0.020779 seconds
+Average execution time: 0.058266 seconds
+Average result transfer time: 0.054469 seconds
+Average performance: 10.37 TFLOPS
+
+Estimated sequential time: 13.351458 seconds
+Actual overlapped time: 113.646948 seconds
+Speedup from overlapping: 0.12x
+
+=== Test Complete ===

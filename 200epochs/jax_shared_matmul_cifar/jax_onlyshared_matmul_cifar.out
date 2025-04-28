@@ -1,0 +1,1761 @@
+2025-04-16 10:08:57.161325: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1744790937.722040   14429 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1744790938.124906   14429 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1744790939.261606   14429 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1744790939.261662   14429 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1744790939.261666   14429 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1744790939.261670   14429 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2025-04-16 10:10:38.809918: E external/xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2025-04-16 10:10:38.972319: E external/xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2025-04-16 10:10:39.122308: E external/xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2025-04-16 10:10:39.276233: E external/xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2025-04-16 10:10:39.427758: E external/xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2025-04-16 10:10:39.578513: E external/xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2025-04-16 10:10:39.731561: E external/xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2025-04-16 10:10:39.893972: E external/xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2025-04-16 10:10:40.049688: E external/xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2025-04-16 10:10:40.201134: E external/xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2025-04-16 10:10:40.347756: E external/xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+
+=== Starting CIFAR-100 CNN with Compilation Caching ===
+
+JAX version: 0.5.3
+JAX devices: [CudaDevice(id=0)]
+
+=== Phase 1: Model Initialization ===
+Model initialization time: 20.4626 seconds
+
+=== Phase 2: Dataset Loading ===
+Dataset info:
+  Features: ['id', 'image', 'label', 'coarse_label']
+  Label classes: 100
+Train: (50000, 32, 32, 3) (50000, 100)
+Test: (10000, 32, 32, 3) (10000, 100)
+Dataset loading time: 17.4693 seconds
+
+=== Phase 3: Function Compilation ===
+Found existing compilation metadata from Wed Apr 16 09:39:55 2025
+Using previously compiled function from cache
+Previous compilation took 26.7941 seconds
+
+=== Phase 4: Training Loop ===
+
+=== Starting Matrix Computations in Background ===
+Initializing matrix worker with control mechanism...
+Found existing compilation metadata from Wed Apr 16 09:42:09 2025
+Matrix worker started in background
+Worker 1: Generating matrix pair 1/100
+Worker 1: Matrix pair 1 transferred in 0.014616 seconds
+Worker 2: Generating matrix pair 2/100
+Compute: Processing matrix pair 1/100
+Worker 2: Matrix pair 2 transferred in 0.041733 seconds
+Worker 3: Generating matrix pair 3/100
+Worker 3: Matrix pair 3 transferred in 0.018473 seconds
+Worker 4: Generating matrix pair 4/100
+Worker 4: Matrix pair 4 transferred in 0.018132 seconds
+Worker 5: Generating matrix pair 5/100
+Worker 5: Matrix pair 5 transferred in 0.016301 seconds
+Worker 6: Generating matrix pair 6/100
+Worker 6: Matrix pair 6 transferred in 0.035604 seconds
+Worker 7: Generating matrix pair 7/100
+Compute: Matrix pair 1 computed in 8.256059 seconds (0.02 TFLOPS)
+Compute: Result transferred in 0.100104 seconds
+Compute: Processing matrix pair 2/100
+Compute: Matrix pair 2 computed in 0.006536 seconds (19.58 TFLOPS)
+Compute: Result transferred in 0.051064 seconds
+Compute: Processing matrix pair 3/100
+Compute: Matrix pair 3 computed in 0.006049 seconds (21.16 TFLOPS)
+Compute: Result transferred in 0.050613 seconds
+Compute: Processing matrix pair 4/100
+Worker 7: Matrix pair 7 transferred in 0.016765 seconds
+Worker 8: Generating matrix pair 8/100
+Worker 8: Matrix pair 8 transferred in 0.019087 seconds
+Worker 9: Generating matrix pair 9/100
+Worker 9: Matrix pair 9 transferred in 0.016026 seconds
+Worker 10: Generating matrix pair 10/100
+Worker 10: Matrix pair 10 transferred in 0.016487 seconds
+Worker 11: Generating matrix pair 11/100
+Compute: Matrix pair 4 computed in 4.747075 seconds (0.03 TFLOPS)
+Compute: Result transferred in 0.049696 seconds
+Compute: Processing matrix pair 5/100
+Worker 11: Matrix pair 11 transferred in 0.010528 seconds
+Worker 12: Generating matrix pair 12/100
+Compute: Matrix pair 5 computed in 0.193178 seconds (0.66 TFLOPS)
+Compute: Result transferred in 0.049997 seconds
+Compute: Processing matrix pair 6/100
+Compute: Matrix pair 6 computed in 0.030757 seconds (4.16 TFLOPS)
+Compute: Result transferred in 0.057918 seconds
+Compute: Processing matrix pair 7/100
+Compute: Matrix pair 7 computed in 0.790689 seconds (0.16 TFLOPS)
+Compute: Result transferred in 0.051081 seconds
+Compute: Processing matrix pair 8/100
+Compute: Matrix pair 8 computed in 0.029210 seconds (4.38 TFLOPS)
+Compute: Result transferred in 0.053316 seconds
+Compute: Processing matrix pair 9/100
+Worker 12: Matrix pair 12 transferred in 0.010926 seconds
+Worker 13: Generating matrix pair 13/100
+Worker 13: Matrix pair 13 transferred in 0.016530 seconds
+Worker 14: Generating matrix pair 14/100
+Compute: Matrix pair 9 computed in 1.277648 seconds (0.10 TFLOPS)
+Compute: Result transferred in 0.050435 seconds
+Compute: Processing matrix pair 10/100
+Compute: Matrix pair 10 computed in 0.084634 seconds (1.51 TFLOPS)
+Compute: Result transferred in 0.056083 seconds
+Compute: Processing matrix pair 11/100
+Compute: Matrix pair 11 computed in 0.025829 seconds (4.96 TFLOPS)
+Compute: Result transferred in 0.050637 seconds
+Compute: Processing matrix pair 12/100
+Compute: Matrix pair 12 computed in 0.006773 seconds (18.90 TFLOPS)
+Compute: Result transferred in 0.051488 seconds
+Compute: Processing matrix pair 13/100
+Compute: Matrix pair 13 computed in 0.006611 seconds (19.36 TFLOPS)
+Compute: Result transferred in 0.050148 seconds
+Worker 14: Matrix pair 14 transferred in 0.012719 seconds
+Worker 15: Generating matrix pair 15/100
+Compute: Processing matrix pair 14/100
+Compute: Matrix pair 14 computed in 0.014185 seconds (9.02 TFLOPS)
+Compute: Result transferred in 0.049867 seconds
+Worker 15: Matrix pair 15 transferred in 0.012783 seconds
+Worker 16: Generating matrix pair 16/100
+Compute: Processing matrix pair 15/100
+Compute: Matrix pair 15 computed in 0.014767 seconds (8.67 TFLOPS)
+Compute: Result transferred in 0.050069 seconds
+Worker 16: Matrix pair 16 transferred in 0.032130 seconds
+Worker 17: Generating matrix pair 17/100
+Compute: Processing matrix pair 16/100
+Compute: Matrix pair 16 computed in 0.068957 seconds (1.86 TFLOPS)
+Compute: Result transferred in 0.058691 seconds
+Worker 17: Matrix pair 17 transferred in 0.017036 seconds
+Worker 18: Generating matrix pair 18/100
+Compute: Processing matrix pair 17/100
+Compute: Matrix pair 17 computed in 0.014733 seconds (8.69 TFLOPS)
+Compute: Result transferred in 0.050248 seconds
+Worker 18: Matrix pair 18 transferred in 0.012382 seconds
+Worker 19: Generating matrix pair 19/100
+Compute: Processing matrix pair 18/100
+Compute: Matrix pair 18 computed in 0.013923 seconds (9.19 TFLOPS)
+Compute: Result transferred in 0.049063 seconds
+Worker 19: Matrix pair 19 transferred in 0.010490 seconds
+Worker 20: Generating matrix pair 20/100
+Compute: Processing matrix pair 19/100
+Compute: Matrix pair 19 computed in 0.014439 seconds (8.86 TFLOPS)
+Compute: Result transferred in 0.049678 seconds
+Worker 20: Matrix pair 20 transferred in 0.011568 seconds
+Worker 21: Generating matrix pair 21/100
+Compute: Processing matrix pair 20/100
+Compute: Matrix pair 20 computed in 0.016154 seconds (7.92 TFLOPS)
+Compute: Result transferred in 0.056619 seconds
+Worker 21: Matrix pair 21 transferred in 0.013147 seconds
+Worker 22: Generating matrix pair 22/100
+Compute: Processing matrix pair 21/100
+Compute: Matrix pair 21 computed in 0.017834 seconds (7.18 TFLOPS)
+Compute: Result transferred in 0.057483 seconds
+Worker 22: Matrix pair 22 transferred in 0.012367 seconds
+Worker 23: Generating matrix pair 23/100
+Compute: Processing matrix pair 22/100
+Compute: Matrix pair 22 computed in 0.071614 seconds (1.79 TFLOPS)
+Compute: Result transferred in 0.059377 seconds
+Worker 23: Matrix pair 23 transferred in 0.017795 seconds
+Worker 24: Generating matrix pair 24/100
+Compute: Processing matrix pair 23/100
+Compute: Matrix pair 23 computed in 0.014638 seconds (8.74 TFLOPS)
+Compute: Result transferred in 0.053915 seconds
+Worker 24: Matrix pair 24 transferred in 0.037867 seconds
+Worker 25: Generating matrix pair 25/100
+Compute: Processing matrix pair 24/100
+Compute: Matrix pair 24 computed in 0.031360 seconds (4.08 TFLOPS)
+Compute: Result transferred in 0.186252 seconds
+Worker 25: Matrix pair 25 transferred in 0.011274 seconds
+Worker 26: Generating matrix pair 26/100
+Compute: Processing matrix pair 25/100
+Compute: Matrix pair 25 computed in 0.018405 seconds (6.95 TFLOPS)
+Compute: Result transferred in 0.062690 seconds
+Worker 26: Matrix pair 26 transferred in 0.016977 seconds
+Worker 27: Generating matrix pair 27/100
+Compute: Processing matrix pair 26/100
+Compute: Matrix pair 26 computed in 0.509329 seconds (0.25 TFLOPS)
+Compute: Result transferred in 0.055208 seconds
+Worker 27: Matrix pair 27 transferred in 0.019435 seconds
+Worker 28: Generating matrix pair 28/100
+Compute: Processing matrix pair 27/100
+Compute: Matrix pair 27 computed in 0.388877 seconds (0.33 TFLOPS)
+Compute: Result transferred in 0.054146 seconds
+Worker 28: Matrix pair 28 transferred in 0.014497 seconds
+Worker 29: Generating matrix pair 29/100
+Compute: Processing matrix pair 28/100
+Compute: Matrix pair 28 computed in 0.020013 seconds (6.40 TFLOPS)
+Compute: Result transferred in 0.070446 seconds
+Worker 29: Matrix pair 29 transferred in 0.010918 seconds
+Worker 30: Generating matrix pair 30/100
+Compute: Processing matrix pair 29/100
+Compute: Matrix pair 29 computed in 0.014346 seconds (8.92 TFLOPS)
+Compute: Result transferred in 0.054260 seconds
+Epoch 0:
+  Learning rate: 0.01000
+  Total epoch time: 37.2752 sec
+  Batch loading time: 1.3608 sec
+  Training computation time: 21.0148 sec
+  Evaluation time: 13.5916 sec
+  Number of batches: 390
+  Training set accuracy: 0.012600 (1.26%)
+  Test set accuracy: 0.012400 (1.24%)
+  Best test accuracy so far: 0.012400 (1.24%)
+
+Matrix 0 transferred in background, took 0.0146 sec
+Matrix 1 transferred in background, took 0.0417 sec
+Matrix 2 transferred in background, took 0.0185 sec
+Matrix 3 transferred in background, took 0.0181 sec
+Matrix 4 transferred in background, took 0.0163 sec
+Matrix 5 transferred in background, took 0.0356 sec
+Matrix 6 transferred in background, took 0.0168 sec
+Matrix 7 transferred in background, took 0.0191 sec
+Matrix 8 transferred in background, took 0.0160 sec
+Matrix 9 transferred in background, took 0.0165 sec
+Matrix 10 transferred in background, took 0.0105 sec
+Matrix 11 transferred in background, took 0.0109 sec
+Matrix 12 transferred in background, took 0.0165 sec
+Matrix 13 transferred in background, took 0.0127 sec
+Matrix 14 transferred in background, took 0.0128 sec
+Matrix 15 transferred in background, took 0.0321 sec
+Matrix 16 transferred in background, took 0.0170 sec
+Matrix 17 transferred in background, took 0.0124 sec
+Matrix 18 transferred in background, took 0.0105 sec
+Matrix 19 transferred in background, took 0.0116 sec
+Matrix 20 transferred in background, took 0.0131 sec
+Matrix 21 transferred in background, took 0.0124 sec
+Matrix 22 transferred in background, took 0.0178 sec
+Matrix 23 transferred in background, took 0.0379 sec
+Matrix 24 transferred in background, took 0.0113 sec
+Matrix 25 transferred in background, took 0.0170 sec
+Matrix 26 transferred in background, took 0.0194 sec
+Matrix 27 transferred in background, took 0.0145 sec
+Matrix 28 transferred in background, took 0.0109 sec
+Worker 30: Matrix pair 30 transferred in 0.016604 seconds
+Worker 31: Generating matrix pair 31/100
+Compute: Processing matrix pair 30/100
+Compute: Matrix pair 30 computed in 0.016358 seconds (7.82 TFLOPS)
+Compute: Result transferred in 0.055039 seconds
+Epoch 1:
+  Learning rate: 0.01000
+  Total epoch time: 1.8360 sec
+  Batch loading time: 0.6442 sec
+  Training computation time: 0.7528 sec
+  Evaluation time: 0.1034 sec
+  Number of batches: 390
+  Training set accuracy: 0.020200 (2.02%)
+  Test set accuracy: 0.017400 (1.74%)
+  Best test accuracy so far: 0.017400 (1.74%)
+
+Matrix 29 transferred in background, took 0.0166 sec
+Worker 31: Matrix pair 31 transferred in 0.010607 seconds
+Worker 32: Generating matrix pair 32/100
+Compute: Processing matrix pair 31/100
+Compute: Matrix pair 31 computed in 0.007646 seconds (16.74 TFLOPS)
+Compute: Result transferred in 0.055636 seconds
+Epoch 2:
+  Learning rate: 0.01000
+  Total epoch time: 1.5223 sec
+  Batch loading time: 0.6477 sec
+  Training computation time: 0.6846 sec
+  Evaluation time: 0.1468 sec
+  Number of batches: 390
+  Training set accuracy: 0.020000 (2.00%)
+  Test set accuracy: 0.022000 (2.20%)
+  Best test accuracy so far: 0.022000 (2.20%)
+
+Matrix 30 transferred in background, took 0.0106 sec
+Worker 32: Matrix pair 32 transferred in 0.018150 seconds
+Worker 33: Generating matrix pair 33/100
+Compute: Processing matrix pair 32/100
+Compute: Matrix pair 32 computed in 0.007469 seconds (17.14 TFLOPS)
+Compute: Result transferred in 0.054645 seconds
+Epoch 3:
+  Learning rate: 0.01000
+  Total epoch time: 1.2072 sec
+  Batch loading time: 0.3561 sec
+  Training computation time: 0.6835 sec
+  Evaluation time: 0.1152 sec
+  Number of batches: 390
+  Training set accuracy: 0.022000 (2.20%)
+  Test set accuracy: 0.024900 (2.49%)
+  Best test accuracy so far: 0.024900 (2.49%)
+
+Matrix 31 transferred in background, took 0.0181 sec
+Worker 33: Matrix pair 33 transferred in 0.016537 seconds
+Worker 34: Generating matrix pair 34/100
+Compute: Processing matrix pair 33/100
+Compute: Matrix pair 33 computed in 0.007303 seconds (17.53 TFLOPS)
+Compute: Result transferred in 0.055416 seconds
+Epoch 4:
+  Learning rate: 0.01000
+  Total epoch time: 1.1866 sec
+  Batch loading time: 0.3559 sec
+  Training computation time: 0.6657 sec
+  Evaluation time: 0.1198 sec
+  Number of batches: 390
+  Training set accuracy: 0.029200 (2.92%)
+  Test set accuracy: 0.029300 (2.93%)
+  Best test accuracy so far: 0.029300 (2.93%)
+
+Matrix 32 transferred in background, took 0.0165 sec
+Worker 34: Matrix pair 34 transferred in 0.017198 seconds
+Worker 35: Generating matrix pair 35/100
+Compute: Processing matrix pair 34/100
+Compute: Matrix pair 34 computed in 0.007392 seconds (17.32 TFLOPS)
+Compute: Result transferred in 0.055345 seconds
+Epoch 5:
+  Learning rate: 0.01000
+  Total epoch time: 1.2119 sec
+  Batch loading time: 0.3634 sec
+  Training computation time: 0.6627 sec
+  Evaluation time: 0.1344 sec
+  Number of batches: 390
+  Training set accuracy: 0.028200 (2.82%)
+  Test set accuracy: 0.032300 (3.23%)
+  Best test accuracy so far: 0.032300 (3.23%)
+
+Matrix 33 transferred in background, took 0.0172 sec
+Worker 35: Matrix pair 35 transferred in 0.021802 seconds
+Worker 36: Generating matrix pair 36/100
+Compute: Processing matrix pair 35/100
+Compute: Matrix pair 35 computed in 0.007960 seconds (16.08 TFLOPS)
+Compute: Result transferred in 0.054430 seconds
+Epoch 6:
+  Learning rate: 0.01000
+  Total epoch time: 1.2010 sec
+  Batch loading time: 0.3592 sec
+  Training computation time: 0.6656 sec
+  Evaluation time: 0.1313 sec
+  Number of batches: 390
+  Training set accuracy: 0.036600 (3.66%)
+  Test set accuracy: 0.036500 (3.65%)
+  Best test accuracy so far: 0.036500 (3.65%)
+
+Matrix 34 transferred in background, took 0.0218 sec
+Worker 36: Matrix pair 36 transferred in 0.015330 seconds
+Worker 37: Generating matrix pair 37/100
+Compute: Processing matrix pair 36/100
+Compute: Matrix pair 36 computed in 0.007524 seconds (17.01 TFLOPS)
+Compute: Result transferred in 0.055371 seconds
+Epoch 7:
+  Learning rate: 0.01000
+  Total epoch time: 1.2034 sec
+  Batch loading time: 0.3561 sec
+  Training computation time: 0.6988 sec
+  Evaluation time: 0.1035 sec
+  Number of batches: 390
+  Training set accuracy: 0.040800 (4.08%)
+  Test set accuracy: 0.040600 (4.06%)
+  Best test accuracy so far: 0.040600 (4.06%)
+
+Matrix 35 transferred in background, took 0.0153 sec
+Worker 37: Matrix pair 37 transferred in 0.014702 seconds
+Worker 38: Generating matrix pair 38/100
+Compute: Processing matrix pair 37/100
+Compute: Matrix pair 37 computed in 0.007446 seconds (17.19 TFLOPS)
+Compute: Result transferred in 0.054804 seconds
+Worker 38: Matrix pair 38 transferred in 0.024298 seconds
+Worker 39: Generating matrix pair 39/100
+Compute: Processing matrix pair 38/100
+Epoch 8:
+  Learning rate: 0.01000
+  Total epoch time: 1.3424 sec
+  Batch loading time: 0.3584 sec
+  Training computation time: 0.8182 sec
+  Evaluation time: 0.1204 sec
+  Number of batches: 390
+  Training set accuracy: 0.039800 (3.98%)
+  Test set accuracy: 0.044000 (4.40%)
+  Best test accuracy so far: 0.044000 (4.40%)
+
+Matrix 36 transferred in background, took 0.0147 sec
+Matrix 37 transferred in background, took 0.0243 sec
+Compute: Matrix pair 38 computed in 0.049350 seconds (2.59 TFLOPS)
+Compute: Result transferred in 0.065059 seconds
+Worker 39: Matrix pair 39 transferred in 0.017137 seconds
+Worker 40: Generating matrix pair 40/100
+Compute: Processing matrix pair 39/100
+Compute: Matrix pair 39 computed in 0.016720 seconds (7.66 TFLOPS)
+Compute: Result transferred in 0.060830 seconds
+Epoch 9:
+  Learning rate: 0.01000
+  Total epoch time: 1.6855 sec
+  Batch loading time: 0.7565 sec
+  Training computation time: 0.7403 sec
+  Evaluation time: 0.1436 sec
+  Number of batches: 390
+  Training set accuracy: 0.044000 (4.40%)
+  Test set accuracy: 0.047300 (4.73%)
+  Best test accuracy so far: 0.047300 (4.73%)
+
+Matrix 38 transferred in background, took 0.0171 sec
+Worker 40: Matrix pair 40 transferred in 0.010884 seconds
+Worker 41: Generating matrix pair 41/100
+Compute: Processing matrix pair 40/100
+Compute: Matrix pair 40 computed in 0.007284 seconds (17.57 TFLOPS)
+Compute: Result transferred in 0.063393 seconds
+Epoch 10:
+  Learning rate: 0.00500
+  Total epoch time: 1.7754 sec
+  Batch loading time: 0.9083 sec
+  Training computation time: 0.6669 sec
+  Evaluation time: 0.1555 sec
+  Number of batches: 390
+  Training set accuracy: 0.046000 (4.60%)
+  Test set accuracy: 0.049400 (4.94%)
+  Best test accuracy so far: 0.049400 (4.94%)
+
+Matrix 39 transferred in background, took 0.0109 sec
+Worker 41: Matrix pair 41 transferred in 0.016471 seconds
+Worker 42: Generating matrix pair 42/100
+Compute: Processing matrix pair 41/100
+Compute: Matrix pair 41 computed in 0.015335 seconds (8.35 TFLOPS)
+Compute: Result transferred in 0.061552 seconds
+Epoch 11:
+  Learning rate: 0.00500
+  Total epoch time: 1.1931 sec
+  Batch loading time: 0.3506 sec
+  Training computation time: 0.6660 sec
+  Evaluation time: 0.1305 sec
+  Number of batches: 390
+  Training set accuracy: 0.043600 (4.36%)
+  Test set accuracy: 0.051200 (5.12%)
+  Best test accuracy so far: 0.051200 (5.12%)
+
+Matrix 40 transferred in background, took 0.0165 sec
+Worker 42: Matrix pair 42 transferred in 0.015171 seconds
+Worker 43: Generating matrix pair 43/100
+Compute: Processing matrix pair 42/100
+Compute: Matrix pair 42 computed in 0.007817 seconds (16.37 TFLOPS)
+Compute: Result transferred in 0.062102 seconds
+Epoch 12:
+  Learning rate: 0.00500
+  Total epoch time: 1.2084 sec
+  Batch loading time: 0.3612 sec
+  Training computation time: 0.6679 sec
+  Evaluation time: 0.1268 sec
+  Number of batches: 390
+  Training set accuracy: 0.057200 (5.72%)
+  Test set accuracy: 0.053200 (5.32%)
+  Best test accuracy so far: 0.053200 (5.32%)
+
+Matrix 41 transferred in background, took 0.0152 sec
+Worker 43: Matrix pair 43 transferred in 0.015567 seconds
+Worker 44: Generating matrix pair 44/100
+Compute: Processing matrix pair 43/100
+Compute: Matrix pair 43 computed in 0.013266 seconds (9.65 TFLOPS)
+Compute: Result transferred in 0.060615 seconds
+Worker 44: Matrix pair 44 transferred in 0.019309 seconds
+Worker 45: Generating matrix pair 45/100
+Compute: Processing matrix pair 44/100
+Epoch 13:
+  Learning rate: 0.00500
+  Total epoch time: 1.3054 sec
+  Batch loading time: 0.3505 sec
+  Training computation time: 0.7695 sec
+  Evaluation time: 0.1022 sec
+  Number of batches: 390
+  Training set accuracy: 0.056000 (5.60%)
+  Test set accuracy: 0.055000 (5.50%)
+  Best test accuracy so far: 0.055000 (5.50%)
+
+Matrix 42 transferred in background, took 0.0156 sec
+Matrix 43 transferred in background, took 0.0193 sec
+Compute: Matrix pair 44 computed in 0.025754 seconds (4.97 TFLOPS)
+Compute: Result transferred in 0.061546 seconds
+Worker 45: Matrix pair 45 transferred in 0.016081 seconds
+Worker 46: Generating matrix pair 46/100
+Compute: Processing matrix pair 45/100
+Compute: Matrix pair 45 computed in 0.015206 seconds (8.42 TFLOPS)
+Compute: Result transferred in 0.061406 seconds
+Epoch 14:
+  Learning rate: 0.00500
+  Total epoch time: 1.7152 sec
+  Batch loading time: 0.7986 sec
+  Training computation time: 0.7356 sec
+  Evaluation time: 0.1352 sec
+  Number of batches: 390
+  Training set accuracy: 0.054400 (5.44%)
+  Test set accuracy: 0.056000 (5.60%)
+  Best test accuracy so far: 0.056000 (5.60%)
+
+Matrix 44 transferred in background, took 0.0161 sec
+Worker 46: Matrix pair 46 transferred in 0.016200 seconds
+Worker 47: Generating matrix pair 47/100
+Compute: Processing matrix pair 46/100
+Compute: Matrix pair 46 computed in 0.015127 seconds (8.46 TFLOPS)
+Compute: Result transferred in 0.062627 seconds
+Epoch 15:
+  Learning rate: 0.00500
+  Total epoch time: 1.1961 sec
+  Batch loading time: 0.3004 sec
+  Training computation time: 0.7293 sec
+  Evaluation time: 0.1210 sec
+  Number of batches: 390
+  Training set accuracy: 0.059000 (5.90%)
+  Test set accuracy: 0.057300 (5.73%)
+  Best test accuracy so far: 0.057300 (5.73%)
+
+Matrix 45 transferred in background, took 0.0162 sec
+Worker 47: Matrix pair 47 transferred in 0.016347 seconds
+Worker 48: Generating matrix pair 48/100
+Compute: Processing matrix pair 47/100
+Compute: Matrix pair 47 computed in 0.015387 seconds (8.32 TFLOPS)
+Compute: Result transferred in 0.061840 seconds
+Epoch 16:
+  Learning rate: 0.00500
+  Total epoch time: 1.2178 sec
+  Batch loading time: 0.3029 sec
+  Training computation time: 0.7332 sec
+  Evaluation time: 0.1359 sec
+  Number of batches: 390
+  Training set accuracy: 0.058000 (5.80%)
+  Test set accuracy: 0.058200 (5.82%)
+  Best test accuracy so far: 0.058200 (5.82%)
+
+Matrix 46 transferred in background, took 0.0163 sec
+Worker 48: Matrix pair 48 transferred in 0.011709 seconds
+Worker 49: Generating matrix pair 49/100
+Compute: Processing matrix pair 48/100
+Compute: Matrix pair 48 computed in 0.007630 seconds (16.78 TFLOPS)
+Compute: Result transferred in 0.062566 seconds
+Epoch 17:
+  Learning rate: 0.00500
+  Total epoch time: 1.7610 sec
+  Batch loading time: 0.8972 sec
+  Training computation time: 0.6769 sec
+  Evaluation time: 0.1416 sec
+  Number of batches: 390
+  Training set accuracy: 0.059000 (5.90%)
+  Test set accuracy: 0.059400 (5.94%)
+  Best test accuracy so far: 0.059400 (5.94%)
+
+Matrix 47 transferred in background, took 0.0117 sec
+Worker 49: Matrix pair 49 transferred in 0.016548 seconds
+Worker 50: Generating matrix pair 50/100
+Compute: Processing matrix pair 49/100
+Compute: Matrix pair 49 computed in 0.007696 seconds (16.63 TFLOPS)
+Compute: Result transferred in 0.061000 seconds
+Epoch 18:
+  Learning rate: 0.00500
+  Total epoch time: 1.1985 sec
+  Batch loading time: 0.3446 sec
+  Training computation time: 0.6895 sec
+  Evaluation time: 0.1191 sec
+  Number of batches: 390
+  Training set accuracy: 0.060800 (6.08%)
+  Test set accuracy: 0.059600 (5.96%)
+  Best test accuracy so far: 0.059600 (5.96%)
+
+Matrix 48 transferred in background, took 0.0165 sec
+Worker 50: Matrix pair 50 transferred in 0.019599 seconds
+Worker 51: Generating matrix pair 51/100
+Compute: Processing matrix pair 50/100
+Compute: Matrix pair 50 computed in 0.008964 seconds (14.28 TFLOPS)
+Compute: Result transferred in 0.062744 seconds
+Epoch 19:
+  Learning rate: 0.00500
+  Total epoch time: 1.2056 sec
+  Batch loading time: 0.3443 sec
+  Training computation time: 0.6675 sec
+  Evaluation time: 0.1478 sec
+  Number of batches: 390
+  Training set accuracy: 0.065800 (6.58%)
+  Test set accuracy: 0.061400 (6.14%)
+  Best test accuracy so far: 0.061400 (6.14%)
+
+Matrix 49 transferred in background, took 0.0196 sec
+Worker 51: Matrix pair 51 transferred in 0.017938 seconds
+Worker 52: Generating matrix pair 52/100
+Compute: Processing matrix pair 51/100
+Compute: Matrix pair 51 computed in 0.009060 seconds (14.13 TFLOPS)
+Compute: Result transferred in 0.060961 seconds
+Epoch 20:
+  Learning rate: 0.00100
+  Total epoch time: 1.2047 sec
+  Batch loading time: 0.3444 sec
+  Training computation time: 0.6672 sec
+  Evaluation time: 0.1475 sec
+  Number of batches: 390
+  Training set accuracy: 0.067800 (6.78%)
+  Test set accuracy: 0.061700 (6.17%)
+  Best test accuracy so far: 0.061700 (6.17%)
+
+Matrix 50 transferred in background, took 0.0179 sec
+Worker 52: Matrix pair 52 transferred in 0.018095 seconds
+Worker 53: Generating matrix pair 53/100
+Compute: Processing matrix pair 52/100
+Compute: Matrix pair 52 computed in 0.008020 seconds (15.96 TFLOPS)
+Compute: Result transferred in 0.062291 seconds
+Worker 53: Matrix pair 53 transferred in 0.037965 seconds
+Worker 54: Generating matrix pair 54/100
+Compute: Processing matrix pair 53/100
+Epoch 21:
+  Learning rate: 0.00100
+  Total epoch time: 1.2672 sec
+  Batch loading time: 0.3407 sec
+  Training computation time: 0.6638 sec
+  Evaluation time: 0.1859 sec
+  Number of batches: 390
+  Training set accuracy: 0.062600 (6.26%)
+  Test set accuracy: 0.062400 (6.24%)
+  Best test accuracy so far: 0.062400 (6.24%)
+
+Matrix 51 transferred in background, took 0.0181 sec
+Matrix 52 transferred in background, took 0.0380 sec
+Compute: Matrix pair 53 computed in 0.027298 seconds (4.69 TFLOPS)
+Compute: Result transferred in 0.060211 seconds
+Worker 54: Matrix pair 54 transferred in 0.021002 seconds
+Worker 55: Generating matrix pair 55/100
+Compute: Processing matrix pair 54/100
+Compute: Matrix pair 54 computed in 0.017025 seconds (7.52 TFLOPS)
+Compute: Result transferred in 0.063436 seconds
+Epoch 22:
+  Learning rate: 0.00100
+  Total epoch time: 1.7849 sec
+  Batch loading time: 0.8484 sec
+  Training computation time: 0.7668 sec
+  Evaluation time: 0.1247 sec
+  Number of batches: 390
+  Training set accuracy: 0.063800 (6.38%)
+  Test set accuracy: 0.062200 (6.22%)
+  Best test accuracy so far: 0.062400 (6.24%)
+
+Matrix 53 transferred in background, took 0.0210 sec
+Worker 55: Matrix pair 55 transferred in 0.040009 seconds
+Worker 56: Generating matrix pair 56/100
+Compute: Processing matrix pair 55/100
+Compute: Matrix pair 55 computed in 0.016876 seconds (7.58 TFLOPS)
+Compute: Result transferred in 0.071040 seconds
+Epoch 23:
+  Learning rate: 0.00100
+  Total epoch time: 1.8176 sec
+  Batch loading time: 0.3753 sec
+  Training computation time: 0.8207 sec
+  Evaluation time: 0.5629 sec
+  Number of batches: 390
+  Training set accuracy: 0.061200 (6.12%)
+  Test set accuracy: 0.062300 (6.23%)
+  Best test accuracy so far: 0.062400 (6.24%)
+
+Matrix 54 transferred in background, took 0.0400 sec
+Worker 56: Matrix pair 56 transferred in 0.019750 seconds
+Worker 57: Generating matrix pair 57/100
+Compute: Processing matrix pair 56/100
+Compute: Matrix pair 56 computed in 0.008804 seconds (14.54 TFLOPS)
+Compute: Result transferred in 0.062536 seconds
+Epoch 24:
+  Learning rate: 0.00100
+  Total epoch time: 1.2131 sec
+  Batch loading time: 0.3447 sec
+  Training computation time: 0.6673 sec
+  Evaluation time: 0.1560 sec
+  Number of batches: 390
+  Training set accuracy: 0.059800 (5.98%)
+  Test set accuracy: 0.062200 (6.22%)
+  Best test accuracy so far: 0.062400 (6.24%)
+
+Matrix 55 transferred in background, took 0.0197 sec
+Worker 57: Matrix pair 57 transferred in 0.018704 seconds
+Worker 58: Generating matrix pair 58/100
+Compute: Processing matrix pair 57/100
+Compute: Matrix pair 57 computed in 0.008795 seconds (14.55 TFLOPS)
+Compute: Result transferred in 0.056721 seconds
+Epoch 25:
+  Learning rate: 0.00100
+  Total epoch time: 1.2113 sec
+  Batch loading time: 0.3595 sec
+  Training computation time: 0.7709 sec
+  Evaluation time: 0.0357 sec
+  Number of batches: 390
+  Training set accuracy: 0.069800 (6.98%)
+  Test set accuracy: 0.062200 (6.22%)
+  Best test accuracy so far: 0.062400 (6.24%)
+
+Matrix 56 transferred in background, took 0.0187 sec
+Worker 58: Matrix pair 58 transferred in 0.017611 seconds
+Worker 59: Generating matrix pair 59/100
+Compute: Processing matrix pair 58/100
+Compute: Matrix pair 58 computed in 0.008036 seconds (15.93 TFLOPS)
+Compute: Result transferred in 0.063413 seconds
+Epoch 26:
+  Learning rate: 0.00100
+  Total epoch time: 1.2110 sec
+  Batch loading time: 0.3710 sec
+  Training computation time: 0.6673 sec
+  Evaluation time: 0.1256 sec
+  Number of batches: 390
+  Training set accuracy: 0.065400 (6.54%)
+  Test set accuracy: 0.062700 (6.27%)
+  Best test accuracy so far: 0.062700 (6.27%)
+
+Matrix 57 transferred in background, took 0.0176 sec
+Worker 59: Matrix pair 59 transferred in 0.018586 seconds
+Worker 60: Generating matrix pair 60/100
+Compute: Processing matrix pair 59/100
+Compute: Matrix pair 59 computed in 0.007909 seconds (16.18 TFLOPS)
+Compute: Result transferred in 0.061162 seconds
+Epoch 27:
+  Learning rate: 0.00100
+  Total epoch time: 1.2077 sec
+  Batch loading time: 0.3606 sec
+  Training computation time: 0.6689 sec
+  Evaluation time: 0.1334 sec
+  Number of batches: 390
+  Training set accuracy: 0.071200 (7.12%)
+  Test set accuracy: 0.062600 (6.26%)
+  Best test accuracy so far: 0.062700 (6.27%)
+
+Matrix 58 transferred in background, took 0.0186 sec
+Worker 60: Matrix pair 60 transferred in 0.017131 seconds
+Worker 61: Generating matrix pair 61/100
+Compute: Processing matrix pair 60/100
+Compute: Matrix pair 60 computed in 0.008918 seconds (14.35 TFLOPS)
+Compute: Result transferred in 0.062431 seconds
+Epoch 28:
+  Learning rate: 0.00100
+  Total epoch time: 1.2091 sec
+  Batch loading time: 0.3511 sec
+  Training computation time: 0.6695 sec
+  Evaluation time: 0.1424 sec
+  Number of batches: 390
+  Training set accuracy: 0.063600 (6.36%)
+  Test set accuracy: 0.062800 (6.28%)
+  Best test accuracy so far: 0.062800 (6.28%)
+
+Matrix 59 transferred in background, took 0.0171 sec
+Worker 61: Matrix pair 61 transferred in 0.018762 seconds
+Worker 62: Generating matrix pair 62/100
+Compute: Processing matrix pair 61/100
+Compute: Matrix pair 61 computed in 0.009088 seconds (14.09 TFLOPS)
+Compute: Result transferred in 0.061509 seconds
+Epoch 29:
+  Learning rate: 0.00100
+  Total epoch time: 1.2085 sec
+  Batch loading time: 0.3576 sec
+  Training computation time: 0.6694 sec
+  Evaluation time: 0.1365 sec
+  Number of batches: 390
+  Training set accuracy: 0.064600 (6.46%)
+  Test set accuracy: 0.063400 (6.34%)
+  Best test accuracy so far: 0.063400 (6.34%)
+
+Matrix 60 transferred in background, took 0.0188 sec
+Worker 62: Matrix pair 62 transferred in 0.016001 seconds
+Worker 63: Generating matrix pair 63/100
+Compute: Processing matrix pair 62/100
+Compute: Matrix pair 62 computed in 0.008054 seconds (15.89 TFLOPS)
+Compute: Result transferred in 0.062678 seconds
+Epoch 30:
+  Learning rate: 0.00100
+  Total epoch time: 1.2344 sec
+  Batch loading time: 0.4259 sec
+  Training computation time: 0.7081 sec
+  Evaluation time: 0.0472 sec
+  Number of batches: 390
+Worker 63: Matrix pair 63 transferred in 0.016885 seconds
+Worker 64: Generating matrix pair 64/100
+Compute: Processing matrix pair 63/100
+  Training set accuracy: 0.062600 (6.26%)
+  Test set accuracy: 0.063600 (6.36%)
+  Best test accuracy so far: 0.063600 (6.36%)
+
+Matrix 61 transferred in background, took 0.0160 sec
+Matrix 62 transferred in background, took 0.0169 sec
+Compute: Matrix pair 63 computed in 0.014051 seconds (9.11 TFLOPS)
+Compute: Result transferred in 0.056025 seconds
+Worker 64: Matrix pair 64 transferred in 0.016588 seconds
+Worker 65: Generating matrix pair 65/100
+Compute: Processing matrix pair 64/100
+Compute: Matrix pair 64 computed in 0.016669 seconds (7.68 TFLOPS)
+Compute: Result transferred in 0.057772 seconds
+Epoch 31:
+  Learning rate: 0.00100
+  Total epoch time: 1.7431 sec
+  Batch loading time: 0.8156 sec
+  Training computation time: 0.7267 sec
+  Evaluation time: 0.1559 sec
+  Number of batches: 390
+  Training set accuracy: 0.063000 (6.30%)
+  Test set accuracy: 0.064000 (6.40%)
+  Best test accuracy so far: 0.064000 (6.40%)
+
+Matrix 63 transferred in background, took 0.0166 sec
+Worker 65: Matrix pair 65 transferred in 0.018750 seconds
+Worker 66: Generating matrix pair 66/100
+Compute: Processing matrix pair 65/100
+Compute: Matrix pair 65 computed in 0.016970 seconds (7.54 TFLOPS)
+Compute: Result transferred in 0.056633 seconds
+Epoch 32:
+  Learning rate: 0.00100
+  Total epoch time: 1.2034 sec
+  Batch loading time: 0.2972 sec
+  Training computation time: 0.7284 sec
+  Evaluation time: 0.1317 sec
+  Number of batches: 390
+  Training set accuracy: 0.064000 (6.40%)
+  Test set accuracy: 0.064000 (6.40%)
+  Best test accuracy so far: 0.064000 (6.40%)
+
+Matrix 64 transferred in background, took 0.0187 sec
+Worker 66: Matrix pair 66 transferred in 0.016118 seconds
+Worker 67: Generating matrix pair 67/100
+Compute: Processing matrix pair 66/100
+Compute: Matrix pair 66 computed in 0.016252 seconds (7.88 TFLOPS)
+Compute: Result transferred in 0.057449 seconds
+Epoch 33:
+  Learning rate: 0.00100
+  Total epoch time: 1.2273 sec
+  Batch loading time: 0.2961 sec
+  Training computation time: 0.7274 sec
+  Evaluation time: 0.1592 sec
+  Number of batches: 390
+  Training set accuracy: 0.065600 (6.56%)
+  Test set accuracy: 0.064200 (6.42%)
+  Best test accuracy so far: 0.064200 (6.42%)
+
+Matrix 65 transferred in background, took 0.0161 sec
+Worker 67: Matrix pair 67 transferred in 0.011113 seconds
+Worker 68: Generating matrix pair 68/100
+Compute: Processing matrix pair 67/100
+Compute: Matrix pair 67 computed in 0.007722 seconds (16.58 TFLOPS)
+Compute: Result transferred in 0.061775 seconds
+Epoch 34:
+  Learning rate: 0.00100
+  Total epoch time: 1.7742 sec
+  Batch loading time: 0.8958 sec
+  Training computation time: 0.6964 sec
+  Evaluation time: 0.1284 sec
+  Number of batches: 390
+  Training set accuracy: 0.061600 (6.16%)
+  Test set accuracy: 0.064300 (6.43%)
+  Best test accuracy so far: 0.064300 (6.43%)
+
+Matrix 66 transferred in background, took 0.0111 sec
+Worker 68: Matrix pair 68 transferred in 0.015501 seconds
+Worker 69: Generating matrix pair 69/100
+Compute: Processing matrix pair 68/100
+Compute: Matrix pair 68 computed in 0.006937 seconds (18.45 TFLOPS)
+Compute: Result transferred in 0.062444 seconds
+Epoch 35:
+  Learning rate: 0.00100
+  Total epoch time: 1.1862 sec
+  Batch loading time: 0.3459 sec
+  Training computation time: 0.6681 sec
+  Evaluation time: 0.1273 sec
+  Number of batches: 390
+  Training set accuracy: 0.067400 (6.74%)
+  Test set accuracy: 0.064500 (6.45%)
+  Best test accuracy so far: 0.064500 (6.45%)
+
+Matrix 67 transferred in background, took 0.0155 sec
+Worker 69: Matrix pair 69 transferred in 0.016907 seconds
+Worker 70: Generating matrix pair 70/100
+Compute: Processing matrix pair 69/100
+Compute: Matrix pair 69 computed in 0.007510 seconds (17.04 TFLOPS)
+Compute: Result transferred in 0.061479 seconds
+Epoch 36:
+  Learning rate: 0.00100
+  Total epoch time: 1.2046 sec
+  Batch loading time: 0.3576 sec
+  Training computation time: 0.6754 sec
+  Evaluation time: 0.1251 sec
+  Number of batches: 390
+  Training set accuracy: 0.064200 (6.42%)
+  Test set accuracy: 0.064600 (6.46%)
+  Best test accuracy so far: 0.064600 (6.46%)
+
+Matrix 68 transferred in background, took 0.0169 sec
+Worker 70: Matrix pair 70 transferred in 0.018722 seconds
+Worker 71: Generating matrix pair 71/100
+Compute: Processing matrix pair 70/100
+Compute: Matrix pair 70 computed in 0.008856 seconds (14.45 TFLOPS)
+Compute: Result transferred in 0.062557 seconds
+Epoch 37:
+  Learning rate: 0.00100
+  Total epoch time: 1.2095 sec
+  Batch loading time: 0.3536 sec
+  Training computation time: 0.6678 sec
+  Evaluation time: 0.1431 sec
+  Number of batches: 390
+  Training set accuracy: 0.069200 (6.92%)
+  Test set accuracy: 0.064800 (6.48%)
+  Best test accuracy so far: 0.064800 (6.48%)
+
+Matrix 69 transferred in background, took 0.0187 sec
+Worker 71: Matrix pair 71 transferred in 0.018355 seconds
+Worker 72: Generating matrix pair 72/100
+Compute: Processing matrix pair 71/100
+Compute: Matrix pair 71 computed in 0.007939 seconds (16.12 TFLOPS)
+Compute: Result transferred in 0.061306 seconds
+Worker 72: Matrix pair 72 transferred in 0.033170 seconds
+Worker 73: Generating matrix pair 73/100
+Compute: Processing matrix pair 72/100
+Epoch 38:
+  Learning rate: 0.00100
+  Total epoch time: 1.3636 sec
+  Batch loading time: 0.3402 sec
+  Training computation time: 0.8412 sec
+  Evaluation time: 0.1359 sec
+  Number of batches: 390
+  Training set accuracy: 0.061000 (6.10%)
+  Test set accuracy: 0.064900 (6.49%)
+  Best test accuracy so far: 0.064900 (6.49%)
+
+Matrix 70 transferred in background, took 0.0184 sec
+Matrix 71 transferred in background, took 0.0332 sec
+Compute: Matrix pair 72 computed in 0.019430 seconds (6.59 TFLOPS)
+Compute: Result transferred in 0.074209 seconds
+Worker 73: Matrix pair 73 transferred in 0.021586 seconds
+Worker 74: Generating matrix pair 74/100
+Compute: Processing matrix pair 73/100
+Compute: Matrix pair 73 computed in 0.016614 seconds (7.70 TFLOPS)
+Compute: Result transferred in 0.056211 seconds
+Epoch 39:
+  Learning rate: 0.00100
+  Total epoch time: 1.7199 sec
+  Batch loading time: 0.7802 sec
+  Training computation time: 0.8060 sec
+  Evaluation time: 0.0893 sec
+  Number of batches: 390
+  Training set accuracy: 0.075200 (7.52%)
+  Test set accuracy: 0.065300 (6.53%)
+  Best test accuracy so far: 0.065300 (6.53%)
+
+Matrix 72 transferred in background, took 0.0216 sec
+Worker 74: Matrix pair 74 transferred in 0.018656 seconds
+Worker 75: Generating matrix pair 75/100
+Compute: Processing matrix pair 74/100
+Compute: Matrix pair 74 computed in 0.016068 seconds (7.97 TFLOPS)
+Compute: Result transferred in 0.056870 seconds
+Epoch 40:
+  Learning rate: 0.00100
+  Total epoch time: 1.2078 sec
+  Batch loading time: 0.2853 sec
+  Training computation time: 0.7314 sec
+  Evaluation time: 0.1452 sec
+  Number of batches: 390
+  Training set accuracy: 0.062400 (6.24%)
+  Test set accuracy: 0.065400 (6.54%)
+  Best test accuracy so far: 0.065400 (6.54%)
+
+Matrix 73 transferred in background, took 0.0187 sec
+Worker 75: Matrix pair 75 transferred in 0.020261 seconds
+Worker 76: Generating matrix pair 76/100
+Compute: Processing matrix pair 75/100
+Compute: Matrix pair 75 computed in 0.016005 seconds (8.00 TFLOPS)
+Compute: Result transferred in 0.056288 seconds
+Epoch 41:
+  Learning rate: 0.00100
+  Total epoch time: 1.2184 sec
+  Batch loading time: 0.2804 sec
+  Training computation time: 0.7457 sec
+  Evaluation time: 0.1483 sec
+  Number of batches: 390
+  Training set accuracy: 0.063200 (6.32%)
+  Test set accuracy: 0.065800 (6.58%)
+  Best test accuracy so far: 0.065800 (6.58%)
+
+Matrix 74 transferred in background, took 0.0203 sec
+Worker 76: Matrix pair 76 transferred in 0.016462 seconds
+Worker 77: Generating matrix pair 77/100
+Compute: Processing matrix pair 76/100
+Compute: Matrix pair 76 computed in 0.016486 seconds (7.76 TFLOPS)
+Compute: Result transferred in 0.057022 seconds
+Epoch 42:
+  Learning rate: 0.00100
+  Total epoch time: 1.1984 sec
+  Batch loading time: 0.2870 sec
+  Training computation time: 0.7722 sec
+  Evaluation time: 0.0927 sec
+  Number of batches: 390
+  Training set accuracy: 0.070400 (7.04%)
+  Test set accuracy: 0.066000 (6.60%)
+  Best test accuracy so far: 0.066000 (6.60%)
+
+Matrix 75 transferred in background, took 0.0165 sec
+Worker 77: Matrix pair 77 transferred in 0.019563 seconds
+Worker 78: Generating matrix pair 78/100
+Compute: Processing matrix pair 77/100
+Compute: Matrix pair 77 computed in 0.016792 seconds (7.62 TFLOPS)
+Compute: Result transferred in 0.056315 seconds
+Epoch 43:
+  Learning rate: 0.00100
+  Total epoch time: 1.2034 sec
+  Batch loading time: 0.2927 sec
+  Training computation time: 0.7337 sec
+  Evaluation time: 0.1317 sec
+  Number of batches: 390
+  Training set accuracy: 0.072000 (7.20%)
+  Test set accuracy: 0.065900 (6.59%)
+  Best test accuracy so far: 0.066000 (6.60%)
+
+Matrix 76 transferred in background, took 0.0196 sec
+Worker 78: Matrix pair 78 transferred in 0.018582 seconds
+Worker 79: Generating matrix pair 79/100
+Compute: Processing matrix pair 78/100
+Compute: Matrix pair 78 computed in 0.015689 seconds (8.16 TFLOPS)
+Compute: Result transferred in 0.056871 seconds
+Epoch 44:
+  Learning rate: 0.00100
+  Total epoch time: 1.2066 sec
+  Batch loading time: 0.2802 sec
+  Training computation time: 0.7373 sec
+  Evaluation time: 0.1428 sec
+  Number of batches: 390
+  Training set accuracy: 0.065800 (6.58%)
+  Test set accuracy: 0.066200 (6.62%)
+  Best test accuracy so far: 0.066200 (6.62%)
+
+Matrix 77 transferred in background, took 0.0186 sec
+Worker 79: Matrix pair 79 transferred in 0.022117 seconds
+Worker 80: Generating matrix pair 80/100
+Compute: Processing matrix pair 79/100
+Compute: Matrix pair 79 computed in 0.016736 seconds (7.65 TFLOPS)
+Compute: Result transferred in 0.056014 seconds
+Epoch 45:
+  Learning rate: 0.00100
+  Total epoch time: 1.2090 sec
+  Batch loading time: 0.2861 sec
+  Training computation time: 0.7315 sec
+  Evaluation time: 0.1468 sec
+  Number of batches: 390
+  Training set accuracy: 0.065000 (6.50%)
+  Test set accuracy: 0.066700 (6.67%)
+  Best test accuracy so far: 0.066700 (6.67%)
+
+Matrix 78 transferred in background, took 0.0221 sec
+Worker 80: Matrix pair 80 transferred in 0.018740 seconds
+Worker 81: Generating matrix pair 81/100
+Compute: Processing matrix pair 80/100
+Compute: Matrix pair 80 computed in 0.016935 seconds (7.56 TFLOPS)
+Compute: Result transferred in 0.057053 seconds
+Epoch 46:
+  Learning rate: 0.00100
+  Total epoch time: 1.2084 sec
+  Batch loading time: 0.2795 sec
+  Training computation time: 0.7311 sec
+  Evaluation time: 0.1518 sec
+  Number of batches: 390
+  Training set accuracy: 0.067600 (6.76%)
+  Test set accuracy: 0.066600 (6.66%)
+  Best test accuracy so far: 0.066700 (6.67%)
+
+Matrix 79 transferred in background, took 0.0187 sec
+Worker 81: Matrix pair 81 transferred in 0.033029 seconds
+Worker 82: Generating matrix pair 82/100
+Compute: Processing matrix pair 81/100
+Compute: Matrix pair 81 computed in 0.014620 seconds (8.75 TFLOPS)
+Compute: Result transferred in 0.079225 seconds
+Epoch 47:
+  Learning rate: 0.00100
+  Total epoch time: 1.8541 sec
+  Batch loading time: 0.2792 sec
+  Training computation time: 0.9135 sec
+  Evaluation time: 0.6160 sec
+  Number of batches: 390
+  Training set accuracy: 0.073600 (7.36%)
+  Test set accuracy: 0.066800 (6.68%)
+  Best test accuracy so far: 0.066800 (6.68%)
+
+Matrix 80 transferred in background, took 0.0330 sec
+Worker 82: Matrix pair 82 transferred in 0.017626 seconds
+Worker 83: Generating matrix pair 83/100
+Compute: Processing matrix pair 82/100
+Compute: Matrix pair 82 computed in 0.014722 seconds (8.69 TFLOPS)
+Compute: Result transferred in 0.057215 seconds
+Epoch 48:
+  Learning rate: 0.00100
+  Total epoch time: 1.1998 sec
+  Batch loading time: 0.3419 sec
+  Training computation time: 0.6741 sec
+  Evaluation time: 0.1372 sec
+  Number of batches: 390
+  Training set accuracy: 0.073600 (7.36%)
+  Test set accuracy: 0.067600 (6.76%)
+  Best test accuracy so far: 0.067600 (6.76%)
+
+Matrix 81 transferred in background, took 0.0176 sec
+Worker 83: Matrix pair 83 transferred in 0.018000 seconds
+Worker 84: Generating matrix pair 84/100
+Compute: Processing matrix pair 83/100
+Compute: Matrix pair 83 computed in 0.007743 seconds (16.53 TFLOPS)
+Compute: Result transferred in 0.056432 seconds
+Epoch 49:
+  Learning rate: 0.00100
+  Total epoch time: 1.2069 sec
+  Batch loading time: 0.3546 sec
+  Training computation time: 0.6719 sec
+  Evaluation time: 0.1356 sec
+  Number of batches: 390
+  Training set accuracy: 0.065800 (6.58%)
+  Test set accuracy: 0.067800 (6.78%)
+  Best test accuracy so far: 0.067800 (6.78%)
+
+Matrix 82 transferred in background, took 0.0180 sec
+Worker 84: Matrix pair 84 transferred in 0.015826 seconds
+Worker 85: Generating matrix pair 85/100
+Compute: Processing matrix pair 84/100
+Compute: Matrix pair 84 computed in 0.008190 seconds (15.63 TFLOPS)
+Compute: Result transferred in 0.057256 seconds
+Epoch 50:
+  Learning rate: 0.00100
+  Total epoch time: 1.2184 sec
+  Batch loading time: 0.3475 sec
+  Training computation time: 0.6918 sec
+  Evaluation time: 0.1326 sec
+  Number of batches: 390
+  Training set accuracy: 0.071600 (7.16%)
+Worker 85: Matrix pair 85 transferred in 0.017645 seconds
+Worker 86: Generating matrix pair 86/100
+  Test set accuracy: 0.068000 (6.80%)
+Compute: Processing matrix pair 85/100
+  Best test accuracy so far: 0.068000 (6.80%)
+
+Matrix 83 transferred in background, took 0.0158 sec
+Matrix 84 transferred in background, took 0.0176 sec
+Compute: Matrix pair 85 computed in 0.008585 seconds (14.91 TFLOPS)
+Compute: Result transferred in 0.055849 seconds
+Worker 86: Matrix pair 86 transferred in 0.022365 seconds
+Worker 87: Generating matrix pair 87/100
+Compute: Processing matrix pair 86/100
+Compute: Matrix pair 86 computed in 0.016681 seconds (7.67 TFLOPS)
+Compute: Result transferred in 0.056802 seconds
+Epoch 51:
+  Learning rate: 0.00100
+  Total epoch time: 1.7894 sec
+  Batch loading time: 0.8305 sec
+  Training computation time: 0.7473 sec
+  Evaluation time: 0.1665 sec
+  Number of batches: 390
+  Training set accuracy: 0.064600 (6.46%)
+  Test set accuracy: 0.068400 (6.84%)
+  Best test accuracy so far: 0.068400 (6.84%)
+
+Matrix 85 transferred in background, took 0.0224 sec
+Worker 87: Matrix pair 87 transferred in 0.016539 seconds
+Worker 88: Generating matrix pair 88/100
+Compute: Processing matrix pair 87/100
+Compute: Matrix pair 87 computed in 0.016728 seconds (7.65 TFLOPS)
+Compute: Result transferred in 0.056515 seconds
+Epoch 52:
+  Learning rate: 0.00100
+  Total epoch time: 1.2062 sec
+  Batch loading time: 0.2902 sec
+  Training computation time: 0.7459 sec
+  Evaluation time: 0.1240 sec
+  Number of batches: 390
+  Training set accuracy: 0.064800 (6.48%)
+  Test set accuracy: 0.068700 (6.87%)
+  Best test accuracy so far: 0.068700 (6.87%)
+
+Matrix 86 transferred in background, took 0.0165 sec
+Worker 88: Matrix pair 88 transferred in 0.019507 seconds
+Worker 89: Generating matrix pair 89/100
+Compute: Processing matrix pair 88/100
+Compute: Matrix pair 88 computed in 0.016883 seconds (7.58 TFLOPS)
+Compute: Result transferred in 0.057159 seconds
+Epoch 53:
+  Learning rate: 0.00100
+  Total epoch time: 1.2032 sec
+  Batch loading time: 0.2914 sec
+  Training computation time: 0.7347 sec
+  Evaluation time: 0.1322 sec
+  Number of batches: 390
+  Training set accuracy: 0.071200 (7.12%)
+  Test set accuracy: 0.068900 (6.89%)
+  Best test accuracy so far: 0.068900 (6.89%)
+
+Matrix 87 transferred in background, took 0.0195 sec
+Worker 89: Matrix pair 89 transferred in 0.021517 seconds
+Worker 90: Generating matrix pair 90/100
+Compute: Processing matrix pair 89/100
+Compute: Matrix pair 89 computed in 0.016898 seconds (7.58 TFLOPS)
+Compute: Result transferred in 0.056089 seconds
+Epoch 54:
+  Learning rate: 0.00100
+  Total epoch time: 1.2098 sec
+  Batch loading time: 0.2840 sec
+  Training computation time: 0.7348 sec
+  Evaluation time: 0.1451 sec
+  Number of batches: 390
+  Training set accuracy: 0.068200 (6.82%)
+  Test set accuracy: 0.069300 (6.93%)
+  Best test accuracy so far: 0.069300 (6.93%)
+
+Matrix 88 transferred in background, took 0.0215 sec
+Worker 90: Matrix pair 90 transferred in 0.021428 seconds
+Worker 91: Generating matrix pair 91/100
+Compute: Processing matrix pair 90/100
+Compute: Matrix pair 90 computed in 0.016851 seconds (7.60 TFLOPS)
+Compute: Result transferred in 0.057631 seconds
+Epoch 55:
+  Learning rate: 0.00100
+  Total epoch time: 1.2111 sec
+  Batch loading time: 0.2854 sec
+  Training computation time: 0.7998 sec
+  Evaluation time: 0.0810 sec
+  Number of batches: 390
+  Training set accuracy: 0.073600 (7.36%)
+  Test set accuracy: 0.069200 (6.92%)
+  Best test accuracy so far: 0.069300 (6.93%)
+
+Matrix 89 transferred in background, took 0.0214 sec
+Worker 91: Matrix pair 91 transferred in 0.015490 seconds
+Worker 92: Generating matrix pair 92/100
+Compute: Processing matrix pair 91/100
+Compute: Matrix pair 91 computed in 0.014345 seconds (8.92 TFLOPS)
+Compute: Result transferred in 0.065512 seconds
+Epoch 56:
+  Learning rate: 0.00100
+  Total epoch time: 1.2368 sec
+  Batch loading time: 0.2782 sec
+  Training computation time: 0.8246 sec
+  Evaluation time: 0.0880 sec
+  Number of batches: 390
+  Training set accuracy: 0.063800 (6.38%)
+  Test set accuracy: 0.069600 (6.96%)
+  Best test accuracy so far: 0.069600 (6.96%)
+
+Matrix 90 transferred in background, took 0.0155 sec
+Worker 92: Matrix pair 92 transferred in 0.016341 seconds
+Worker 93: Generating matrix pair 93/100
+Compute: Processing matrix pair 92/100
+Compute: Matrix pair 92 computed in 0.007817 seconds (16.38 TFLOPS)
+Compute: Result transferred in 0.057207 seconds
+Epoch 57:
+  Learning rate: 0.00100
+  Total epoch time: 1.7980 sec
+  Batch loading time: 0.8965 sec
+  Training computation time: 0.6758 sec
+  Evaluation time: 0.1812 sec
+  Number of batches: 390
+  Training set accuracy: 0.075400 (7.54%)
+  Test set accuracy: 0.070000 (7.00%)
+  Best test accuracy so far: 0.070000 (7.00%)
+
+Matrix 91 transferred in background, took 0.0163 sec
+Worker 93: Matrix pair 93 transferred in 0.021287 seconds
+Worker 94: Generating matrix pair 94/100
+Compute: Processing matrix pair 93/100
+Compute: Matrix pair 93 computed in 0.007968 seconds (16.06 TFLOPS)
+Compute: Result transferred in 0.056335 seconds
+Epoch 58:
+  Learning rate: 0.00100
+  Total epoch time: 1.2174 sec
+  Batch loading time: 0.3362 sec
+  Training computation time: 0.6698 sec
+  Evaluation time: 0.1658 sec
+  Number of batches: 390
+  Training set accuracy: 0.075400 (7.54%)
+  Test set accuracy: 0.070100 (7.01%)
+  Best test accuracy so far: 0.070100 (7.01%)
+
+Matrix 92 transferred in background, took 0.0213 sec
+Worker 94: Matrix pair 94 transferred in 0.018666 seconds
+Worker 95: Generating matrix pair 95/100
+Compute: Processing matrix pair 94/100
+Compute: Matrix pair 94 computed in 0.007992 seconds (16.02 TFLOPS)
+Compute: Result transferred in 0.057771 seconds
+Epoch 59:
+  Learning rate: 0.00100
+  Total epoch time: 1.2126 sec
+  Batch loading time: 0.3540 sec
+  Training computation time: 0.7156 sec
+  Evaluation time: 0.0980 sec
+  Number of batches: 390
+  Training set accuracy: 0.068800 (6.88%)
+  Test set accuracy: 0.070300 (7.03%)
+  Best test accuracy so far: 0.070300 (7.03%)
+
+Matrix 93 transferred in background, took 0.0187 sec
+Worker 95: Matrix pair 95 transferred in 0.015183 seconds
+Worker 96: Generating matrix pair 96/100
+Compute: Processing matrix pair 95/100
+Compute: Matrix pair 95 computed in 0.008496 seconds (15.07 TFLOPS)
+Compute: Result transferred in 0.057029 seconds
+Epoch 60:
+  Learning rate: 0.00100
+  Total epoch time: 1.2215 sec
+  Batch loading time: 0.3627 sec
+  Training computation time: 0.6796 sec
+  Evaluation time: 0.1254 sec
+  Number of batches: 390
+  Training set accuracy: 0.074400 (7.44%)
+  Test set accuracy: 0.070600 (7.06%)
+  Best test accuracy so far: 0.070600 (7.06%)
+
+Matrix 94 transferred in background, took 0.0152 sec
+Worker 96: Matrix pair 96 transferred in 0.017864 seconds
+Worker 97: Generating matrix pair 97/100
+Compute: Processing matrix pair 96/100
+Compute: Matrix pair 96 computed in 0.007135 seconds (17.94 TFLOPS)
+Compute: Result transferred in 0.057821 seconds
+Worker 97: Matrix pair 97 transferred in 0.035186 seconds
+Worker 98: Generating matrix pair 98/100
+Compute: Processing matrix pair 97/100
+Compute: Matrix pair 97 computed in 0.013251 seconds (9.66 TFLOPS)
+Compute: Result transferred in 0.070584 seconds
+Epoch 61:
+  Learning rate: 0.00100
+  Total epoch time: 1.8301 sec
+  Batch loading time: 0.3365 sec
+  Training computation time: 0.9568 sec
+  Evaluation time: 0.4917 sec
+  Number of batches: 390
+  Training set accuracy: 0.067600 (6.76%)
+  Test set accuracy: 0.071000 (7.10%)
+  Best test accuracy so far: 0.071000 (7.10%)
+
+Matrix 95 transferred in background, took 0.0179 sec
+Matrix 96 transferred in background, took 0.0352 sec
+Worker 98: Matrix pair 98 transferred in 0.018338 seconds
+Worker 99: Generating matrix pair 99/100
+Compute: Processing matrix pair 98/100
+Compute: Matrix pair 98 computed in 0.016704 seconds (7.66 TFLOPS)
+Compute: Result transferred in 0.056997 seconds
+Epoch 62:
+  Learning rate: 0.00100
+  Total epoch time: 1.2340 sec
+  Batch loading time: 0.2815 sec
+  Training computation time: 0.7303 sec
+  Evaluation time: 0.1763 sec
+  Number of batches: 390
+  Training set accuracy: 0.068400 (6.84%)
+  Test set accuracy: 0.071400 (7.14%)
+  Best test accuracy so far: 0.071400 (7.14%)
+
+Matrix 97 transferred in background, took 0.0183 sec
+Worker 99: Matrix pair 99 transferred in 0.019562 seconds
+Worker 100: Generating matrix pair 100/100
+Compute: Processing matrix pair 99/100
+Compute: Matrix pair 99 computed in 0.016901 seconds (7.57 TFLOPS)
+Compute: Result transferred in 0.056001 seconds
+Epoch 63:
+  Learning rate: 0.00100
+  Total epoch time: 1.2379 sec
+  Batch loading time: 0.2773 sec
+  Training computation time: 0.7311 sec
+  Evaluation time: 0.1851 sec
+  Number of batches: 390
+  Training set accuracy: 0.069000 (6.90%)
+  Test set accuracy: 0.071400 (7.14%)
+  Best test accuracy so far: 0.071400 (7.14%)
+
+Matrix 98 transferred in background, took 0.0196 sec
+Worker 100: Matrix pair 100 transferred in 0.018449 seconds
+Compute: Processing matrix pair 100/100
+Compute: Matrix pair 100 computed in 0.015072 seconds (8.49 TFLOPS)
+Compute: Result transferred in 0.055348 seconds
+Epoch 64:
+  Learning rate: 0.00100
+  Total epoch time: 1.2148 sec
+  Batch loading time: 0.2772 sec
+  Training computation time: 0.8049 sec
+  Evaluation time: 0.0803 sec
+  Number of batches: 390
+  Training set accuracy: 0.074800 (7.48%)
+  Test set accuracy: 0.071900 (7.19%)
+  Best test accuracy so far: 0.071900 (7.19%)
+
+Matrix 99 transferred in background, took 0.0184 sec
+All matrix computations completed
+Epoch 65:
+  Learning rate: 0.00100
+  Total epoch time: 0.9962 sec
+  Batch loading time: 0.2785 sec
+  Training computation time: 0.6532 sec
+  Evaluation time: 0.0202 sec
+  Number of batches: 390
+  Training set accuracy: 0.074600 (7.46%)
+  Test set accuracy: 0.072600 (7.26%)
+  Best test accuracy so far: 0.072600 (7.26%)
+
+Epoch 66:
+  Learning rate: 0.00100
+  Total epoch time: 1.0005 sec
+  Batch loading time: 0.2753 sec
+  Training computation time: 0.6591 sec
+  Evaluation time: 0.0202 sec
+  Number of batches: 390
+  Training set accuracy: 0.083400 (8.34%)
+  Test set accuracy: 0.072700 (7.27%)
+  Best test accuracy so far: 0.072700 (7.27%)
+
+Epoch 67:
+  Learning rate: 0.00100
+  Total epoch time: 0.9922 sec
+  Batch loading time: 0.2725 sec
+  Training computation time: 0.6549 sec
+  Evaluation time: 0.0201 sec
+  Number of batches: 390
+  Training set accuracy: 0.078600 (7.86%)
+  Test set accuracy: 0.073000 (7.30%)
+  Best test accuracy so far: 0.073000 (7.30%)
+
+Epoch 68:
+  Learning rate: 0.00100
+  Total epoch time: 1.0039 sec
+  Batch loading time: 0.2780 sec
+  Training computation time: 0.6594 sec
+  Evaluation time: 0.0203 sec
+  Number of batches: 390
+  Training set accuracy: 0.076000 (7.60%)
+  Test set accuracy: 0.073200 (7.32%)
+  Best test accuracy so far: 0.073200 (7.32%)
+
+Epoch 69:
+  Learning rate: 0.00100
+  Total epoch time: 1.0100 sec
+  Batch loading time: 0.2747 sec
+  Training computation time: 0.6649 sec
+  Evaluation time: 0.0243 sec
+  Number of batches: 390
+  Training set accuracy: 0.070200 (7.02%)
+  Test set accuracy: 0.073400 (7.34%)
+  Best test accuracy so far: 0.073400 (7.34%)
+
+Epoch 70:
+  Learning rate: 0.00100
+  Total epoch time: 1.0003 sec
+  Batch loading time: 0.2726 sec
+  Training computation time: 0.6613 sec
+  Evaluation time: 0.0203 sec
+  Number of batches: 390
+  Training set accuracy: 0.080200 (8.02%)
+  Test set accuracy: 0.073300 (7.33%)
+  Best test accuracy so far: 0.073400 (7.34%)
+
+Epoch 71:
+  Learning rate: 0.00100
+  Total epoch time: 0.9987 sec
+  Batch loading time: 0.2772 sec
+  Training computation time: 0.6565 sec
+  Evaluation time: 0.0202 sec
+  Number of batches: 390
+  Training set accuracy: 0.071400 (7.14%)
+  Test set accuracy: 0.073700 (7.37%)
+  Best test accuracy so far: 0.073700 (7.37%)
+
+Epoch 72:
+  Learning rate: 0.00100
+  Total epoch time: 1.0682 sec
+  Batch loading time: 0.2746 sec
+  Training computation time: 0.7250 sec
+  Evaluation time: 0.0224 sec
+  Number of batches: 390
+  Training set accuracy: 0.071800 (7.18%)
+  Test set accuracy: 0.073700 (7.37%)
+  Best test accuracy so far: 0.073700 (7.37%)
+
+Epoch 73:
+  Learning rate: 0.00100
+  Total epoch time: 1.2140 sec
+  Batch loading time: 0.3027 sec
+  Training computation time: 0.7232 sec
+  Evaluation time: 0.1279 sec
+  Number of batches: 390
+  Training set accuracy: 0.073000 (7.30%)
+  Test set accuracy: 0.073900 (7.39%)
+  Best test accuracy so far: 0.073900 (7.39%)
+
+Epoch 74:
+  Learning rate: 0.00100
+  Total epoch time: 1.1243 sec
+  Batch loading time: 0.2671 sec
+  Training computation time: 0.7881 sec
+  Evaluation time: 0.0228 sec
+  Number of batches: 390
+  Training set accuracy: 0.072400 (7.24%)
+  Test set accuracy: 0.074200 (7.42%)
+  Best test accuracy so far: 0.074200 (7.42%)
+
+Epoch 75:
+  Learning rate: 0.00100
+  Total epoch time: 0.9965 sec
+  Batch loading time: 0.2718 sec
+  Training computation time: 0.6596 sec
+  Evaluation time: 0.0202 sec
+  Number of batches: 390
+  Training set accuracy: 0.078800 (7.88%)
+  Test set accuracy: 0.074200 (7.42%)
+  Best test accuracy so far: 0.074200 (7.42%)
+
+Epoch 76:
+  Learning rate: 0.00100
+  Total epoch time: 1.0151 sec
+  Batch loading time: 0.2881 sec
+  Training computation time: 0.6605 sec
+  Evaluation time: 0.0204 sec
+  Number of batches: 390
+  Training set accuracy: 0.078200 (7.82%)
+  Test set accuracy: 0.074600 (7.46%)
+  Best test accuracy so far: 0.074600 (7.46%)
+
+Epoch 77:
+  Learning rate: 0.00100
+  Total epoch time: 1.0027 sec
+  Batch loading time: 0.2808 sec
+  Training computation time: 0.6571 sec
+  Evaluation time: 0.0202 sec
+  Number of batches: 390
+  Training set accuracy: 0.072200 (7.22%)
+  Test set accuracy: 0.074900 (7.49%)
+  Best test accuracy so far: 0.074900 (7.49%)
+
+Epoch 78:
+  Learning rate: 0.00100
+  Total epoch time: 1.0013 sec
+  Batch loading time: 0.2732 sec
+  Training computation time: 0.6618 sec
+  Evaluation time: 0.0203 sec
+  Number of batches: 390
+  Training set accuracy: 0.073600 (7.36%)
+  Test set accuracy: 0.075700 (7.57%)
+  Best test accuracy so far: 0.075700 (7.57%)
+
+Epoch 79:
+  Learning rate: 0.00100
+  Total epoch time: 1.0197 sec
+  Batch loading time: 0.2746 sec
+  Training computation time: 0.6794 sec
+  Evaluation time: 0.0202 sec
+  Number of batches: 390
+  Training set accuracy: 0.082600 (8.26%)
+  Test set accuracy: 0.075500 (7.55%)
+  Best test accuracy so far: 0.075700 (7.57%)
+
+Epoch 80:
+  Learning rate: 0.00100
+  Total epoch time: 0.9994 sec
+  Batch loading time: 0.2744 sec
+  Training computation time: 0.6577 sec
+  Evaluation time: 0.0214 sec
+  Number of batches: 390
+  Training set accuracy: 0.077800 (7.78%)
+  Test set accuracy: 0.075800 (7.58%)
+  Best test accuracy so far: 0.075800 (7.58%)
+
+Epoch 81:
+  Learning rate: 0.00100
+  Total epoch time: 1.0007 sec
+  Batch loading time: 0.2757 sec
+  Training computation time: 0.6602 sec
+  Evaluation time: 0.0203 sec
+  Number of batches: 390
+  Training set accuracy: 0.080400 (8.04%)
+  Test set accuracy: 0.075800 (7.58%)
+  Best test accuracy so far: 0.075800 (7.58%)
+
+Epoch 82:
+  Learning rate: 0.00100
+  Total epoch time: 0.9944 sec
+  Batch loading time: 0.2721 sec
+  Training computation time: 0.6558 sec
+  Evaluation time: 0.0203 sec
+  Number of batches: 390
+  Training set accuracy: 0.080400 (8.04%)
+  Test set accuracy: 0.076100 (7.61%)
+  Best test accuracy so far: 0.076100 (7.61%)
+
+Epoch 83:
+  Learning rate: 0.00100
+  Total epoch time: 0.9987 sec
+  Batch loading time: 0.2769 sec
+  Training computation time: 0.6570 sec
+  Evaluation time: 0.0202 sec
+  Number of batches: 390
+  Training set accuracy: 0.076000 (7.60%)
+  Test set accuracy: 0.076100 (7.61%)
+  Best test accuracy so far: 0.076100 (7.61%)
+
+Epoch 84:
+  Learning rate: 0.00100
+  Total epoch time: 1.3033 sec
+  Batch loading time: 0.2757 sec
+  Training computation time: 0.8104 sec
+  Evaluation time: 0.1360 sec
+  Number of batches: 390
+  Training set accuracy: 0.080000 (8.00%)
+  Test set accuracy: 0.076500 (7.65%)
+  Best test accuracy so far: 0.076500 (7.65%)
+
+Epoch 85:
+  Learning rate: 0.00100
+  Total epoch time: 1.0378 sec
+  Batch loading time: 0.2849 sec
+  Training computation time: 0.6877 sec
+  Evaluation time: 0.0203 sec
+  Number of batches: 390
+  Training set accuracy: 0.077200 (7.72%)
+  Test set accuracy: 0.076700 (7.67%)
+  Best test accuracy so far: 0.076700 (7.67%)
+
+Epoch 86:
+  Learning rate: 0.00100
+  Total epoch time: 1.0017 sec
+  Batch loading time: 0.2762 sec
+  Training computation time: 0.6597 sec
+  Evaluation time: 0.0202 sec
+  Number of batches: 390
+  Training set accuracy: 0.072800 (7.28%)
+  Test set accuracy: 0.076900 (7.69%)
+  Best test accuracy so far: 0.076900 (7.69%)
+
+Epoch 87:
+  Learning rate: 0.00100
+  Total epoch time: 1.0298 sec
+  Batch loading time: 0.2844 sec
+  Training computation time: 0.6802 sec
+  Evaluation time: 0.0203 sec
+  Number of batches: 390
+  Training set accuracy: 0.081600 (8.16%)
+  Test set accuracy: 0.076900 (7.69%)
+  Best test accuracy so far: 0.076900 (7.69%)
+
+Epoch 88:
+  Learning rate: 0.00100
+  Total epoch time: 1.0073 sec
+  Batch loading time: 0.2745 sec
+  Training computation time: 0.6666 sec
+  Evaluation time: 0.0203 sec
+  Number of batches: 390
+  Training set accuracy: 0.080800 (8.08%)
+  Test set accuracy: 0.077000 (7.70%)
+  Best test accuracy so far: 0.077000 (7.70%)
+
+Epoch 89:
+  Learning rate: 0.00100
+  Total epoch time: 1.0013 sec
+  Batch loading time: 0.2771 sec
+  Training computation time: 0.6583 sec
+  Evaluation time: 0.0209 sec
+  Number of batches: 390
+  Training set accuracy: 0.075800 (7.58%)
+  Test set accuracy: 0.077300 (7.73%)
+  Best test accuracy so far: 0.077300 (7.73%)
+
+Epoch 90:
+  Learning rate: 0.00100
+  Total epoch time: 1.0006 sec
+  Batch loading time: 0.2761 sec
+  Training computation time: 0.6579 sec
+  Evaluation time: 0.0202 sec
+  Number of batches: 390
+  Training set accuracy: 0.081800 (8.18%)
+  Test set accuracy: 0.077400 (7.74%)
+  Best test accuracy so far: 0.077400 (7.74%)
+
+Epoch 91:
+  Learning rate: 0.00100
+  Total epoch time: 1.0019 sec
+  Batch loading time: 0.2760 sec
+  Training computation time: 0.6599 sec
+  Evaluation time: 0.0210 sec
+  Number of batches: 390
+  Training set accuracy: 0.077200 (7.72%)
+  Test set accuracy: 0.077400 (7.74%)
+  Best test accuracy so far: 0.077400 (7.74%)
+
+Epoch 92:
+  Learning rate: 0.00100
+  Total epoch time: 1.1832 sec
+  Batch loading time: 0.2783 sec
+  Training computation time: 0.8384 sec
+  Evaluation time: 0.0210 sec
+  Number of batches: 390
+  Training set accuracy: 0.083400 (8.34%)
+  Test set accuracy: 0.077400 (7.74%)
+  Best test accuracy so far: 0.077400 (7.74%)
+
+Epoch 93:
+  Learning rate: 0.00100
+  Total epoch time: 1.0022 sec
+  Batch loading time: 0.2750 sec
+  Training computation time: 0.6579 sec
+  Evaluation time: 0.0244 sec
+  Number of batches: 390
+  Training set accuracy: 0.080000 (8.00%)
+  Test set accuracy: 0.077800 (7.78%)
+  Best test accuracy so far: 0.077800 (7.78%)
+
+Epoch 94:
+  Learning rate: 0.00100
+  Total epoch time: 1.4877 sec
+  Batch loading time: 0.5201 sec
+  Training computation time: 0.7196 sec
+  Evaluation time: 0.1773 sec
+  Number of batches: 390
+  Training set accuracy: 0.081800 (8.18%)
+  Test set accuracy: 0.078000 (7.80%)
+  Best test accuracy so far: 0.078000 (7.80%)
+
+Epoch 95:
+  Learning rate: 0.00100
+  Total epoch time: 1.0449 sec
+  Batch loading time: 0.2777 sec
+  Training computation time: 0.7018 sec
+  Evaluation time: 0.0202 sec
+  Number of batches: 390
+  Training set accuracy: 0.078000 (7.80%)
+  Test set accuracy: 0.078300 (7.83%)
+  Best test accuracy so far: 0.078300 (7.83%)
+
+Epoch 96:
+  Learning rate: 0.00100
+  Total epoch time: 1.0016 sec
+  Batch loading time: 0.2754 sec
+  Training computation time: 0.6602 sec
+  Evaluation time: 0.0205 sec
+  Number of batches: 390
+  Training set accuracy: 0.080400 (8.04%)
+  Test set accuracy: 0.078500 (7.85%)
+  Best test accuracy so far: 0.078500 (7.85%)
+
+Epoch 97:
+  Learning rate: 0.00100
+  Total epoch time: 1.0066 sec
+  Batch loading time: 0.2737 sec
+  Training computation time: 0.6675 sec
+  Evaluation time: 0.0203 sec
+  Number of batches: 390
+  Training set accuracy: 0.082000 (8.20%)
+  Test set accuracy: 0.078700 (7.87%)
+  Best test accuracy so far: 0.078700 (7.87%)
+
+Epoch 98:
+  Learning rate: 0.00100
+  Total epoch time: 1.0023 sec
+  Batch loading time: 0.2754 sec
+  Training computation time: 0.6612 sec
+  Evaluation time: 0.0203 sec
+  Number of batches: 390
+  Training set accuracy: 0.079600 (7.96%)
+  Test set accuracy: 0.079000 (7.90%)
+  Best test accuracy so far: 0.079000 (7.90%)
+
+Epoch 99:
+  Learning rate: 0.00100
+  Total epoch time: 1.0124 sec
+  Batch loading time: 0.2791 sec
+  Training computation time: 0.6650 sec
+  Evaluation time: 0.0235 sec
+  Number of batches: 390
+  Training set accuracy: 0.081000 (8.10%)
+  Test set accuracy: 0.079000 (7.90%)
+  Best test accuracy so far: 0.079000 (7.90%)
+
+=== Training Summary ===
+Model initialization time: 20.4626 seconds
+Initial dataset loading time: 17.4693 seconds
+Function compilation time: 26.7941 seconds
+Training loop time: 160.2353 seconds
+  - Batch loading time: 38.1147 seconds
+  - Computation time: 91.1992 seconds
+  - Evaluation time: 24.3498 seconds
+Total time: 198.1671 seconds
+Final test accuracy: 0.079000 (7.90%)
+Best test accuracy: 0.079000 (7.90%)
+
+Reused cached compilation, saved approximately 26.7941 seconds

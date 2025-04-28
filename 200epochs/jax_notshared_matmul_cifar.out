@@ -1,0 +1,1532 @@
+2025-04-14 16:45:30.342319: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1744641930.879795   13205 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1744641931.238976   13205 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1744641932.240797   13205 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1744641932.241543   13205 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1744641932.241549   13205 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1744641932.241551   13205 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+WARNING:absl:Variant folder /tmp/tfds/cifar100/3.0.2 has no dataset_info.json
+
+=== Starting CIFAR-100 CNN with Compilation Caching ===
+
+JAX version: 0.5.3
+JAX devices: [CudaDevice(id=0)]
+
+=== Phase 1: Model Initialization ===
+Model initialization time: 14.6051 seconds
+
+=== Phase 2: Dataset Loading ===
+Downloading and preparing dataset Unknown size (download: Unknown size, generated: Unknown size, total: Unknown size) to /tmp/tfds/cifar100/3.0.2...
+Dl Completed...: 0 url [00:00, ? url/s]
+Dl Size...: 0 MiB [00:00, ? MiB/s][A
+
+Extraction completed...: 0 file [00:00, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:00<?, ? url/s]
+Dl Size...: 0 MiB [00:00, ? MiB/s][A
+
+Extraction completed...: 0 file [00:00, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:00<?, ? url/s]
+Dl Size...:   0%|          | 0/160 [00:00<?, ? MiB/s][A
+
+Extraction completed...: 0 file [00:00, ? file/s][A[A
+Dl Size...:   1%|          | 1/160 [00:01<02:52,  1.09s/ MiB][ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:   1%|          | 1/160 [00:01<02:52,  1.09s/ MiB][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:   1%|▏         | 2/160 [00:01<02:51,  1.09s/ MiB][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:   2%|▏         | 3/160 [00:01<02:50,  1.09s/ MiB][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:   2%|▎         | 4/160 [00:01<02:49,  1.09s/ MiB][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:   3%|▎         | 5/160 [00:01<02:48,  1.09s/ MiB][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:   4%|▍         | 6/160 [00:01<02:47,  1.09s/ MiB][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:   4%|▍         | 7/160 [00:01<02:46,  1.09s/ MiB][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:   5%|▌         | 8/160 [00:01<02:45,  1.09s/ MiB][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:   6%|▌         | 9/160 [00:01<02:44,  1.09s/ MiB][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:   6%|▋         | 10/160 [00:01<02:43,  1.09s/ MiB][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:   7%|▋         | 11/160 [00:01<02:41,  1.09s/ MiB][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:   8%|▊         | 12/160 [00:01<02:40,  1.09s/ MiB][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:   8%|▊         | 13/160 [00:01<02:39,  1.09s/ MiB][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:   9%|▉         | 14/160 [00:01<02:38,  1.09s/ MiB][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:   9%|▉         | 15/160 [00:01<02:37,  1.09s/ MiB][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:  10%|█         | 16/160 [00:01<02:36,  1.09s/ MiB][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:  11%|█         | 17/160 [00:01<02:35,  1.09s/ MiB][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:  11%|█▏        | 18/160 [00:01<02:34,  1.09s/ MiB][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:  12%|█▏        | 19/160 [00:01<02:33,  1.09s/ MiB][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:  12%|█▎        | 20/160 [00:01<02:32,  1.09s/ MiB][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:  13%|█▎        | 21/160 [00:01<02:31,  1.09s/ MiB][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:  14%|█▍        | 22/160 [00:01<02:29,  1.09s/ MiB][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:  14%|█▍        | 23/160 [00:01<02:28,  1.09s/ MiB][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:01<?, ? url/s]
+Dl Size...:  15%|█▌        | 24/160 [00:01<02:27,  1.09s/ MiB][A
+
+Extraction completed...: 0 file [00:01, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  16%|█▌        | 25/160 [00:02<02:26,  1.09s/ MiB][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  16%|█▋        | 26/160 [00:02<02:25,  1.09s/ MiB][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  17%|█▋        | 27/160 [00:02<02:24,  1.09s/ MiB][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[A
+Dl Size...:  18%|█▊        | 28/160 [00:02<00:08, 15.54 MiB/s][ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  18%|█▊        | 28/160 [00:02<00:08, 15.54 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  18%|█▊        | 29/160 [00:02<00:08, 15.54 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  19%|█▉        | 30/160 [00:02<00:08, 15.54 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  19%|█▉        | 31/160 [00:02<00:08, 15.54 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  20%|██        | 32/160 [00:02<00:08, 15.54 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  21%|██        | 33/160 [00:02<00:08, 15.54 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  21%|██▏       | 34/160 [00:02<00:08, 15.54 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  22%|██▏       | 35/160 [00:02<00:08, 15.54 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  22%|██▎       | 36/160 [00:02<00:07, 15.54 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  23%|██▎       | 37/160 [00:02<00:07, 15.54 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  24%|██▍       | 38/160 [00:02<00:07, 15.54 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  24%|██▍       | 39/160 [00:02<00:07, 15.54 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  25%|██▌       | 40/160 [00:02<00:07, 15.54 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  26%|██▌       | 41/160 [00:02<00:07, 15.54 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  26%|██▋       | 42/160 [00:02<00:07, 15.54 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  27%|██▋       | 43/160 [00:02<00:07, 15.54 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  28%|██▊       | 44/160 [00:02<00:07, 15.54 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  28%|██▊       | 45/160 [00:02<00:07, 15.54 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  29%|██▉       | 46/160 [00:02<00:07, 15.54 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  29%|██▉       | 47/160 [00:02<00:07, 15.54 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  30%|███       | 48/160 [00:02<00:07, 15.54 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  31%|███       | 49/160 [00:02<00:07, 15.54 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  31%|███▏      | 50/160 [00:02<00:07, 15.54 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  32%|███▏      | 51/160 [00:02<00:07, 15.54 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  32%|███▎      | 52/160 [00:02<00:06, 15.54 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  33%|███▎      | 53/160 [00:02<00:06, 15.54 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:02<?, ? url/s]
+Dl Size...:  34%|███▍      | 54/160 [00:02<00:06, 15.54 MiB/s][A
+
+Extraction completed...: 0 file [00:02, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  34%|███▍      | 55/160 [00:03<00:06, 15.54 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  35%|███▌      | 56/160 [00:03<00:06, 15.54 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  36%|███▌      | 57/160 [00:03<00:06, 15.54 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[A
+Dl Size...:  36%|███▋      | 58/160 [00:03<00:04, 21.72 MiB/s][ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  36%|███▋      | 58/160 [00:03<00:04, 21.72 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  37%|███▋      | 59/160 [00:03<00:04, 21.72 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  38%|███▊      | 60/160 [00:03<00:04, 21.72 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  38%|███▊      | 61/160 [00:03<00:04, 21.72 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  39%|███▉      | 62/160 [00:03<00:04, 21.72 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  39%|███▉      | 63/160 [00:03<00:04, 21.72 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  40%|████      | 64/160 [00:03<00:04, 21.72 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  41%|████      | 65/160 [00:03<00:04, 21.72 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  41%|████▏     | 66/160 [00:03<00:04, 21.72 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  42%|████▏     | 67/160 [00:03<00:04, 21.72 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  42%|████▎     | 68/160 [00:03<00:04, 21.72 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  43%|████▎     | 69/160 [00:03<00:04, 21.72 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  44%|████▍     | 70/160 [00:03<00:04, 21.72 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  44%|████▍     | 71/160 [00:03<00:04, 21.72 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  45%|████▌     | 72/160 [00:03<00:04, 21.72 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  46%|████▌     | 73/160 [00:03<00:04, 21.72 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  46%|████▋     | 74/160 [00:03<00:03, 21.72 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  47%|████▋     | 75/160 [00:03<00:03, 21.72 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  48%|████▊     | 76/160 [00:03<00:03, 21.72 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  48%|████▊     | 77/160 [00:03<00:03, 21.72 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  49%|████▉     | 78/160 [00:03<00:03, 21.72 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  49%|████▉     | 79/160 [00:03<00:03, 21.72 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  50%|█████     | 80/160 [00:03<00:03, 21.72 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  51%|█████     | 81/160 [00:03<00:03, 21.72 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  51%|█████▏    | 82/160 [00:03<00:03, 21.72 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:03<?, ? url/s]
+Dl Size...:  52%|█████▏    | 83/160 [00:03<00:03, 21.72 MiB/s][A
+
+Extraction completed...: 0 file [00:03, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  52%|█████▎    | 84/160 [00:04<00:03, 21.72 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  53%|█████▎    | 85/160 [00:04<00:03, 21.72 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  54%|█████▍    | 86/160 [00:04<00:03, 21.72 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  54%|█████▍    | 87/160 [00:04<00:03, 21.72 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[A
+Dl Size...:  55%|█████▌    | 88/160 [00:04<00:02, 24.58 MiB/s][ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  55%|█████▌    | 88/160 [00:04<00:02, 24.58 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  56%|█████▌    | 89/160 [00:04<00:02, 24.58 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  56%|█████▋    | 90/160 [00:04<00:02, 24.58 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  57%|█████▋    | 91/160 [00:04<00:02, 24.58 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  57%|█████▊    | 92/160 [00:04<00:02, 24.58 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  58%|█████▊    | 93/160 [00:04<00:02, 24.58 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  59%|█████▉    | 94/160 [00:04<00:02, 24.58 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  59%|█████▉    | 95/160 [00:04<00:02, 24.58 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  60%|██████    | 96/160 [00:04<00:02, 24.58 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  61%|██████    | 97/160 [00:04<00:02, 24.58 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  61%|██████▏   | 98/160 [00:04<00:02, 24.58 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  62%|██████▏   | 99/160 [00:04<00:02, 24.58 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  62%|██████▎   | 100/160 [00:04<00:02, 24.58 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  63%|██████▎   | 101/160 [00:04<00:02, 24.58 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  64%|██████▍   | 102/160 [00:04<00:02, 24.58 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  64%|██████▍   | 103/160 [00:04<00:02, 24.58 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  65%|██████▌   | 104/160 [00:04<00:02, 24.58 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  66%|██████▌   | 105/160 [00:04<00:02, 24.58 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  66%|██████▋   | 106/160 [00:04<00:02, 24.58 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  67%|██████▋   | 107/160 [00:04<00:02, 24.58 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  68%|██████▊   | 108/160 [00:04<00:02, 24.58 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  68%|██████▊   | 109/160 [00:04<00:02, 24.58 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  69%|██████▉   | 110/160 [00:04<00:02, 24.58 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:04<?, ? url/s]
+Dl Size...:  69%|██████▉   | 111/160 [00:04<00:01, 24.58 MiB/s][A
+
+Extraction completed...: 0 file [00:04, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  70%|███████   | 112/160 [00:05<00:01, 24.58 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  71%|███████   | 113/160 [00:05<00:01, 24.58 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  71%|███████▏  | 114/160 [00:05<00:01, 24.58 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  72%|███████▏  | 115/160 [00:05<00:01, 24.58 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  72%|███████▎  | 116/160 [00:05<00:01, 24.58 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[A
+Dl Size...:  73%|███████▎  | 117/160 [00:05<00:01, 25.88 MiB/s][ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  73%|███████▎  | 117/160 [00:05<00:01, 25.88 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  74%|███████▍  | 118/160 [00:05<00:01, 25.88 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  74%|███████▍  | 119/160 [00:05<00:01, 25.88 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  75%|███████▌  | 120/160 [00:05<00:01, 25.88 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  76%|███████▌  | 121/160 [00:05<00:01, 25.88 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  76%|███████▋  | 122/160 [00:05<00:01, 25.88 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  77%|███████▋  | 123/160 [00:05<00:01, 25.88 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  78%|███████▊  | 124/160 [00:05<00:01, 25.88 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  78%|███████▊  | 125/160 [00:05<00:01, 25.88 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  79%|███████▉  | 126/160 [00:05<00:01, 25.88 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  79%|███████▉  | 127/160 [00:05<00:01, 25.88 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  80%|████████  | 128/160 [00:05<00:01, 25.88 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  81%|████████  | 129/160 [00:05<00:01, 25.88 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  81%|████████▏ | 130/160 [00:05<00:01, 25.88 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  82%|████████▏ | 131/160 [00:05<00:01, 25.88 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  82%|████████▎ | 132/160 [00:05<00:01, 25.88 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  83%|████████▎ | 133/160 [00:05<00:01, 25.88 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  84%|████████▍ | 134/160 [00:05<00:01, 25.88 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  84%|████████▍ | 135/160 [00:05<00:00, 25.88 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  85%|████████▌ | 136/160 [00:05<00:00, 25.88 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  86%|████████▌ | 137/160 [00:05<00:00, 25.88 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  86%|████████▋ | 138/160 [00:05<00:00, 25.88 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  87%|████████▋ | 139/160 [00:05<00:00, 25.88 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:05<?, ? url/s]
+Dl Size...:  88%|████████▊ | 140/160 [00:05<00:00, 25.88 MiB/s][A
+
+Extraction completed...: 0 file [00:05, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  88%|████████▊ | 141/160 [00:06<00:00, 25.88 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  89%|████████▉ | 142/160 [00:06<00:00, 25.88 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  89%|████████▉ | 143/160 [00:06<00:00, 25.88 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  90%|█████████ | 144/160 [00:06<00:00, 25.88 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  91%|█████████ | 145/160 [00:06<00:00, 25.88 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  91%|█████████▏| 146/160 [00:06<00:00, 25.88 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[A
+Dl Size...:  92%|█████████▏| 147/160 [00:06<00:00, 26.96 MiB/s][ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  92%|█████████▏| 147/160 [00:06<00:00, 26.96 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  92%|█████████▎| 148/160 [00:06<00:00, 26.96 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  93%|█████████▎| 149/160 [00:06<00:00, 26.96 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  94%|█████████▍| 150/160 [00:06<00:00, 26.96 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  94%|█████████▍| 151/160 [00:06<00:00, 26.96 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  95%|█████████▌| 152/160 [00:06<00:00, 26.96 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  96%|█████████▌| 153/160 [00:06<00:00, 26.96 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  96%|█████████▋| 154/160 [00:06<00:00, 26.96 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  97%|█████████▋| 155/160 [00:06<00:00, 26.96 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  98%|█████████▊| 156/160 [00:06<00:00, 26.96 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  98%|█████████▊| 157/160 [00:06<00:00, 26.96 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  99%|█████████▉| 158/160 [00:06<00:00, 26.96 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...:  99%|█████████▉| 159/160 [00:06<00:00, 26.96 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...:   0%|          | 0/1 [00:06<?, ? url/s]
+Dl Size...: 100%|██████████| 160/160 [00:06<00:00, 26.96 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...: 100%|██████████| 1/1 [00:06<00:00,  6.71s/ url]Dl Completed...: 100%|██████████| 1/1 [00:06<00:00,  6.71s/ url]
+Dl Size...: 100%|██████████| 160/160 [00:06<00:00, 26.96 MiB/s][A
+
+Extraction completed...: 0 file [00:06, ? file/s][A[ADl Completed...: 100%|██████████| 1/1 [00:06<00:00,  6.71s/ url]
+Dl Size...: 100%|██████████| 160/160 [00:06<00:00, 26.96 MiB/s][A
+
+Extraction completed...:   0%|          | 0/1 [00:06<?, ? file/s][A[ADl Completed...: 100%|██████████| 1/1 [00:07<00:00,  6.71s/ url]
+Dl Size...: 100%|██████████| 160/160 [00:07<00:00, 26.96 MiB/s][A
+
+Extraction completed...:   0%|          | 0/2 [00:07<?, ? file/s][A[ADl Completed...: 100%|██████████| 1/1 [00:07<00:00,  6.71s/ url]
+Dl Size...: 100%|██████████| 160/160 [00:07<00:00, 26.96 MiB/s][A
+
+Extraction completed...:   0%|          | 0/3 [00:07<?, ? file/s][A[ADl Completed...: 100%|██████████| 1/1 [00:07<00:00,  6.71s/ url]
+Dl Size...: 100%|██████████| 160/160 [00:07<00:00, 26.96 MiB/s][A
+
+Extraction completed...:   0%|          | 0/4 [00:07<?, ? file/s][A[A
+
+Extraction completed...:  25%|██▌       | 1/4 [00:07<00:23,  8.00s/ file][A[ADl Completed...: 100%|██████████| 1/1 [00:07<00:00,  6.71s/ url]
+Dl Size...: 100%|██████████| 160/160 [00:07<00:00, 26.96 MiB/s][A
+
+Extraction completed...:  25%|██▌       | 1/4 [00:07<00:23,  8.00s/ file][A[ADl Completed...: 100%|██████████| 1/1 [00:07<00:00,  6.71s/ url]
+Dl Size...: 100%|██████████| 160/160 [00:07<00:00, 26.96 MiB/s][A
+
+Extraction completed...:  50%|█████     | 2/4 [00:07<00:15,  8.00s/ file][A[ADl Completed...: 100%|██████████| 1/1 [00:07<00:00,  6.71s/ url]
+Dl Size...: 100%|██████████| 160/160 [00:07<00:00, 26.96 MiB/s][A
+
+Extraction completed...:  75%|███████▌  | 3/4 [00:07<00:07,  8.00s/ file][A[ADl Completed...: 100%|██████████| 1/1 [00:08<00:00,  6.71s/ url]
+Dl Size...: 100%|██████████| 160/160 [00:08<00:00, 26.96 MiB/s][A
+
+Extraction completed...: 100%|██████████| 4/4 [00:08<00:00,  8.00s/ file][A[AExtraction completed...: 100%|██████████| 4/4 [00:08<00:00,  2.00s/ file]
+Dl Size...: 100%|██████████| 160/160 [00:08<00:00, 19.97 MiB/s]
+Dl Completed...: 100%|██████████| 1/1 [00:08<00:00,  8.01s/ url]
+Generating splits...:   0%|          | 0/2 [00:00<?, ? splits/s]
+Generating train examples...: 0 examples [00:00, ? examples/s][A
+Generating train examples...: 1 examples [00:02,  2.67s/ examples][A
+Generating train examples...: 2962 examples [00:03, 1033.47 examples/s][A
+Generating train examples...: 6008 examples [00:04, 1702.93 examples/s][A
+Generating train examples...: 9061 examples [00:05, 2137.79 examples/s][A
+Generating train examples...: 12110 examples [00:06, 2424.90 examples/s][A
+Generating train examples...: 15147 examples [00:07, 2614.86 examples/s][A
+Generating train examples...: 18206 examples [00:08, 2751.17 examples/s][A
+Generating train examples...: 21266 examples [00:09, 2845.31 examples/s][A
+Generating train examples...: 24236 examples [00:10, 2874.58 examples/s][A
+Generating train examples...: 27197 examples [00:11, 2820.02 examples/s][A
+Generating train examples...: 30079 examples [00:13, 2652.57 examples/s][A
+Generating train examples...: 33060 examples [00:14, 2745.33 examples/s][A
+Generating train examples...: 36119 examples [00:15, 2835.43 examples/s][A
+Generating train examples...: 39172 examples [00:16, 2898.78 examples/s][A
+Generating train examples...: 42223 examples [00:17, 2943.30 examples/s][A
+Generating train examples...: 45277 examples [00:18, 2975.82 examples/s][A
+Generating train examples...: 48342 examples [00:19, 3002.25 examples/s][A
+                                                                        [A
+Shuffling /tmp/tfds/cifar100/incomplete.S5ZW1Q_3.0.2/cifar100-train.tfrecord*...:   0%|          | 0/50000 [00:00<?, ? examples/s][A
+                                                                                                                                  [AGenerating splits...:  50%|█████     | 1/2 [00:19<00:19, 19.90s/ splits]
+Generating test examples...: 0 examples [00:00, ? examples/s][A
+Generating test examples...: 1331 examples [00:01, 1330.68 examples/s][A
+Generating test examples...: 4387 examples [00:02, 2345.05 examples/s][A
+Generating test examples...: 6764 examples [00:03, 1978.69 examples/s][A
+Generating test examples...: 9470 examples [00:04, 2235.66 examples/s][A
+                                                                      [A
+Shuffling /tmp/tfds/cifar100/incomplete.S5ZW1Q_3.0.2/cifar100-test.tfrecord*...:   0%|          | 0/10000 [00:00<?, ? examples/s][A
+                                                                                                                                 [AGenerating splits...: 100%|██████████| 2/2 [00:24<00:00, 10.95s/ splits]                                                                        Dataset cifar100 downloaded and prepared to /tmp/tfds/cifar100/3.0.2. Subsequent calls will reuse this data.
+Dataset info:
+  Features: ['id', 'image', 'label', 'coarse_label']
+  Label classes: 100
+Train: (50000, 32, 32, 3) (50000, 100)
+Test: (10000, 32, 32, 3) (10000, 100)
+Dataset loading time: 57.2557 seconds
+
+=== Phase 3: Function Compilation ===
+No compilation metadata found, JIT-compiling update function...
+Compilation completed in 43.2057 seconds
+Saved compilation metadata to /tmp/jax_cifar100_cnn_aot_cache/96df6e2667db3178149bc9a8592b7c0e_metadata.pickle
+
+=== Phase 4: Training Loop ===
+Epoch 0:
+  Learning rate: 0.01000
+  Total epoch time: 16.6871 sec
+  Batch loading time: 0.6852 sec
+  Training computation time: 0.8765 sec
+  Evaluation time: 14.5580 sec
+  Number of batches: 390
+  Training set accuracy: 0.012000 (1.20%)
+  Test set accuracy: 0.012400 (1.24%)
+  Best test accuracy so far: 0.012400 (1.24%)
+
+Epoch 1:
+  Learning rate: 0.01000
+  Total epoch time: 1.3217 sec
+  Batch loading time: 0.2600 sec
+  Training computation time: 0.9485 sec
+  Evaluation time: 0.0202 sec
+  Number of batches: 390
+  Training set accuracy: 0.017000 (1.70%)
+  Test set accuracy: 0.017700 (1.77%)
+  Best test accuracy so far: 0.017700 (1.77%)
+
+Epoch 2:
+  Learning rate: 0.01000
+  Total epoch time: 0.9772 sec
+  Batch loading time: 0.2765 sec
+  Training computation time: 0.6417 sec
+  Evaluation time: 0.0202 sec
+  Number of batches: 390
+  Training set accuracy: 0.024000 (2.40%)
+  Test set accuracy: 0.021300 (2.13%)
+  Best test accuracy so far: 0.021300 (2.13%)
+
+Epoch 3:
+  Learning rate: 0.01000
+  Total epoch time: 0.9956 sec
+  Batch loading time: 0.2887 sec
+  Training computation time: 0.6407 sec
+  Evaluation time: 0.0264 sec
+  Number of batches: 390
+  Training set accuracy: 0.025800 (2.58%)
+  Test set accuracy: 0.024100 (2.41%)
+  Best test accuracy so far: 0.024100 (2.41%)
+
+Epoch 4:
+  Learning rate: 0.01000
+  Total epoch time: 0.9585 sec
+  Batch loading time: 0.2563 sec
+  Training computation time: 0.6421 sec
+  Evaluation time: 0.0204 sec
+  Number of batches: 390
+  Training set accuracy: 0.033800 (3.38%)
+  Test set accuracy: 0.029300 (2.93%)
+  Best test accuracy so far: 0.029300 (2.93%)
+
+Epoch 5:
+  Learning rate: 0.01000
+  Total epoch time: 0.9584 sec
+  Batch loading time: 0.2566 sec
+  Training computation time: 0.6423 sec
+  Evaluation time: 0.0200 sec
+  Number of batches: 390
+  Training set accuracy: 0.029600 (2.96%)
+  Test set accuracy: 0.032800 (3.28%)
+  Best test accuracy so far: 0.032800 (3.28%)
+
+Epoch 6:
+  Learning rate: 0.01000
+  Total epoch time: 0.9624 sec
+  Batch loading time: 0.2626 sec
+  Training computation time: 0.6403 sec
+  Evaluation time: 0.0203 sec
+  Number of batches: 390
+  Training set accuracy: 0.035800 (3.58%)
+  Test set accuracy: 0.037000 (3.70%)
+  Best test accuracy so far: 0.037000 (3.70%)
+
+Epoch 7:
+  Learning rate: 0.01000
+  Total epoch time: 0.9584 sec
+  Batch loading time: 0.2582 sec
+  Training computation time: 0.6414 sec
+  Evaluation time: 0.0200 sec
+  Number of batches: 390
+  Training set accuracy: 0.038400 (3.84%)
+  Test set accuracy: 0.040400 (4.04%)
+  Best test accuracy so far: 0.040400 (4.04%)
+
+Epoch 8:
+  Learning rate: 0.01000
+  Total epoch time: 0.9691 sec
+  Batch loading time: 0.2502 sec
+  Training computation time: 0.6593 sec
+  Evaluation time: 0.0202 sec
+  Number of batches: 390
+  Training set accuracy: 0.043600 (4.36%)
+  Test set accuracy: 0.044300 (4.43%)
+  Best test accuracy so far: 0.044300 (4.43%)
+
+Epoch 9:
+  Learning rate: 0.01000
+  Total epoch time: 0.9881 sec
+  Batch loading time: 0.2524 sec
+  Training computation time: 0.6768 sec
+  Evaluation time: 0.0199 sec
+  Number of batches: 390
+  Training set accuracy: 0.047000 (4.70%)
+  Test set accuracy: 0.047200 (4.72%)
+  Best test accuracy so far: 0.047200 (4.72%)
+
+Epoch 10:
+  Learning rate: 0.00500
+  Total epoch time: 0.9583 sec
+  Batch loading time: 0.2579 sec
+  Training computation time: 0.6411 sec
+  Evaluation time: 0.0203 sec
+  Number of batches: 390
+  Training set accuracy: 0.050000 (5.00%)
+  Test set accuracy: 0.049300 (4.93%)
+  Best test accuracy so far: 0.049300 (4.93%)
+
+Epoch 11:
+  Learning rate: 0.00500
+  Total epoch time: 1.7924 sec
+  Batch loading time: 0.6226 sec
+  Training computation time: 0.9981 sec
+  Evaluation time: 0.1074 sec
+  Number of batches: 390
+  Training set accuracy: 0.049200 (4.92%)
+  Test set accuracy: 0.051100 (5.11%)
+  Best test accuracy so far: 0.051100 (5.11%)
+
+Epoch 12:
+  Learning rate: 0.00500
+  Total epoch time: 0.9734 sec
+  Batch loading time: 0.2739 sec
+  Training computation time: 0.6402 sec
+  Evaluation time: 0.0202 sec
+  Number of batches: 390
+  Training set accuracy: 0.051800 (5.18%)
+  Test set accuracy: 0.053100 (5.31%)
+  Best test accuracy so far: 0.053100 (5.31%)
+
+Epoch 13:
+  Learning rate: 0.00500
+  Total epoch time: 0.9759 sec
+  Batch loading time: 0.2773 sec
+  Training computation time: 0.6382 sec
+  Evaluation time: 0.0200 sec
+  Number of batches: 390
+  Training set accuracy: 0.052600 (5.26%)
+  Test set accuracy: 0.054800 (5.48%)
+  Best test accuracy so far: 0.054800 (5.48%)
+
+Epoch 14:
+  Learning rate: 0.00500
+  Total epoch time: 0.9858 sec
+  Batch loading time: 0.2658 sec
+  Training computation time: 0.6603 sec
+  Evaluation time: 0.0202 sec
+  Number of batches: 390
+  Training set accuracy: 0.060000 (6.00%)
+  Test set accuracy: 0.056000 (5.60%)
+  Best test accuracy so far: 0.056000 (5.60%)
+
+Epoch 15:
+  Learning rate: 0.00500
+  Total epoch time: 0.9872 sec
+  Batch loading time: 0.2887 sec
+  Training computation time: 0.6392 sec
+  Evaluation time: 0.0201 sec
+  Number of batches: 390
+  Training set accuracy: 0.056400 (5.64%)
+  Test set accuracy: 0.057000 (5.70%)
+  Best test accuracy so far: 0.057000 (5.70%)
+
+Epoch 16:
+  Learning rate: 0.00500
+  Total epoch time: 0.9576 sec
+  Batch loading time: 0.2570 sec
+  Training computation time: 0.6412 sec
+  Evaluation time: 0.0202 sec
+  Number of batches: 390
+  Training set accuracy: 0.056000 (5.60%)
+  Test set accuracy: 0.057700 (5.77%)
+  Best test accuracy so far: 0.057700 (5.77%)
+
+Epoch 17:
+  Learning rate: 0.00500
+  Total epoch time: 0.9599 sec
+  Batch loading time: 0.2575 sec
+  Training computation time: 0.6432 sec
+  Evaluation time: 0.0199 sec
+  Number of batches: 390
+  Training set accuracy: 0.056000 (5.60%)
+  Test set accuracy: 0.059400 (5.94%)
+  Best test accuracy so far: 0.059400 (5.94%)
+
+Epoch 18:
+  Learning rate: 0.00500
+  Total epoch time: 0.9476 sec
+  Batch loading time: 0.2450 sec
+  Training computation time: 0.6432 sec
+  Evaluation time: 0.0202 sec
+  Number of batches: 390
+  Training set accuracy: 0.062800 (6.28%)
+  Test set accuracy: 0.059600 (5.96%)
+  Best test accuracy so far: 0.059600 (5.96%)
+
+Epoch 19:
+  Learning rate: 0.00500
+  Total epoch time: 0.9544 sec
+  Batch loading time: 0.2526 sec
+  Training computation time: 0.6424 sec
+  Evaluation time: 0.0200 sec
+  Number of batches: 390
+  Training set accuracy: 0.062600 (6.26%)
+  Test set accuracy: 0.060900 (6.09%)
+  Best test accuracy so far: 0.060900 (6.09%)
+
+=== Training Summary ===
+Model initialization time: 14.6051 seconds
+Initial dataset loading time: 57.2557 seconds
+Function compilation time: 43.2057 seconds
+Training loop time: 36.3451 seconds
+  - Batch loading time: 6.0449 seconds
+  - Computation time: 13.7967 seconds
+  - Evaluation time: 15.0339 seconds
+Total time: 151.4115 seconds
+Final test accuracy: 0.060900 (6.09%)
+Best test accuracy: 0.060900 (6.09%)
+=== JAX XLA Timing Test with Focused PJRT StreamExecutor Logging ===
+JAX version: 0.5.3
+JAX backend: gpu
+JAX devices: [CudaDevice(id=0)]
+Log settings:
+  TF_CPP_MIN_LOG_LEVEL: 1
+  TF_CPP_VMODULE: None
+  JAX_LOG_COMPILES: None
+Precompiling function...
+Saved compilation metadata to /tmp/jax_direct_aot_cache/cb95baccffc13f9fc0b69993d8d568b6_metadata.pickle
+
+=== Testing Matrix Multiplication with Advanced Overlapped Data Transfer and Computation ===
+Matrix size: 4000x4000 (0.06 GB each)
+Number of matrix pairs to process: 200
+Maximum concurrent transfers: 4
+Worker 1: Generating matrix pair 1/200
+Worker 2: Generating matrix pair 2/200
+Worker 3: Generating matrix pair 3/200
+Worker 4: Generating matrix pair 4/200
+Worker 1: Matrix pair 1 transferred in 0.014431 seconds
+Worker 5: Generating matrix pair 5/200
+Compute: Processing matrix pair 1/200
+Worker 2: Matrix pair 2 transferred in 0.117833 seconds
+Worker 6: Generating matrix pair 6/200
+Worker 3: Matrix pair 3 transferred in 0.017657 seconds
+Worker 7: Generating matrix pair 7/200
+Worker 4: Matrix pair 4 transferred in 0.017413 seconds
+Worker 8: Generating matrix pair 8/200
+Compute: Matrix pair 1 computed in 2.566786 seconds (0.05 TFLOPS)
+Compute: Result transferred in 0.050508 seconds
+Compute: Processing matrix pair 2/200
+Compute: Matrix pair 2 computed in 0.005404 seconds (23.69 TFLOPS)
+Compute: Result transferred in 0.049508 seconds
+Compute: Processing matrix pair 3/200
+Compute: Matrix pair 3 computed in 0.005467 seconds (23.41 TFLOPS)
+Compute: Result transferred in 0.049178 seconds
+Compute: Processing matrix pair 4/200
+Compute: Matrix pair 4 computed in 0.005453 seconds (23.47 TFLOPS)
+Compute: Result transferred in 0.048680 seconds
+Worker 5: Matrix pair 5 transferred in 0.010250 seconds
+Worker 9: Generating matrix pair 9/200
+Compute: Processing matrix pair 5/200
+Compute: Matrix pair 5 computed in 0.010581 seconds (12.10 TFLOPS)
+Compute: Result transferred in 0.049026 seconds
+Worker 6: Matrix pair 6 transferred in 0.010242 seconds
+Worker 10: Generating matrix pair 10/200
+Compute: Processing matrix pair 6/200
+Compute: Matrix pair 6 computed in 0.010832 seconds (11.82 TFLOPS)
+Compute: Result transferred in 0.049263 seconds
+Worker 7: Matrix pair 7 transferred in 0.010361 seconds
+Worker 11: Generating matrix pair 11/200
+Compute: Processing matrix pair 7/200
+Compute: Matrix pair 7 computed in 0.010271 seconds (12.46 TFLOPS)
+Compute: Result transferred in 0.048648 seconds
+Worker 8: Matrix pair 8 transferred in 0.010048 seconds
+Worker 12: Generating matrix pair 12/200
+Compute: Processing matrix pair 8/200
+Compute: Matrix pair 8 computed in 0.010315 seconds (12.41 TFLOPS)
+Compute: Result transferred in 0.048535 seconds
+Worker 9: Matrix pair 9 transferred in 0.014707 seconds
+Worker 13: Generating matrix pair 13/200
+Compute: Processing matrix pair 9/200
+Compute: Matrix pair 9 computed in 0.010842 seconds (11.81 TFLOPS)
+Compute: Result transferred in 0.049479 seconds
+Worker 10: Matrix pair 10 transferred in 0.010140 seconds
+Worker 14: Generating matrix pair 14/200
+Compute: Processing matrix pair 10/200
+Compute: Matrix pair 10 computed in 0.011076 seconds (11.56 TFLOPS)
+Compute: Result transferred in 0.049259 seconds
+Worker 11: Matrix pair 11 transferred in 0.010173 seconds
+Worker 15: Generating matrix pair 15/200
+Compute: Processing matrix pair 11/200
+Compute: Matrix pair 11 computed in 0.010545 seconds (12.14 TFLOPS)
+Compute: Result transferred in 0.049128 seconds
+Worker 12: Matrix pair 12 transferred in 0.010196 seconds
+Worker 16: Generating matrix pair 16/200
+Compute: Processing matrix pair 12/200
+Compute: Matrix pair 12 computed in 0.010557 seconds (12.12 TFLOPS)
+Compute: Result transferred in 0.049076 seconds
+Worker 13: Matrix pair 13 transferred in 0.260442 seconds
+Worker 17: Generating matrix pair 17/200
+Compute: Processing matrix pair 13/200
+Compute: Matrix pair 13 computed in 0.125686 seconds (1.02 TFLOPS)
+Compute: Result transferred in 0.072819 seconds
+Worker 14: Matrix pair 14 transferred in 0.010386 seconds
+Worker 18: Generating matrix pair 18/200
+Compute: Processing matrix pair 14/200
+Compute: Matrix pair 14 computed in 0.015052 seconds (8.50 TFLOPS)
+Compute: Result transferred in 0.052435 seconds
+Worker 15: Matrix pair 15 transferred in 0.010204 seconds
+Worker 19: Generating matrix pair 19/200
+Compute: Processing matrix pair 15/200
+Compute: Matrix pair 15 computed in 0.011504 seconds (11.13 TFLOPS)
+Compute: Result transferred in 0.049789 seconds
+Worker 16: Matrix pair 16 transferred in 0.010054 seconds
+Worker 20: Generating matrix pair 20/200
+Compute: Processing matrix pair 16/200
+Compute: Matrix pair 16 computed in 0.011244 seconds (11.38 TFLOPS)
+Compute: Result transferred in 0.050183 seconds
+Worker 17: Matrix pair 17 transferred in 0.010637 seconds
+Worker 21: Generating matrix pair 21/200
+Compute: Processing matrix pair 17/200
+Compute: Matrix pair 17 computed in 0.010742 seconds (11.92 TFLOPS)
+Compute: Result transferred in 0.050749 seconds
+Worker 18: Matrix pair 18 transferred in 0.010349 seconds
+Worker 22: Generating matrix pair 22/200
+Compute: Processing matrix pair 18/200
+Compute: Matrix pair 18 computed in 0.012661 seconds (10.11 TFLOPS)
+Compute: Result transferred in 0.049284 seconds
+Worker 19: Matrix pair 19 transferred in 0.010057 seconds
+Worker 23: Generating matrix pair 23/200
+Compute: Processing matrix pair 19/200
+Compute: Matrix pair 19 computed in 0.010996 seconds (11.64 TFLOPS)
+Compute: Result transferred in 0.050599 seconds
+Worker 20: Matrix pair 20 transferred in 0.009987 seconds
+Worker 24: Generating matrix pair 24/200
+Compute: Processing matrix pair 20/200
+Compute: Matrix pair 20 computed in 0.011211 seconds (11.42 TFLOPS)
+Compute: Result transferred in 0.050330 seconds
+Worker 21: Matrix pair 21 transferred in 0.010404 seconds
+Worker 25: Generating matrix pair 25/200
+Compute: Processing matrix pair 21/200
+Compute: Matrix pair 21 computed in 0.011117 seconds (11.51 TFLOPS)
+Compute: Result transferred in 0.050139 seconds
+Worker 22: Matrix pair 22 transferred in 0.010274 seconds
+Worker 26: Generating matrix pair 26/200
+Compute: Processing matrix pair 22/200
+Compute: Matrix pair 22 computed in 0.012775 seconds (10.02 TFLOPS)
+Compute: Result transferred in 0.050016 seconds
+Worker 23: Matrix pair 23 transferred in 0.010064 seconds
+Worker 27: Generating matrix pair 27/200
+Compute: Processing matrix pair 23/200
+Compute: Matrix pair 23 computed in 0.011219 seconds (11.41 TFLOPS)
+Compute: Result transferred in 0.050218 seconds
+Worker 24: Matrix pair 24 transferred in 0.069855 seconds
+Worker 28: Generating matrix pair 28/200
+Compute: Processing matrix pair 24/200
+Compute: Matrix pair 24 computed in 0.087126 seconds (1.47 TFLOPS)
+Compute: Result transferred in 0.058237 seconds
+Worker 25: Matrix pair 25 transferred in 0.013002 seconds
+Worker 29: Generating matrix pair 29/200
+Compute: Processing matrix pair 25/200
+Compute: Matrix pair 25 computed in 0.011190 seconds (11.44 TFLOPS)
+Compute: Result transferred in 0.050677 seconds
+Worker 26: Matrix pair 26 transferred in 0.010265 seconds
+Worker 30: Generating matrix pair 30/200
+Compute: Processing matrix pair 26/200
+Compute: Matrix pair 26 computed in 0.012996 seconds (9.85 TFLOPS)
+Compute: Result transferred in 0.049790 seconds
+Worker 27: Matrix pair 27 transferred in 0.011785 seconds
+Worker 31: Generating matrix pair 31/200
+Compute: Processing matrix pair 27/200
+Compute: Matrix pair 27 computed in 0.013359 seconds (9.58 TFLOPS)
+Compute: Result transferred in 0.053698 seconds
+Worker 28: Matrix pair 28 transferred in 0.010301 seconds
+Worker 32: Generating matrix pair 32/200
+Compute: Processing matrix pair 28/200
+Compute: Matrix pair 28 computed in 0.011126 seconds (11.50 TFLOPS)
+Compute: Result transferred in 0.050286 seconds
+Worker 29: Matrix pair 29 transferred in 0.090414 seconds
+Worker 33: Generating matrix pair 33/200
+Compute: Processing matrix pair 29/200
+Compute: Matrix pair 29 computed in 0.019719 seconds (6.49 TFLOPS)
+Compute: Result transferred in 0.061610 seconds
+Worker 30: Matrix pair 30 transferred in 0.010421 seconds
+Worker 34: Generating matrix pair 34/200
+Compute: Processing matrix pair 30/200
+Compute: Matrix pair 30 computed in 0.015157 seconds (8.44 TFLOPS)
+Compute: Result transferred in 0.053118 seconds
+Worker 31: Matrix pair 31 transferred in 0.010210 seconds
+Worker 35: Generating matrix pair 35/200
+Compute: Processing matrix pair 31/200
+Compute: Matrix pair 31 computed in 0.013135 seconds (9.74 TFLOPS)
+Compute: Result transferred in 0.053431 seconds
+Worker 32: Matrix pair 32 transferred in 0.010263 seconds
+Worker 36: Generating matrix pair 36/200
+Compute: Processing matrix pair 32/200
+Compute: Matrix pair 32 computed in 0.011277 seconds (11.35 TFLOPS)
+Compute: Result transferred in 0.050200 seconds
+Worker 33: Matrix pair 33 transferred in 0.010397 seconds
+Worker 37: Generating matrix pair 37/200
+Compute: Processing matrix pair 33/200
+Compute: Matrix pair 33 computed in 0.011156 seconds (11.47 TFLOPS)
+Compute: Result transferred in 0.050153 seconds
+Worker 34: Matrix pair 34 transferred in 0.080290 seconds
+Worker 38: Generating matrix pair 38/200
+Compute: Processing matrix pair 34/200
+Compute: Matrix pair 34 computed in 0.163128 seconds (0.78 TFLOPS)
+Compute: Result transferred in 0.060867 seconds
+Worker 35: Matrix pair 35 transferred in 0.014434 seconds
+Worker 39: Generating matrix pair 39/200
+Compute: Processing matrix pair 35/200
+Compute: Matrix pair 35 computed in 0.013212 seconds (9.69 TFLOPS)
+Compute: Result transferred in 0.052868 seconds
+Worker 36: Matrix pair 36 transferred in 0.010095 seconds
+Worker 40: Generating matrix pair 40/200
+Compute: Processing matrix pair 36/200
+Compute: Matrix pair 36 computed in 0.011409 seconds (11.22 TFLOPS)
+Compute: Result transferred in 0.050395 seconds
+Worker 37: Matrix pair 37 transferred in 0.011367 seconds
+Worker 41: Generating matrix pair 41/200
+Compute: Processing matrix pair 37/200
+Compute: Matrix pair 37 computed in 0.010863 seconds (11.78 TFLOPS)
+Compute: Result transferred in 0.050680 seconds
+Worker 38: Matrix pair 38 transferred in 0.010252 seconds
+Worker 42: Generating matrix pair 42/200
+Compute: Processing matrix pair 38/200
+Compute: Matrix pair 38 computed in 0.013116 seconds (9.76 TFLOPS)
+Compute: Result transferred in 0.050172 seconds
+Worker 39: Matrix pair 39 transferred in 0.100578 seconds
+Worker 43: Generating matrix pair 43/200
+Compute: Processing matrix pair 39/200
+Compute: Matrix pair 39 computed in 0.019442 seconds (6.58 TFLOPS)
+Compute: Result transferred in 0.064094 seconds
+Worker 40: Matrix pair 40 transferred in 0.010205 seconds
+Worker 44: Generating matrix pair 44/200
+Compute: Processing matrix pair 40/200
+Compute: Matrix pair 40 computed in 0.011119 seconds (11.51 TFLOPS)
+Compute: Result transferred in 0.050088 seconds
+Worker 41: Matrix pair 41 transferred in 0.010456 seconds
+Worker 45: Generating matrix pair 45/200
+Compute: Processing matrix pair 41/200
+Compute: Matrix pair 41 computed in 0.011036 seconds (11.60 TFLOPS)
+Compute: Result transferred in 0.050650 seconds
+Worker 42: Matrix pair 42 transferred in 0.010513 seconds
+Worker 46: Generating matrix pair 46/200
+Compute: Processing matrix pair 42/200
+Compute: Matrix pair 42 computed in 0.015243 seconds (8.40 TFLOPS)
+Compute: Result transferred in 0.052885 seconds
+Worker 43: Matrix pair 43 transferred in 0.010327 seconds
+Worker 47: Generating matrix pair 47/200
+Compute: Processing matrix pair 43/200
+Compute: Matrix pair 43 computed in 0.013275 seconds (9.64 TFLOPS)
+Compute: Result transferred in 0.053575 seconds
+Worker 44: Matrix pair 44 transferred in 0.010337 seconds
+Worker 48: Generating matrix pair 48/200
+Compute: Processing matrix pair 44/200
+Compute: Matrix pair 44 computed in 0.011362 seconds (11.27 TFLOPS)
+Compute: Result transferred in 0.050499 seconds
+Worker 45: Matrix pair 45 transferred in 0.114479 seconds
+Worker 49: Generating matrix pair 49/200
+Compute: Processing matrix pair 45/200
+Compute: Matrix pair 45 computed in 0.162259 seconds (0.79 TFLOPS)
+Compute: Result transferred in 0.059112 seconds
+Worker 46: Matrix pair 46 transferred in 0.013058 seconds
+Worker 50: Generating matrix pair 50/200
+Compute: Processing matrix pair 46/200
+Compute: Matrix pair 46 computed in 0.013167 seconds (9.72 TFLOPS)
+Compute: Result transferred in 0.049801 seconds
+Worker 47: Matrix pair 47 transferred in 0.012334 seconds
+Worker 51: Generating matrix pair 51/200
+Compute: Processing matrix pair 47/200
+Compute: Matrix pair 47 computed in 0.011239 seconds (11.39 TFLOPS)
+Compute: Result transferred in 0.050543 seconds
+Worker 48: Matrix pair 48 transferred in 0.012542 seconds
+Worker 52: Generating matrix pair 52/200
+Compute: Processing matrix pair 48/200
+Compute: Matrix pair 48 computed in 0.011722 seconds (10.92 TFLOPS)
+Compute: Result transferred in 0.050306 seconds
+Worker 49: Matrix pair 49 transferred in 0.013479 seconds
+Worker 53: Generating matrix pair 53/200
+Compute: Processing matrix pair 49/200
+Compute: Matrix pair 49 computed in 0.011488 seconds (11.14 TFLOPS)
+Compute: Result transferred in 0.050432 seconds
+Worker 50: Matrix pair 50 transferred in 0.010192 seconds
+Worker 54: Generating matrix pair 54/200
+Compute: Processing matrix pair 50/200
+Compute: Matrix pair 50 computed in 0.013532 seconds (9.46 TFLOPS)
+Compute: Result transferred in 0.050219 seconds
+Worker 51: Matrix pair 51 transferred in 0.010235 seconds
+Worker 55: Generating matrix pair 55/200
+Compute: Processing matrix pair 51/200
+Compute: Matrix pair 51 computed in 0.011249 seconds (11.38 TFLOPS)
+Compute: Result transferred in 0.049950 seconds
+Worker 52: Matrix pair 52 transferred in 0.010248 seconds
+Worker 56: Generating matrix pair 56/200
+Compute: Processing matrix pair 52/200
+Compute: Matrix pair 52 computed in 0.011612 seconds (11.02 TFLOPS)
+Compute: Result transferred in 0.049895 seconds
+Worker 53: Matrix pair 53 transferred in 0.010071 seconds
+Worker 57: Generating matrix pair 57/200
+Compute: Processing matrix pair 53/200
+Compute: Matrix pair 53 computed in 0.011281 seconds (11.35 TFLOPS)
+Compute: Result transferred in 0.050417 seconds
+Worker 54: Matrix pair 54 transferred in 0.150894 seconds
+Worker 58: Generating matrix pair 58/200
+Compute: Processing matrix pair 54/200
+Compute: Matrix pair 54 computed in 0.022934 seconds (5.58 TFLOPS)
+Compute: Result transferred in 0.061395 seconds
+Worker 55: Matrix pair 55 transferred in 0.148551 seconds
+Worker 59: Generating matrix pair 59/200
+Compute: Processing matrix pair 55/200
+Compute: Matrix pair 55 computed in 0.205070 seconds (0.62 TFLOPS)
+Compute: Result transferred in 0.061017 seconds
+Worker 56: Matrix pair 56 transferred in 0.010075 seconds
+Worker 60: Generating matrix pair 60/200
+Compute: Processing matrix pair 56/200
+Compute: Matrix pair 56 computed in 0.011431 seconds (11.20 TFLOPS)
+Compute: Result transferred in 0.050227 seconds
+Worker 57: Matrix pair 57 transferred in 0.026784 seconds
+Worker 61: Generating matrix pair 61/200
+Compute: Processing matrix pair 57/200
+Compute: Matrix pair 57 computed in 0.011404 seconds (11.22 TFLOPS)
+Compute: Result transferred in 0.050452 seconds
+Worker 58: Matrix pair 58 transferred in 0.012630 seconds
+Worker 62: Generating matrix pair 62/200
+Compute: Processing matrix pair 58/200
+Compute: Matrix pair 58 computed in 0.012802 seconds (10.00 TFLOPS)
+Compute: Result transferred in 0.049179 seconds
+Worker 59: Matrix pair 59 transferred in 0.012507 seconds
+Worker 63: Generating matrix pair 63/200
+Compute: Processing matrix pair 59/200
+Compute: Matrix pair 59 computed in 0.011728 seconds (10.91 TFLOPS)
+Compute: Result transferred in 0.050606 seconds
+Worker 60: Matrix pair 60 transferred in 0.012455 seconds
+Worker 64: Generating matrix pair 64/200
+Compute: Processing matrix pair 60/200
+Compute: Matrix pair 60 computed in 0.011311 seconds (11.32 TFLOPS)
+Compute: Result transferred in 0.049929 seconds
+Worker 61: Matrix pair 61 transferred in 0.013153 seconds
+Worker 65: Generating matrix pair 65/200
+Compute: Processing matrix pair 61/200
+Compute: Matrix pair 61 computed in 0.011346 seconds (11.28 TFLOPS)
+Compute: Result transferred in 0.051027 seconds
+Worker 62: Matrix pair 62 transferred in 0.012832 seconds
+Worker 66: Generating matrix pair 66/200
+Compute: Processing matrix pair 62/200
+Compute: Matrix pair 62 computed in 0.013167 seconds (9.72 TFLOPS)
+Compute: Result transferred in 0.050417 seconds
+Worker 63: Matrix pair 63 transferred in 0.014607 seconds
+Worker 67: Generating matrix pair 67/200
+Compute: Processing matrix pair 63/200
+Compute: Matrix pair 63 computed in 0.120422 seconds (1.06 TFLOPS)
+Compute: Result transferred in 0.054653 seconds
+Worker 64: Matrix pair 64 transferred in 0.012376 seconds
+Worker 68: Generating matrix pair 68/200
+Compute: Processing matrix pair 64/200
+Compute: Matrix pair 64 computed in 0.011385 seconds (11.24 TFLOPS)
+Compute: Result transferred in 0.050447 seconds
+Worker 65: Matrix pair 65 transferred in 0.012955 seconds
+Worker 69: Generating matrix pair 69/200
+Compute: Processing matrix pair 65/200
+Compute: Matrix pair 65 computed in 0.011154 seconds (11.48 TFLOPS)
+Compute: Result transferred in 0.050688 seconds
+Worker 66: Matrix pair 66 transferred in 0.012652 seconds
+Worker 70: Generating matrix pair 70/200
+Compute: Processing matrix pair 66/200
+Compute: Matrix pair 66 computed in 0.015433 seconds (8.29 TFLOPS)
+Compute: Result transferred in 0.053697 seconds
+Worker 67: Matrix pair 67 transferred in 0.012671 seconds
+Worker 71: Generating matrix pair 71/200
+Compute: Processing matrix pair 67/200
+Compute: Matrix pair 67 computed in 0.013719 seconds (9.33 TFLOPS)
+Compute: Result transferred in 0.054101 seconds
+Worker 68: Matrix pair 68 transferred in 0.012447 seconds
+Worker 72: Generating matrix pair 72/200
+Compute: Processing matrix pair 68/200
+Compute: Matrix pair 68 computed in 0.011390 seconds (11.24 TFLOPS)
+Compute: Result transferred in 0.051071 seconds
+Worker 69: Matrix pair 69 transferred in 0.012572 seconds
+Worker 73: Generating matrix pair 73/200
+Compute: Processing matrix pair 69/200
+Compute: Matrix pair 69 computed in 0.011380 seconds (11.25 TFLOPS)
+Compute: Result transferred in 0.050031 seconds
+Worker 70: Matrix pair 70 transferred in 0.012846 seconds
+Worker 74: Generating matrix pair 74/200
+Compute: Processing matrix pair 70/200
+Compute: Matrix pair 70 computed in 0.013065 seconds (9.80 TFLOPS)
+Compute: Result transferred in 0.050022 seconds
+Worker 71: Matrix pair 71 transferred in 0.012423 seconds
+Worker 75: Generating matrix pair 75/200
+Compute: Processing matrix pair 71/200
+Compute: Matrix pair 71 computed in 0.013045 seconds (9.81 TFLOPS)
+Compute: Result transferred in 0.053892 seconds
+Worker 72: Matrix pair 72 transferred in 0.012563 seconds
+Worker 76: Generating matrix pair 76/200
+Compute: Processing matrix pair 72/200
+Compute: Matrix pair 72 computed in 0.011930 seconds (10.73 TFLOPS)
+Compute: Result transferred in 0.050378 seconds
+Worker 73: Matrix pair 73 transferred in 0.314179 seconds
+Worker 77: Generating matrix pair 77/200
+Compute: Processing matrix pair 73/200
+Compute: Matrix pair 73 computed in 0.097777 seconds (1.31 TFLOPS)
+Compute: Result transferred in 0.099360 seconds
+Worker 74: Matrix pair 74 transferred in 0.012536 seconds
+Worker 78: Generating matrix pair 78/200
+Compute: Processing matrix pair 74/200
+Compute: Matrix pair 74 computed in 0.013328 seconds (9.60 TFLOPS)
+Compute: Result transferred in 0.065717 seconds
+Worker 75: Matrix pair 75 transferred in 0.012550 seconds
+Worker 79: Generating matrix pair 79/200
+Compute: Processing matrix pair 75/200
+Compute: Matrix pair 75 computed in 0.011506 seconds (11.12 TFLOPS)
+Compute: Result transferred in 0.050652 seconds
+Worker 76: Matrix pair 76 transferred in 0.012354 seconds
+Worker 80: Generating matrix pair 80/200
+Compute: Processing matrix pair 76/200
+Compute: Matrix pair 76 computed in 0.011296 seconds (11.33 TFLOPS)
+Compute: Result transferred in 0.053572 seconds
+Worker 77: Matrix pair 77 transferred in 0.012616 seconds
+Worker 81: Generating matrix pair 81/200
+Compute: Processing matrix pair 77/200
+Compute: Matrix pair 77 computed in 0.010978 seconds (11.66 TFLOPS)
+Compute: Result transferred in 0.051068 seconds
+Worker 78: Matrix pair 78 transferred in 0.012746 seconds
+Worker 82: Generating matrix pair 82/200
+Compute: Processing matrix pair 78/200
+Compute: Matrix pair 78 computed in 0.013593 seconds (9.42 TFLOPS)
+Compute: Result transferred in 0.050425 seconds
+Worker 79: Matrix pair 79 transferred in 0.012353 seconds
+Worker 83: Generating matrix pair 83/200
+Compute: Processing matrix pair 79/200
+Compute: Matrix pair 79 computed in 0.011311 seconds (11.32 TFLOPS)
+Compute: Result transferred in 0.050506 seconds
+Worker 80: Matrix pair 80 transferred in 0.012516 seconds
+Worker 84: Generating matrix pair 84/200
+Compute: Processing matrix pair 80/200
+Compute: Matrix pair 80 computed in 0.011511 seconds (11.12 TFLOPS)
+Compute: Result transferred in 0.053495 seconds
+Worker 81: Matrix pair 81 transferred in 0.015087 seconds
+Worker 85: Generating matrix pair 85/200
+Compute: Processing matrix pair 81/200
+Compute: Matrix pair 81 computed in 0.135345 seconds (0.95 TFLOPS)
+Compute: Result transferred in 0.050320 seconds
+Worker 82: Matrix pair 82 transferred in 0.012679 seconds
+Worker 86: Generating matrix pair 86/200
+Compute: Processing matrix pair 82/200
+Compute: Matrix pair 82 computed in 0.013030 seconds (9.82 TFLOPS)
+Compute: Result transferred in 0.049694 seconds
+Worker 83: Matrix pair 83 transferred in 0.012447 seconds
+Worker 87: Generating matrix pair 87/200
+Compute: Processing matrix pair 83/200
+Compute: Matrix pair 83 computed in 0.011199 seconds (11.43 TFLOPS)
+Compute: Result transferred in 0.050476 seconds
+Worker 84: Matrix pair 84 transferred in 0.012640 seconds
+Worker 88: Generating matrix pair 88/200
+Compute: Processing matrix pair 84/200
+Compute: Matrix pair 84 computed in 0.081731 seconds (1.57 TFLOPS)
+Compute: Result transferred in 0.213057 seconds
+Worker 85: Matrix pair 85 transferred in 0.113249 seconds
+Worker 89: Generating matrix pair 89/200
+Compute: Processing matrix pair 85/200
+Compute: Matrix pair 85 computed in 0.050027 seconds (2.56 TFLOPS)
+Compute: Result transferred in 0.051209 seconds
+Worker 86: Matrix pair 86 transferred in 0.012680 seconds
+Worker 90: Generating matrix pair 90/200
+Compute: Processing matrix pair 86/200
+Compute: Matrix pair 86 computed in 0.013427 seconds (9.53 TFLOPS)
+Compute: Result transferred in 0.050792 seconds
+Worker 87: Matrix pair 87 transferred in 0.010209 seconds
+Worker 91: Generating matrix pair 91/200
+Compute: Processing matrix pair 87/200
+Compute: Matrix pair 87 computed in 0.013149 seconds (9.73 TFLOPS)
+Compute: Result transferred in 0.051023 seconds
+Worker 88: Matrix pair 88 transferred in 0.010324 seconds
+Worker 92: Generating matrix pair 92/200
+Compute: Processing matrix pair 88/200
+Compute: Matrix pair 88 computed in 0.013511 seconds (9.47 TFLOPS)
+Compute: Result transferred in 0.053692 seconds
+Worker 89: Matrix pair 89 transferred in 0.010081 seconds
+Worker 93: Generating matrix pair 93/200
+Compute: Processing matrix pair 89/200
+Compute: Matrix pair 89 computed in 0.012906 seconds (9.92 TFLOPS)
+Compute: Result transferred in 0.050782 seconds
+Worker 90: Matrix pair 90 transferred in 0.010426 seconds
+Worker 94: Generating matrix pair 94/200
+Compute: Processing matrix pair 90/200
+Compute: Matrix pair 90 computed in 0.014482 seconds (8.84 TFLOPS)
+Compute: Result transferred in 0.050335 seconds
+Worker 91: Matrix pair 91 transferred in 0.010248 seconds
+Worker 95: Generating matrix pair 95/200
+Compute: Processing matrix pair 91/200
+Compute: Matrix pair 91 computed in 0.013239 seconds (9.67 TFLOPS)
+Compute: Result transferred in 0.050683 seconds
+Worker 92: Matrix pair 92 transferred in 0.010269 seconds
+Worker 96: Generating matrix pair 96/200
+Compute: Processing matrix pair 92/200
+Compute: Matrix pair 92 computed in 0.013607 seconds (9.41 TFLOPS)
+Compute: Result transferred in 0.053885 seconds
+Worker 93: Matrix pair 93 transferred in 0.010602 seconds
+Worker 97: Generating matrix pair 97/200
+Compute: Processing matrix pair 93/200
+Compute: Matrix pair 93 computed in 0.013292 seconds (9.63 TFLOPS)
+Compute: Result transferred in 0.050848 seconds
+Worker 94: Matrix pair 94 transferred in 0.010410 seconds
+Worker 98: Generating matrix pair 98/200
+Compute: Processing matrix pair 94/200
+Compute: Matrix pair 94 computed in 0.013853 seconds (9.24 TFLOPS)
+Compute: Result transferred in 0.050497 seconds
+Worker 95: Matrix pair 95 transferred in 0.010200 seconds
+Worker 99: Generating matrix pair 99/200
+Compute: Processing matrix pair 95/200
+Compute: Matrix pair 95 computed in 0.013339 seconds (9.60 TFLOPS)
+Compute: Result transferred in 0.051339 seconds
+Worker 96: Matrix pair 96 transferred in 0.045951 seconds
+Worker 100: Generating matrix pair 100/200
+Compute: Processing matrix pair 96/200
+Compute: Matrix pair 96 computed in 0.045744 seconds (2.80 TFLOPS)
+Compute: Result transferred in 0.063392 seconds
+Worker 97: Matrix pair 97 transferred in 0.010330 seconds
+Worker 101: Generating matrix pair 101/200
+Compute: Processing matrix pair 97/200
+Compute: Matrix pair 97 computed in 0.013120 seconds (9.76 TFLOPS)
+Compute: Result transferred in 0.051264 seconds
+Worker 98: Matrix pair 98 transferred in 0.012628 seconds
+Worker 102: Generating matrix pair 102/200
+Compute: Processing matrix pair 98/200
+Compute: Matrix pair 98 computed in 0.013474 seconds (9.50 TFLOPS)
+Compute: Result transferred in 0.051283 seconds
+Worker 99: Matrix pair 99 transferred in 0.100850 seconds
+Worker 103: Generating matrix pair 103/200
+Compute: Processing matrix pair 99/200
+Compute: Matrix pair 99 computed in 0.160474 seconds (0.80 TFLOPS)
+Compute: Result transferred in 0.062623 seconds
+Worker 100: Matrix pair 100 transferred in 0.012672 seconds
+Worker 104: Generating matrix pair 104/200
+Compute: Processing matrix pair 100/200
+Compute: Matrix pair 100 computed in 0.012552 seconds (10.20 TFLOPS)
+Compute: Result transferred in 0.053996 seconds
+Worker 101: Matrix pair 101 transferred in 0.017445 seconds
+Worker 105: Generating matrix pair 105/200
+Compute: Processing matrix pair 101/200
+Compute: Matrix pair 101 computed in 0.012764 seconds (10.03 TFLOPS)
+Compute: Result transferred in 0.050760 seconds
+Worker 102: Matrix pair 102 transferred in 0.010211 seconds
+Worker 106: Generating matrix pair 106/200
+Compute: Processing matrix pair 102/200
+Compute: Matrix pair 102 computed in 0.014226 seconds (9.00 TFLOPS)
+Compute: Result transferred in 0.050444 seconds
+Worker 103: Matrix pair 103 transferred in 0.010320 seconds
+Worker 107: Generating matrix pair 107/200
+Compute: Processing matrix pair 103/200
+Compute: Matrix pair 103 computed in 0.013093 seconds (9.78 TFLOPS)
+Compute: Result transferred in 0.051003 seconds
+Worker 104: Matrix pair 104 transferred in 0.010212 seconds
+Worker 108: Generating matrix pair 108/200
+Compute: Processing matrix pair 104/200
+Compute: Matrix pair 104 computed in 0.013838 seconds (9.25 TFLOPS)
+Compute: Result transferred in 0.054128 seconds
+Worker 105: Matrix pair 105 transferred in 0.010223 seconds
+Worker 109: Generating matrix pair 109/200
+Compute: Processing matrix pair 105/200
+Compute: Matrix pair 105 computed in 0.013431 seconds (9.53 TFLOPS)
+Compute: Result transferred in 0.050960 seconds
+Worker 106: Matrix pair 106 transferred in 0.010438 seconds
+Worker 110: Generating matrix pair 110/200
+Compute: Processing matrix pair 106/200
+Compute: Matrix pair 106 computed in 0.014244 seconds (8.99 TFLOPS)
+Compute: Result transferred in 0.051106 seconds
+Worker 107: Matrix pair 107 transferred in 0.044950 seconds
+Worker 111: Generating matrix pair 111/200
+Compute: Processing matrix pair 107/200
+Compute: Matrix pair 107 computed in 0.048715 seconds (2.63 TFLOPS)
+Compute: Result transferred in 0.060051 seconds
+Worker 108: Matrix pair 108 transferred in 0.010338 seconds
+Worker 112: Generating matrix pair 112/200
+Compute: Processing matrix pair 108/200
+Compute: Matrix pair 108 computed in 0.013057 seconds (9.80 TFLOPS)
+Compute: Result transferred in 0.053607 seconds
+Worker 109: Matrix pair 109 transferred in 0.099922 seconds
+Worker 113: Generating matrix pair 113/200
+Compute: Processing matrix pair 109/200
+Compute: Matrix pair 109 computed in 0.316939 seconds (0.40 TFLOPS)
+Compute: Result transferred in 0.077902 seconds
+Worker 110: Matrix pair 110 transferred in 0.010051 seconds
+Worker 114: Generating matrix pair 114/200
+Compute: Processing matrix pair 110/200
+Compute: Matrix pair 110 computed in 0.014227 seconds (9.00 TFLOPS)
+Compute: Result transferred in 0.051458 seconds
+Worker 111: Matrix pair 111 transferred in 0.012161 seconds
+Worker 115: Generating matrix pair 115/200
+Compute: Processing matrix pair 111/200
+Compute: Matrix pair 111 computed in 0.013275 seconds (9.64 TFLOPS)
+Compute: Result transferred in 0.051587 seconds
+Worker 112: Matrix pair 112 transferred in 0.010180 seconds
+Worker 116: Generating matrix pair 116/200
+Compute: Processing matrix pair 112/200
+Compute: Matrix pair 112 computed in 0.013148 seconds (9.74 TFLOPS)
+Compute: Result transferred in 0.054007 seconds
+Worker 113: Matrix pair 113 transferred in 0.010218 seconds
+Worker 117: Generating matrix pair 117/200
+Compute: Processing matrix pair 113/200
+Compute: Matrix pair 113 computed in 0.013073 seconds (9.79 TFLOPS)
+Compute: Result transferred in 0.051030 seconds
+Worker 114: Matrix pair 114 transferred in 0.010155 seconds
+Worker 118: Generating matrix pair 118/200
+Compute: Processing matrix pair 114/200
+Compute: Matrix pair 114 computed in 0.014319 seconds (8.94 TFLOPS)
+Compute: Result transferred in 0.050583 seconds
+Worker 115: Matrix pair 115 transferred in 0.010312 seconds
+Worker 119: Generating matrix pair 119/200
+Compute: Processing matrix pair 115/200
+Compute: Matrix pair 115 computed in 0.013458 seconds (9.51 TFLOPS)
+Compute: Result transferred in 0.051668 seconds
+Worker 116: Matrix pair 116 transferred in 0.010198 seconds
+Worker 120: Generating matrix pair 120/200
+Compute: Processing matrix pair 116/200
+Compute: Matrix pair 116 computed in 0.013841 seconds (9.25 TFLOPS)
+Compute: Result transferred in 0.053975 seconds
+Worker 117: Matrix pair 117 transferred in 0.010661 seconds
+Worker 121: Generating matrix pair 121/200
+Compute: Processing matrix pair 117/200
+Compute: Matrix pair 117 computed in 0.013258 seconds (9.65 TFLOPS)
+Compute: Result transferred in 0.051507 seconds
+Worker 118: Matrix pair 118 transferred in 0.010301 seconds
+Worker 122: Generating matrix pair 122/200
+Compute: Processing matrix pair 118/200
+Compute: Matrix pair 118 computed in 0.014467 seconds (8.85 TFLOPS)
+Compute: Result transferred in 0.050687 seconds
+Worker 119: Matrix pair 119 transferred in 0.010314 seconds
+Worker 123: Generating matrix pair 123/200
+Compute: Processing matrix pair 119/200
+Compute: Matrix pair 119 computed in 0.013395 seconds (9.56 TFLOPS)
+Compute: Result transferred in 0.050937 seconds
+Worker 120: Matrix pair 120 transferred in 0.010374 seconds
+Worker 124: Generating matrix pair 124/200
+Compute: Processing matrix pair 120/200
+Compute: Matrix pair 120 computed in 0.013215 seconds (9.69 TFLOPS)
+Compute: Result transferred in 0.053744 seconds
+Worker 121: Matrix pair 121 transferred in 0.130719 seconds
+Worker 125: Generating matrix pair 125/200
+Compute: Processing matrix pair 121/200
+Compute: Matrix pair 121 computed in 0.280942 seconds (0.46 TFLOPS)
+Compute: Result transferred in 0.060192 seconds
+Worker 122: Matrix pair 122 transferred in 0.010294 seconds
+Worker 126: Generating matrix pair 126/200
+Compute: Processing matrix pair 122/200
+Compute: Matrix pair 122 computed in 0.014214 seconds (9.01 TFLOPS)
+Compute: Result transferred in 0.050971 seconds
+Worker 123: Matrix pair 123 transferred in 0.010220 seconds
+Worker 127: Generating matrix pair 127/200
+Compute: Processing matrix pair 123/200
+Compute: Matrix pair 123 computed in 0.013682 seconds (9.36 TFLOPS)
+Compute: Result transferred in 0.051668 seconds
+Worker 124: Matrix pair 124 transferred in 0.010195 seconds
+Worker 128: Generating matrix pair 128/200
+Compute: Processing matrix pair 124/200
+Compute: Matrix pair 124 computed in 0.013286 seconds (9.63 TFLOPS)
+Compute: Result transferred in 0.054179 seconds
+Worker 125: Matrix pair 125 transferred in 0.089880 seconds
+Worker 129: Generating matrix pair 129/200
+Compute: Processing matrix pair 125/200
+Compute: Matrix pair 125 computed in 0.022077 seconds (5.80 TFLOPS)
+Compute: Result transferred in 0.073539 seconds
+Worker 126: Matrix pair 126 transferred in 0.010640 seconds
+Worker 130: Generating matrix pair 130/200
+Compute: Processing matrix pair 126/200
+Compute: Matrix pair 126 computed in 0.014228 seconds (9.00 TFLOPS)
+Compute: Result transferred in 0.051117 seconds
+Worker 127: Matrix pair 127 transferred in 0.010277 seconds
+Worker 131: Generating matrix pair 131/200
+Worker 128: Matrix pair 128 transferred in 0.014933 seconds
+Worker 132: Generating matrix pair 132/200
+Worker 129: Matrix pair 129 transferred in 0.014883 seconds
+Worker 133: Generating matrix pair 133/200
+Worker 130: Matrix pair 130 transferred in 0.015688 seconds
+Worker 134: Generating matrix pair 134/200
+Worker 131: Matrix pair 131 transferred in 0.016371 seconds
+Worker 135: Generating matrix pair 135/200
+Worker 132: Matrix pair 132 transferred in 0.015530 seconds
+Worker 136: Generating matrix pair 136/200
+Worker 133: Matrix pair 133 transferred in 0.054285 seconds
+Worker 137: Generating matrix pair 137/200
+Worker 134: Matrix pair 134 transferred in 0.017290 seconds
+Worker 138: Generating matrix pair 138/200
+Worker 135: Matrix pair 135 transferred in 0.016070 seconds
+Worker 139: Generating matrix pair 139/200
+Worker 136: Matrix pair 136 transferred in 0.015298 seconds
+Worker 140: Generating matrix pair 140/200
+Worker 137: Matrix pair 137 transferred in 0.015239 seconds
+Worker 141: Generating matrix pair 141/200
+Worker 138: Matrix pair 138 transferred in 0.016041 seconds
+Worker 142: Generating matrix pair 142/200
+Worker 139: Matrix pair 139 transferred in 0.016072 seconds
+Worker 143: Generating matrix pair 143/200
+Worker 140: Matrix pair 140 transferred in 0.014872 seconds
+Worker 144: Generating matrix pair 144/200
+Traceback (most recent call last):
+  File "/mnt/tier2/users/u100122/jaxapp/jax_notshared_matmul_cifar.py", line 556, in run
+    for future in concurrent.futures.as_completed(future_to_idx):
+  File "/apps/USE/easybuild/release/2024.1/software/Python/3.12.3-GCCcore-13.3.0/lib/python3.12/concurrent/futures/_base.py", line 243, in as_completed
+    waiter.event.wait(wait_timeout)
+  File "/apps/USE/easybuild/release/2024.1/software/Python/3.12.3-GCCcore-13.3.0/lib/python3.12/threading.py", line 655, in wait
+    signaled = self._cond.wait(timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/apps/USE/easybuild/release/2024.1/software/Python/3.12.3-GCCcore-13.3.0/lib/python3.12/threading.py", line 355, in wait
+    waiter.acquire()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/tier2/users/u100122/jaxapp/jax_notshared_matmul_cifar.py", line 907, in <module>
+    main_mm()
+  File "/mnt/tier2/users/u100122/jaxapp/jax_notshared_matmul_cifar.py", line 900, in main_mm
+    test_large_matrix_multiplication_direct_aot_multiple()
+  File "/mnt/tier2/users/u100122/jaxapp/jax_notshared_matmul_cifar.py", line 614, in test_large_matrix_multiplication_direct_aot_multiple
+    results = worker.run()
+              ^^^^^^^^^^^^
+  File "/mnt/tier2/users/u100122/jaxapp/jax_notshared_matmul_cifar.py", line 548, in run
+    with concurrent.futures.ThreadPoolExecutor(max_workers=self.max_concurrent_transfers) as executor:
+  File "/apps/USE/easybuild/release/2024.1/software/Python/3.12.3-GCCcore-13.3.0/lib/python3.12/concurrent/futures/_base.py", line 647, in __exit__
+    self.shutdown(wait=True)
+  File "/apps/USE/easybuild/release/2024.1/software/Python/3.12.3-GCCcore-13.3.0/lib/python3.12/concurrent/futures/thread.py", line 238, in shutdown
+    t.join()
+  File "/apps/USE/easybuild/release/2024.1/software/Python/3.12.3-GCCcore-13.3.0/lib/python3.12/threading.py", line 1147, in join
+    self._wait_for_tstate_lock()
+  File "/apps/USE/easybuild/release/2024.1/software/Python/3.12.3-GCCcore-13.3.0/lib/python3.12/threading.py", line 1167, in _wait_for_tstate_lock
+    if lock.acquire(block, timeout):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

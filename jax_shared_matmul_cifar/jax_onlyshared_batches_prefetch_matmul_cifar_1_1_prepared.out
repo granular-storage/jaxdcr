@@ -1,0 +1,1046 @@
+2025-04-28 12:31:24.201543: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:467] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1745836284.685720   13313 cuda_dnn.cc:8579] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1745836284.968033   13313 cuda_blas.cc:1407] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+W0000 00:00:1745836286.086313   13313 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1745836286.087392   13313 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1745836286.087397   13313 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+W0000 00:00:1745836286.087399   13313 computation_placer.cc:177] computation placer already registered. Please check linkage and avoid linking the same target more than once.
+2025-04-28 12:36:17.461452: E external/xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2025-04-28 12:36:17.622315: E external/xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2025-04-28 12:36:17.788218: E external/xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2025-04-28 12:36:17.950357: E external/xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2025-04-28 12:36:18.112372: E external/xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2025-04-28 12:36:18.259879: E external/xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2025-04-28 12:36:18.417035: E external/xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2025-04-28 12:36:18.577202: E external/xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2025-04-28 12:36:18.737991: E external/xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2025-04-28 12:36:18.896289: E external/xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2025-04-28 12:36:19.049887: E external/xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2025-04-28 12:36:19.195390: E external/xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+2025-04-28 12:36:33.267518: E external/xla/xla/stream_executor/cuda/cuda_timer.cc:86] Delay kernel timed out: measured time has sub-optimal accuracy. There may be a missing warmup execution, please investigate in Nsight Systems.
+
+=== Starting Enhanced CIFAR-100 CNN Training ===
+
+JAX version: 0.5.3
+JAX devices: [CudaDevice(id=0)]
+
+=== Phase 1: Model Initialization ===
+Model initialization time: 128.1539 seconds
+
+=== Phase 2: Dataset Loading ===
+Loading preprocessed dataset for evaluation...
+Dataset loading time: 79.8599 seconds
+
+=== Phase 3: Function Compilation ===
+Found existing compilation metadata from Mon Apr 28 11:49:47 2025
+Using previously compiled function from cache
+Previous compilation took 73.3985 seconds
+
+=== Phase 4: Initializing Cached Batch Loader ===
+Found existing compilation metadata from Mon Apr 28 11:49:57 2025
+
+=== Phase 5: Training Loop ===
+
+=== Running Enhanced Matrix Multiplication with Precomputed Data ===
+Matrix size: 4000x4000 (0.06 GB each)
+Number of matrix pairs to process: 200
+Maximum concurrent transfers: 1
+Matrix worker started in background
+Warning: Batch queue is empty, waiting for loader...
+Worker: Matrix pair 1 transferred in 0.091291 seconds
+Worker: Matrix pair 2 transferred in 0.014618 seconds
+Worker: Matrix pair 3 transferred in 0.016062 seconds
+Worker: Matrix pair 4 transferred in 0.015891 seconds
+Worker: Matrix pair 5 transferred in 0.010999 seconds
+Worker: Matrix pair 6 transferred in 0.015926 seconds
+Worker: Matrix pair 7 transferred in 0.016331 seconds
+Worker: Matrix pair 8 transferred in 0.155116 seconds
+Worker: Matrix pair 9 transferred in 0.011734 seconds
+Worker: Matrix pair 10 transferred in 0.018552 seconds
+Worker: Matrix pair 11 transferred in 0.016350 seconds
+Worker: Matrix pair 12 transferred in 0.018480 seconds
+Worker: Matrix pair 13 transferred in 0.015574 seconds
+Worker: Matrix pair 14 transferred in 0.017910 seconds
+Worker: Matrix pair 15 transferred in 0.016276 seconds
+Worker: Matrix pair 16 transferred in 0.017681 seconds
+Worker: Matrix pair 17 transferred in 4.228860 seconds
+Worker: Matrix pair 18 transferred in 0.019831 seconds
+Worker: Matrix pair 19 transferred in 0.019321 seconds
+Worker: Matrix pair 20 transferred in 0.020646 seconds
+Worker: Matrix pair 21 transferred in 0.019043 seconds
+Worker: Matrix pair 22 transferred in 0.017404 seconds
+Worker: Matrix pair 23 transferred in 0.019955 seconds
+Worker: Matrix pair 24 transferred in 0.019932 seconds
+Worker: Matrix pair 25 transferred in 0.017871 seconds
+Worker: Matrix pair 26 transferred in 0.018235 seconds
+Worker: Matrix pair 27 transferred in 0.017255 seconds
+Worker: Matrix pair 28 transferred in 0.017988 seconds
+Worker: Matrix pair 29 transferred in 0.011415 seconds
+Worker: Matrix pair 30 transferred in 0.019564 seconds
+Worker: Matrix pair 31 transferred in 0.016349 seconds
+Worker: Matrix pair 32 transferred in 0.027214 seconds
+Worker: Matrix pair 33 transferred in 0.017062 seconds
+Worker: Matrix pair 34 transferred in 0.019119 seconds
+Worker: Matrix pair 35 transferred in 0.016781 seconds
+Worker: Matrix pair 36 transferred in 0.018944 seconds
+Worker: Matrix pair 37 transferred in 0.017374 seconds
+Worker: Matrix pair 38 transferred in 0.019006 seconds
+Worker: Matrix pair 39 transferred in 0.017287 seconds
+Worker: Matrix pair 40 transferred in 0.019314 seconds
+Worker: Matrix pair 41 transferred in 0.016807 seconds
+Worker: Matrix pair 42 transferred in 0.018765 seconds
+Worker: Matrix pair 43 transferred in 0.017004 seconds
+Worker: Matrix pair 44 transferred in 0.018766 seconds
+Worker: Matrix pair 45 transferred in 0.017177 seconds
+Worker: Matrix pair 46 transferred in 0.018823 seconds
+Worker: Matrix pair 47 transferred in 0.017420 seconds
+Worker: Matrix pair 48 transferred in 0.019046 seconds
+Worker: Matrix pair 49 transferred in 0.017426 seconds
+Worker: Matrix pair 50 transferred in 0.019193 seconds
+Worker: Matrix pair 51 transferred in 0.010538 seconds
+Worker: Matrix pair 52 transferred in 0.019836 seconds
+Worker: Matrix pair 53 transferred in 0.016181 seconds
+Worker: Matrix pair 54 transferred in 0.019845 seconds
+Worker: Matrix pair 55 transferred in 0.016239 seconds
+Worker: Matrix pair 56 transferred in 0.104818 seconds
+Worker: Matrix pair 57 transferred in 0.326491 seconds
+Worker: Matrix pair 58 transferred in 0.013844 seconds
+Worker: Matrix pair 59 transferred in 0.020240 seconds
+Worker: Matrix pair 60 transferred in 0.017032 seconds
+Worker: Matrix pair 61 transferred in 0.020032 seconds
+Worker: Matrix pair 62 transferred in 0.017266 seconds
+Worker: Matrix pair 63 transferred in 0.019925 seconds
+Worker: Matrix pair 64 transferred in 0.016697 seconds
+Worker: Matrix pair 65 transferred in 0.020077 seconds
+Worker: Matrix pair 66 transferred in 0.017421 seconds
+Worker: Matrix pair 67 transferred in 0.019902 seconds
+Worker: Matrix pair 68 transferred in 0.017166 seconds
+Worker: Matrix pair 69 transferred in 0.019634 seconds
+Worker: Matrix pair 70 transferred in 0.017140 seconds
+Worker: Matrix pair 71 transferred in 0.019889 seconds
+Worker: Matrix pair 72 transferred in 0.231948 seconds
+Worker: Matrix pair 73 transferred in 0.014798 seconds
+Worker: Matrix pair 74 transferred in 0.167592 seconds
+Worker: Matrix pair 75 transferred in 0.077927 seconds
+Worker: Matrix pair 76 transferred in 0.055603 seconds
+Worker: Matrix pair 77 transferred in 0.053401 seconds
+Worker: Matrix pair 78 transferred in 0.188821 seconds
+Worker: Matrix pair 79 transferred in 0.065280 seconds
+Worker: Matrix pair 80 transferred in 0.054671 seconds
+Worker: Matrix pair 81 transferred in 0.052824 seconds
+Worker: Matrix pair 82 transferred in 0.190034 seconds
+Worker: Matrix pair 83 transferred in 0.055028 seconds
+Worker: Matrix pair 84 transferred in 0.020035 seconds
+Worker: Matrix pair 85 transferred in 0.016582 seconds
+Worker: Matrix pair 86 transferred in 0.019747 seconds
+Worker: Matrix pair 87 transferred in 0.016468 seconds
+Worker: Matrix pair 88 transferred in 0.020079 seconds
+Worker: Matrix pair 89 transferred in 0.016641 seconds
+Worker: Matrix pair 90 transferred in 0.021222 seconds
+Worker: Matrix pair 91 transferred in 0.016292 seconds
+Worker: Matrix pair 92 transferred in 0.019970 seconds
+Worker: Matrix pair 93 transferred in 0.016329 seconds
+Worker: Matrix pair 94 transferred in 0.020001 seconds
+Worker: Matrix pair 95 transferred in 0.010811 seconds
+Worker: Matrix pair 96 transferred in 0.019988 seconds
+Worker: Matrix pair 97 transferred in 0.016473 seconds
+Worker: Matrix pair 98 transferred in 0.019890 seconds
+Worker: Matrix pair 99 transferred in 0.016665 seconds
+Worker: Matrix pair 100 transferred in 0.020373 seconds
+Worker: Matrix pair 101 transferred in 0.016574 seconds
+Worker: Matrix pair 102 transferred in 0.019850 seconds
+Worker: Matrix pair 103 transferred in 0.016338 seconds
+Worker: Matrix pair 104 transferred in 0.019976 seconds
+Worker: Matrix pair 105 transferred in 0.016620 seconds
+Worker: Matrix pair 106 transferred in 0.987519 seconds
+Worker: Matrix pair 107 transferred in 0.010748 seconds
+Worker: Matrix pair 108 transferred in 0.020747 seconds
+Worker: Matrix pair 109 transferred in 0.017030 seconds
+Worker: Matrix pair 110 transferred in 0.020343 seconds
+Worker: Matrix pair 111 transferred in 0.016773 seconds
+Worker: Matrix pair 112 transferred in 0.020396 seconds
+Worker: Matrix pair 113 transferred in 0.016963 seconds
+Worker: Matrix pair 114 transferred in 0.020394 seconds
+Worker: Matrix pair 115 transferred in 0.017167 seconds
+Worker: Matrix pair 116 transferred in 0.010423 seconds
+Worker: Matrix pair 117 transferred in 0.020698 seconds
+Worker: Matrix pair 118 transferred in 0.017277 seconds
+Worker: Matrix pair 119 transferred in 0.020545 seconds
+Worker: Matrix pair 120 transferred in 0.016901 seconds
+Worker: Matrix pair 121 transferred in 0.020338 seconds
+Worker: Matrix pair 122 transferred in 0.017257 seconds
+Worker: Matrix pair 123 transferred in 0.020090 seconds
+Worker: Matrix pair 124 transferred in 0.016851 seconds
+Worker: Matrix pair 125 transferred in 0.020140 seconds
+Worker: Matrix pair 126 transferred in 0.016299 seconds
+Worker: Matrix pair 127 transferred in 0.020378 seconds
+Worker: Matrix pair 128 transferred in 0.016942 seconds
+Worker: Matrix pair 129 transferred in 0.020503 seconds
+Worker: Matrix pair 130 transferred in 0.016976 seconds
+Worker: Matrix pair 131 transferred in 0.020245 seconds
+Worker: Matrix pair 132 transferred in 0.016656 seconds
+Worker: Matrix pair 133 transferred in 0.020402 seconds
+Worker: Matrix pair 134 transferred in 0.016864 seconds
+Worker: Matrix pair 135 transferred in 0.019465 seconds
+Worker: Matrix pair 136 transferred in 0.016885 seconds
+Worker: Matrix pair 137 transferred in 0.020309 seconds
+Worker: Matrix pair 138 transferred in 0.011512 seconds
+Worker: Matrix pair 139 transferred in 0.603273 seconds
+Worker: Matrix pair 140 transferred in 0.016892 seconds
+Worker: Matrix pair 141 transferred in 0.019582 seconds
+Worker: Matrix pair 142 transferred in 0.016549 seconds
+Worker: Matrix pair 143 transferred in 0.020702 seconds
+Worker: Matrix pair 144 transferred in 0.017032 seconds
+Worker: Matrix pair 145 transferred in 0.019171 seconds
+Worker: Matrix pair 146 transferred in 0.017253 seconds
+Worker: Matrix pair 147 transferred in 0.018785 seconds
+Worker: Matrix pair 148 transferred in 0.016928 seconds
+Worker: Matrix pair 149 transferred in 0.019180 seconds
+Worker: Matrix pair 150 transferred in 0.017532 seconds
+Worker: Matrix pair 151 transferred in 0.019204 seconds
+Worker: Matrix pair 152 transferred in 0.017141 seconds
+Worker: Matrix pair 153 transferred in 0.018465 seconds
+Worker: Matrix pair 154 transferred in 0.017368 seconds
+Worker: Matrix pair 155 transferred in 0.018753 seconds
+Worker: Matrix pair 156 transferred in 0.017335 seconds
+Worker: Matrix pair 157 transferred in 0.018749 seconds
+Worker: Matrix pair 158 transferred in 0.017056 seconds
+Worker: Matrix pair 159 transferred in 0.018573 seconds
+Worker: Matrix pair 160 transferred in 0.020796 seconds
+Worker: Matrix pair 161 transferred in 0.018925 seconds
+Worker: Matrix pair 162 transferred in 0.016732 seconds
+Worker: Matrix pair 163 transferred in 0.019253 seconds
+Worker: Matrix pair 164 transferred in 0.016754 seconds
+Worker: Matrix pair 165 transferred in 0.018950 seconds
+Compute: Matrix pair 1 computed in 31.967200 seconds (0.00 TFLOPS)
+Compute: Result transferred in 0.244688 seconds
+Worker: Matrix pair 166 transferred in 0.012033 seconds
+Worker: Matrix pair 167 transferred in 0.019132 seconds
+Worker: Matrix pair 168 transferred in 0.016966 seconds
+Worker: Matrix pair 169 transferred in 0.019135 seconds
+Worker: Matrix pair 170 transferred in 0.018908 seconds
+Worker: Matrix pair 171 transferred in 0.019317 seconds
+Worker: Matrix pair 172 transferred in 0.018280 seconds
+Worker: Matrix pair 173 transferred in 0.018990 seconds
+Worker: Matrix pair 174 transferred in 0.018470 seconds
+Worker: Matrix pair 175 transferred in 0.018975 seconds
+Worker: Matrix pair 176 transferred in 0.019180 seconds
+Worker: Matrix pair 177 transferred in 0.018914 seconds
+Compute: Matrix pair 2 computed in 1.496574 seconds (0.09 TFLOPS)
+Compute: Result transferred in 0.054935 seconds
+Worker: Matrix pair 178 transferred in 0.020132 seconds
+Worker: Matrix pair 179 transferred in 0.011047 seconds
+Worker: Matrix pair 180 transferred in 0.020484 seconds
+Worker: Matrix pair 181 transferred in 0.017123 seconds
+Worker: Matrix pair 182 transferred in 0.020226 seconds
+Worker: Matrix pair 183 transferred in 0.011554 seconds
+Worker: Matrix pair 184 transferred in 0.022860 seconds
+Compute: Matrix pair 3 computed in 0.721218 seconds (0.18 TFLOPS)
+Compute: Result transferred in 0.063573 seconds
+Worker: Matrix pair 185 transferred in 0.011353 seconds
+Worker: Matrix pair 186 transferred in 0.021342 seconds
+Worker: Matrix pair 187 transferred in 0.017550 seconds
+Worker: Matrix pair 188 transferred in 0.020340 seconds
+Worker: Matrix pair 189 transferred in 0.017258 seconds
+Worker: Matrix pair 190 transferred in 0.020305 seconds
+Worker: Matrix pair 191 transferred in 0.017476 seconds
+Worker: Matrix pair 192 transferred in 0.020442 seconds
+Worker: Matrix pair 193 transferred in 0.017171 seconds
+Worker: Matrix pair 194 transferred in 0.020140 seconds
+Worker: Matrix pair 195 transferred in 0.017188 seconds
+Worker: Matrix pair 196 transferred in 0.020231 seconds
+Worker: Matrix pair 197 transferred in 0.017881 seconds
+Worker: Matrix pair 198 transferred in 0.019850 seconds
+Worker: Matrix pair 199 transferred in 0.018428 seconds
+Compute: Matrix pair 4 computed in 1.920885 seconds (0.07 TFLOPS)
+Compute: Result transferred in 0.062241 seconds
+Worker: Matrix pair 200 transferred in 0.012169 seconds
+Compute: Matrix pair 5 computed in 0.035024 seconds (3.65 TFLOPS)
+Compute: Result transferred in 0.058827 seconds
+Compute: Matrix pair 6 computed in 1.627496 seconds (0.08 TFLOPS)
+Compute: Result transferred in 0.053067 seconds
+Compute: Matrix pair 7 computed in 0.065580 seconds (1.95 TFLOPS)
+Compute: Result transferred in 0.063756 seconds
+Compute: Matrix pair 8 computed in 0.029383 seconds (4.36 TFLOPS)
+Compute: Result transferred in 0.054399 seconds
+Compute: Matrix pair 9 computed in 0.006921 seconds (18.49 TFLOPS)
+Compute: Result transferred in 0.053635 seconds
+Compute: Matrix pair 10 computed in 0.006948 seconds (18.42 TFLOPS)
+Compute: Result transferred in 0.404182 seconds
+Compute: Matrix pair 11 computed in 0.451822 seconds (0.28 TFLOPS)
+Compute: Result transferred in 0.085902 seconds
+Compute: Matrix pair 12 computed in 0.007127 seconds (17.96 TFLOPS)
+Compute: Result transferred in 0.053005 seconds
+Compute: Matrix pair 13 computed in 0.007090 seconds (18.05 TFLOPS)
+Compute: Result transferred in 0.053300 seconds
+Compute: Matrix pair 14 computed in 0.007371 seconds (17.36 TFLOPS)
+Compute: Result transferred in 0.053250 seconds
+Compute: Matrix pair 15 computed in 0.007122 seconds (17.97 TFLOPS)
+Compute: Result transferred in 0.053194 seconds
+Compute: Matrix pair 16 computed in 0.007222 seconds (17.72 TFLOPS)
+Compute: Result transferred in 0.053423 seconds
+Compute: Matrix pair 17 computed in 0.007105 seconds (18.02 TFLOPS)
+Compute: Result transferred in 0.053093 seconds
+Compute: Matrix pair 18 computed in 0.007362 seconds (17.39 TFLOPS)
+Compute: Result transferred in 0.053573 seconds
+Compute: Matrix pair 19 computed in 0.007126 seconds (17.96 TFLOPS)
+Compute: Result transferred in 0.053609 seconds
+Compute: Matrix pair 20 computed in 0.007285 seconds (17.57 TFLOPS)
+Compute: Result transferred in 0.053706 seconds
+Compute: Matrix pair 21 computed in 0.007252 seconds (17.65 TFLOPS)
+Compute: Result transferred in 0.054318 seconds
+Compute: Matrix pair 22 computed in 0.007287 seconds (17.57 TFLOPS)
+Compute: Result transferred in 0.057369 seconds
+Compute: Matrix pair 23 computed in 0.007056 seconds (18.14 TFLOPS)
+Compute: Result transferred in 0.054266 seconds
+Compute: Matrix pair 24 computed in 0.007622 seconds (16.79 TFLOPS)
+Compute: Result transferred in 0.054316 seconds
+Compute: Matrix pair 25 computed in 0.007440 seconds (17.21 TFLOPS)
+Compute: Result transferred in 0.055338 seconds
+Compute: Matrix pair 26 computed in 0.007634 seconds (16.77 TFLOPS)
+Compute: Result transferred in 0.054380 seconds
+Compute: Matrix pair 27 computed in 0.007483 seconds (17.11 TFLOPS)
+Compute: Result transferred in 0.054405 seconds
+Compute: Matrix pair 28 computed in 0.007352 seconds (17.41 TFLOPS)
+Compute: Result transferred in 0.054074 seconds
+Compute: Matrix pair 29 computed in 0.007538 seconds (16.98 TFLOPS)
+Compute: Result transferred in 0.054063 seconds
+Compute: Matrix pair 30 computed in 0.007323 seconds (17.48 TFLOPS)
+Compute: Result transferred in 0.054193 seconds
+Compute: Matrix pair 31 computed in 0.007539 seconds (16.98 TFLOPS)
+Compute: Result transferred in 0.053768 seconds
+Compute: Matrix pair 32 computed in 0.007751 seconds (16.51 TFLOPS)
+Compute: Result transferred in 0.054077 seconds
+Compute: Matrix pair 33 computed in 0.007675 seconds (16.68 TFLOPS)
+Compute: Result transferred in 0.054048 seconds
+Compute: Matrix pair 34 computed in 0.007724 seconds (16.57 TFLOPS)
+Compute: Result transferred in 0.053718 seconds
+Compute: Matrix pair 35 computed in 0.007646 seconds (16.74 TFLOPS)
+Compute: Result transferred in 0.054018 seconds
+Compute: Matrix pair 36 computed in 0.007522 seconds (17.02 TFLOPS)
+Compute: Result transferred in 0.053964 seconds
+Compute: Matrix pair 37 computed in 0.007552 seconds (16.95 TFLOPS)
+Compute: Result transferred in 0.054597 seconds
+Compute: Matrix pair 38 computed in 0.007679 seconds (16.67 TFLOPS)
+Compute: Result transferred in 0.054139 seconds
+Compute: Matrix pair 39 computed in 0.007581 seconds (16.88 TFLOPS)
+Compute: Result transferred in 0.055845 seconds
+Compute: Matrix pair 40 computed in 0.007322 seconds (17.48 TFLOPS)
+Compute: Result transferred in 0.054446 seconds
+Compute: Matrix pair 41 computed in 0.007600 seconds (16.84 TFLOPS)
+Compute: Result transferred in 0.054171 seconds
+Compute: Matrix pair 42 computed in 0.007311 seconds (17.51 TFLOPS)
+Compute: Result transferred in 0.053991 seconds
+Compute: Matrix pair 43 computed in 0.007244 seconds (17.67 TFLOPS)
+Compute: Result transferred in 0.054392 seconds
+Compute: Matrix pair 44 computed in 0.007311 seconds (17.51 TFLOPS)
+Compute: Result transferred in 0.054457 seconds
+Compute: Matrix pair 45 computed in 0.007578 seconds (16.89 TFLOPS)
+Compute: Result transferred in 0.053826 seconds
+Compute: Matrix pair 46 computed in 0.007382 seconds (17.34 TFLOPS)
+Compute: Result transferred in 0.054337 seconds
+Compute: Matrix pair 47 computed in 0.007519 seconds (17.02 TFLOPS)
+Compute: Result transferred in 0.054096 seconds
+Compute: Matrix pair 48 computed in 0.007578 seconds (16.89 TFLOPS)
+Compute: Result transferred in 0.054432 seconds
+Compute: Matrix pair 49 computed in 0.007643 seconds (16.75 TFLOPS)
+Compute: Result transferred in 0.054100 seconds
+Compute: Matrix pair 50 computed in 0.007559 seconds (16.93 TFLOPS)
+Compute: Result transferred in 0.054230 seconds
+Compute: Matrix pair 51 computed in 0.007650 seconds (16.73 TFLOPS)
+Compute: Result transferred in 0.054276 seconds
+Compute: Matrix pair 52 computed in 0.007356 seconds (17.40 TFLOPS)
+Compute: Result transferred in 0.054239 seconds
+Compute: Matrix pair 53 computed in 0.007268 seconds (17.61 TFLOPS)
+Compute: Result transferred in 0.054272 seconds
+Compute: Matrix pair 54 computed in 0.007333 seconds (17.46 TFLOPS)
+Compute: Result transferred in 0.055959 seconds
+Compute: Matrix pair 55 computed in 0.395717 seconds (0.32 TFLOPS)
+Compute: Result transferred in 0.114666 seconds
+Compute: Matrix pair 56 computed in 0.007611 seconds (16.82 TFLOPS)
+Compute: Result transferred in 0.054778 seconds
+Compute: Matrix pair 57 computed in 0.007374 seconds (17.36 TFLOPS)
+Compute: Result transferred in 0.054371 seconds
+Compute: Matrix pair 58 computed in 0.007256 seconds (17.64 TFLOPS)
+Compute: Result transferred in 0.054251 seconds
+Compute: Matrix pair 59 computed in 0.007600 seconds (16.84 TFLOPS)
+Compute: Result transferred in 0.054588 seconds
+Compute: Matrix pair 60 computed in 0.007476 seconds (17.12 TFLOPS)
+Compute: Result transferred in 0.054039 seconds
+Compute: Matrix pair 61 computed in 0.007275 seconds (17.59 TFLOPS)
+Compute: Result transferred in 0.054546 seconds
+Compute: Matrix pair 62 computed in 0.007257 seconds (17.64 TFLOPS)
+Compute: Result transferred in 0.054696 seconds
+Compute: Matrix pair 63 computed in 0.007197 seconds (17.79 TFLOPS)
+Compute: Result transferred in 0.054416 seconds
+Compute: Matrix pair 64 computed in 0.007214 seconds (17.74 TFLOPS)
+Compute: Result transferred in 0.054448 seconds
+Compute: Matrix pair 65 computed in 0.007225 seconds (17.72 TFLOPS)
+Compute: Result transferred in 0.054410 seconds
+Compute: Matrix pair 66 computed in 0.007199 seconds (17.78 TFLOPS)
+Compute: Result transferred in 0.054823 seconds
+Compute: Matrix pair 67 computed in 0.007164 seconds (17.87 TFLOPS)
+Compute: Result transferred in 0.054612 seconds
+Compute: Matrix pair 68 computed in 0.007410 seconds (17.27 TFLOPS)
+Compute: Result transferred in 0.054388 seconds
+Compute: Matrix pair 69 computed in 0.007251 seconds (17.65 TFLOPS)
+Compute: Result transferred in 0.054934 seconds
+Compute: Matrix pair 70 computed in 0.007243 seconds (17.67 TFLOPS)
+Compute: Result transferred in 0.054576 seconds
+Compute: Matrix pair 71 computed in 0.007175 seconds (17.84 TFLOPS)
+Compute: Result transferred in 0.054797 seconds
+Compute: Matrix pair 72 computed in 0.007251 seconds (17.65 TFLOPS)
+Compute: Result transferred in 0.054226 seconds
+Compute: Matrix pair 73 computed in 0.007191 seconds (17.80 TFLOPS)
+Compute: Result transferred in 0.054207 seconds
+Compute: Matrix pair 74 computed in 0.007207 seconds (17.76 TFLOPS)
+Compute: Result transferred in 0.054499 seconds
+Compute: Matrix pair 75 computed in 0.007173 seconds (17.85 TFLOPS)
+Compute: Result transferred in 0.054291 seconds
+Compute: Matrix pair 76 computed in 0.007168 seconds (17.86 TFLOPS)
+Compute: Result transferred in 0.054267 seconds
+Compute: Matrix pair 77 computed in 0.007262 seconds (17.63 TFLOPS)
+Compute: Result transferred in 0.054446 seconds
+Compute: Matrix pair 78 computed in 0.007183 seconds (17.82 TFLOPS)
+Compute: Result transferred in 0.054212 seconds
+Compute: Matrix pair 79 computed in 0.007124 seconds (17.97 TFLOPS)
+Compute: Result transferred in 0.054403 seconds
+Compute: Matrix pair 80 computed in 0.007211 seconds (17.75 TFLOPS)
+Compute: Result transferred in 0.054808 seconds
+Compute: Matrix pair 81 computed in 0.007169 seconds (17.86 TFLOPS)
+Compute: Result transferred in 0.054223 seconds
+Compute: Matrix pair 82 computed in 0.007173 seconds (17.85 TFLOPS)
+Compute: Result transferred in 0.054595 seconds
+Compute: Matrix pair 83 computed in 0.007166 seconds (17.86 TFLOPS)
+Compute: Result transferred in 0.055069 seconds
+Compute: Matrix pair 84 computed in 0.007138 seconds (17.93 TFLOPS)
+Compute: Result transferred in 0.054188 seconds
+Compute: Matrix pair 85 computed in 0.007149 seconds (17.91 TFLOPS)
+Compute: Result transferred in 0.054383 seconds
+Compute: Matrix pair 86 computed in 0.007120 seconds (17.98 TFLOPS)
+Compute: Result transferred in 0.054115 seconds
+Compute: Matrix pair 87 computed in 0.007079 seconds (18.08 TFLOPS)
+Compute: Result transferred in 0.054819 seconds
+Compute: Matrix pair 88 computed in 0.007109 seconds (18.01 TFLOPS)
+Compute: Result transferred in 0.054426 seconds
+Compute: Matrix pair 89 computed in 0.007121 seconds (17.97 TFLOPS)
+Compute: Result transferred in 0.054631 seconds
+Compute: Matrix pair 90 computed in 0.007092 seconds (18.05 TFLOPS)
+Compute: Result transferred in 0.054191 seconds
+Compute: Matrix pair 91 computed in 0.007125 seconds (17.96 TFLOPS)
+Compute: Result transferred in 0.054621 seconds
+Compute: Matrix pair 92 computed in 0.007075 seconds (18.09 TFLOPS)
+Compute: Result transferred in 0.054424 seconds
+Compute: Matrix pair 93 computed in 0.007164 seconds (17.87 TFLOPS)
+Compute: Result transferred in 0.054440 seconds
+Compute: Matrix pair 94 computed in 0.007147 seconds (17.91 TFLOPS)
+Compute: Result transferred in 0.055041 seconds
+Compute: Matrix pair 95 computed in 0.007118 seconds (17.98 TFLOPS)
+Compute: Result transferred in 0.054487 seconds
+Compute: Matrix pair 96 computed in 0.007167 seconds (17.86 TFLOPS)
+Compute: Result transferred in 0.054551 seconds
+Compute: Matrix pair 97 computed in 0.007074 seconds (18.09 TFLOPS)
+Compute: Result transferred in 0.054893 seconds
+Compute: Matrix pair 98 computed in 0.007119 seconds (17.98 TFLOPS)
+Compute: Result transferred in 0.054389 seconds
+Compute: Matrix pair 99 computed in 0.007074 seconds (18.09 TFLOPS)
+Compute: Result transferred in 0.054762 seconds
+Compute: Matrix pair 100 computed in 0.007129 seconds (17.95 TFLOPS)
+Compute: Result transferred in 0.054312 seconds
+Compute: Matrix pair 101 computed in 0.007053 seconds (18.15 TFLOPS)
+Compute: Result transferred in 0.054475 seconds
+Compute: Matrix pair 102 computed in 0.007119 seconds (17.98 TFLOPS)
+Compute: Result transferred in 0.054295 seconds
+Compute: Matrix pair 103 computed in 0.007177 seconds (17.84 TFLOPS)
+Compute: Result transferred in 0.054854 seconds
+Compute: Matrix pair 104 computed in 0.007132 seconds (17.95 TFLOPS)
+Compute: Result transferred in 0.054584 seconds
+Compute: Matrix pair 105 computed in 0.007104 seconds (18.02 TFLOPS)
+Compute: Result transferred in 0.054427 seconds
+Compute: Matrix pair 106 computed in 0.007074 seconds (18.09 TFLOPS)
+Compute: Result transferred in 0.054468 seconds
+Compute: Matrix pair 107 computed in 0.007085 seconds (18.07 TFLOPS)
+Compute: Result transferred in 0.054516 seconds
+Compute: Matrix pair 108 computed in 0.006995 seconds (18.30 TFLOPS)
+Compute: Result transferred in 0.054218 seconds
+Compute: Matrix pair 109 computed in 0.007116 seconds (17.99 TFLOPS)
+Compute: Result transferred in 0.054377 seconds
+Compute: Matrix pair 110 computed in 0.007067 seconds (18.11 TFLOPS)
+Compute: Result transferred in 0.054358 seconds
+Compute: Matrix pair 111 computed in 0.007108 seconds (18.01 TFLOPS)
+Compute: Result transferred in 0.054341 seconds
+Compute: Matrix pair 112 computed in 0.007215 seconds (17.74 TFLOPS)
+Compute: Result transferred in 0.054427 seconds
+Compute: Matrix pair 113 computed in 0.007046 seconds (18.17 TFLOPS)
+Compute: Result transferred in 0.054878 seconds
+Compute: Matrix pair 114 computed in 0.007169 seconds (17.85 TFLOPS)
+Compute: Result transferred in 0.054505 seconds
+Compute: Matrix pair 115 computed in 0.007074 seconds (18.09 TFLOPS)
+Compute: Result transferred in 0.054228 seconds
+Compute: Matrix pair 116 computed in 0.007089 seconds (18.06 TFLOPS)
+Compute: Result transferred in 0.054484 seconds
+Compute: Matrix pair 117 computed in 0.007149 seconds (17.90 TFLOPS)
+Compute: Result transferred in 0.054709 seconds
+Compute: Matrix pair 118 computed in 0.007079 seconds (18.08 TFLOPS)
+Compute: Result transferred in 0.054768 seconds
+Compute: Matrix pair 119 computed in 0.007020 seconds (18.23 TFLOPS)
+Compute: Result transferred in 0.054538 seconds
+Compute: Matrix pair 120 computed in 0.007029 seconds (18.21 TFLOPS)
+Compute: Result transferred in 0.054622 seconds
+Compute: Matrix pair 121 computed in 0.007075 seconds (18.09 TFLOPS)
+Compute: Result transferred in 0.054696 seconds
+Compute: Matrix pair 122 computed in 0.007023 seconds (18.23 TFLOPS)
+Compute: Result transferred in 0.054591 seconds
+Compute: Matrix pair 123 computed in 0.007113 seconds (17.99 TFLOPS)
+Compute: Result transferred in 0.054740 seconds
+Compute: Matrix pair 124 computed in 0.007070 seconds (18.11 TFLOPS)
+Compute: Result transferred in 0.055959 seconds
+Compute: Matrix pair 125 computed in 0.007043 seconds (18.17 TFLOPS)
+Compute: Result transferred in 0.054574 seconds
+Compute: Matrix pair 126 computed in 0.007148 seconds (17.91 TFLOPS)
+Compute: Result transferred in 0.055350 seconds
+Compute: Matrix pair 127 computed in 0.006980 seconds (18.34 TFLOPS)
+Compute: Result transferred in 0.054377 seconds
+Compute: Matrix pair 128 computed in 0.006900 seconds (18.55 TFLOPS)
+Compute: Result transferred in 0.058283 seconds
+Compute: Matrix pair 129 computed in 0.007004 seconds (18.28 TFLOPS)
+Compute: Result transferred in 0.060559 seconds
+Compute: Matrix pair 130 computed in 0.006966 seconds (18.38 TFLOPS)
+Compute: Result transferred in 0.055743 seconds
+Compute: Matrix pair 131 computed in 0.006899 seconds (18.55 TFLOPS)
+Compute: Result transferred in 0.054584 seconds
+Compute: Matrix pair 132 computed in 0.006974 seconds (18.36 TFLOPS)
+Compute: Result transferred in 0.057681 seconds
+Compute: Matrix pair 133 computed in 0.006937 seconds (18.45 TFLOPS)
+Compute: Result transferred in 0.060359 seconds
+Compute: Matrix pair 134 computed in 0.006860 seconds (18.66 TFLOPS)
+Compute: Result transferred in 0.060461 seconds
+Compute: Matrix pair 135 computed in 0.006856 seconds (18.67 TFLOPS)
+Compute: Result transferred in 0.055948 seconds
+Compute: Matrix pair 136 computed in 0.006935 seconds (18.46 TFLOPS)
+Compute: Result transferred in 0.060865 seconds
+Compute: Matrix pair 137 computed in 0.006937 seconds (18.45 TFLOPS)
+Compute: Result transferred in 0.058397 seconds
+Compute: Matrix pair 138 computed in 0.006970 seconds (18.37 TFLOPS)
+Compute: Result transferred in 0.060355 seconds
+Compute: Matrix pair 139 computed in 0.007074 seconds (18.10 TFLOPS)
+Compute: Result transferred in 0.055804 seconds
+Compute: Matrix pair 140 computed in 0.006920 seconds (18.50 TFLOPS)
+Compute: Result transferred in 0.060497 seconds
+Compute: Matrix pair 141 computed in 0.006881 seconds (18.60 TFLOPS)
+Compute: Result transferred in 0.060675 seconds
+Compute: Matrix pair 142 computed in 0.006851 seconds (18.68 TFLOPS)
+Compute: Result transferred in 0.060579 seconds
+Compute: Matrix pair 143 computed in 0.006867 seconds (18.64 TFLOPS)
+Compute: Result transferred in 0.060850 seconds
+Compute: Matrix pair 144 computed in 0.006885 seconds (18.59 TFLOPS)
+Compute: Result transferred in 0.055845 seconds
+Compute: Matrix pair 145 computed in 0.006974 seconds (18.35 TFLOPS)
+Compute: Result transferred in 0.054619 seconds
+Compute: Matrix pair 146 computed in 0.007113 seconds (17.99 TFLOPS)
+Compute: Result transferred in 0.054398 seconds
+Compute: Matrix pair 147 computed in 0.007009 seconds (18.26 TFLOPS)
+Compute: Result transferred in 0.054307 seconds
+Compute: Matrix pair 148 computed in 0.007057 seconds (18.14 TFLOPS)
+Compute: Result transferred in 0.054333 seconds
+Compute: Matrix pair 149 computed in 0.007082 seconds (18.07 TFLOPS)
+Compute: Result transferred in 0.054206 seconds
+Compute: Matrix pair 150 computed in 0.007060 seconds (18.13 TFLOPS)
+Compute: Result transferred in 0.053969 seconds
+Compute: Matrix pair 151 computed in 0.007087 seconds (18.06 TFLOPS)
+Compute: Result transferred in 0.054995 seconds
+Compute: Matrix pair 152 computed in 0.007410 seconds (17.27 TFLOPS)
+Compute: Result transferred in 0.053986 seconds
+Compute: Matrix pair 153 computed in 0.007113 seconds (18.00 TFLOPS)
+Compute: Result transferred in 0.053464 seconds
+Compute: Matrix pair 154 computed in 0.007030 seconds (18.21 TFLOPS)
+Compute: Result transferred in 0.054214 seconds
+Compute: Matrix pair 155 computed in 0.007104 seconds (18.02 TFLOPS)
+Compute: Result transferred in 0.054259 seconds
+Compute: Matrix pair 156 computed in 0.007137 seconds (17.94 TFLOPS)
+Compute: Result transferred in 0.054039 seconds
+Compute: Matrix pair 157 computed in 0.007102 seconds (18.02 TFLOPS)
+Compute: Result transferred in 0.053936 seconds
+Compute: Matrix pair 158 computed in 0.007136 seconds (17.94 TFLOPS)
+Compute: Result transferred in 0.053824 seconds
+Compute: Matrix pair 159 computed in 0.007172 seconds (17.85 TFLOPS)
+Compute: Result transferred in 0.054425 seconds
+Compute: Matrix pair 160 computed in 0.007102 seconds (18.02 TFLOPS)
+Compute: Result transferred in 0.053928 seconds
+Compute: Matrix pair 161 computed in 0.007118 seconds (17.98 TFLOPS)
+Compute: Result transferred in 0.055091 seconds
+Compute: Matrix pair 162 computed in 0.007073 seconds (18.10 TFLOPS)
+Compute: Result transferred in 0.053755 seconds
+Compute: Matrix pair 163 computed in 0.007102 seconds (18.02 TFLOPS)
+Compute: Result transferred in 0.054170 seconds
+Compute: Matrix pair 164 computed in 0.007190 seconds (17.80 TFLOPS)
+Compute: Result transferred in 0.053735 seconds
+Compute: Matrix pair 165 computed in 0.007069 seconds (18.11 TFLOPS)
+Compute: Result transferred in 0.053722 seconds
+Compute: Matrix pair 166 computed in 0.007172 seconds (17.85 TFLOPS)
+Compute: Result transferred in 0.053838 seconds
+Compute: Matrix pair 167 computed in 0.007115 seconds (17.99 TFLOPS)
+Compute: Result transferred in 0.053730 seconds
+Compute: Matrix pair 168 computed in 0.007167 seconds (17.86 TFLOPS)
+Compute: Result transferred in 0.054200 seconds
+Compute: Matrix pair 169 computed in 0.007124 seconds (17.97 TFLOPS)
+Compute: Result transferred in 0.054000 seconds
+Compute: Matrix pair 170 computed in 0.007028 seconds (18.21 TFLOPS)
+Compute: Result transferred in 0.054647 seconds
+Compute: Matrix pair 171 computed in 0.007068 seconds (18.11 TFLOPS)
+Compute: Result transferred in 0.055688 seconds
+Compute: Matrix pair 172 computed in 0.007118 seconds (17.98 TFLOPS)
+Compute: Result transferred in 0.057485 seconds
+Compute: Matrix pair 173 computed in 0.007013 seconds (18.25 TFLOPS)
+Compute: Result transferred in 0.056118 seconds
+Compute: Matrix pair 174 computed in 0.007013 seconds (18.25 TFLOPS)
+Compute: Result transferred in 0.054756 seconds
+Compute: Matrix pair 175 computed in 0.007031 seconds (18.21 TFLOPS)
+Compute: Result transferred in 0.054195 seconds
+Compute: Matrix pair 176 computed in 0.007025 seconds (18.22 TFLOPS)
+Compute: Result transferred in 0.054393 seconds
+Compute: Matrix pair 177 computed in 0.007036 seconds (18.19 TFLOPS)
+Compute: Result transferred in 0.059376 seconds
+Compute: Matrix pair 178 computed in 0.007090 seconds (18.05 TFLOPS)
+Compute: Result transferred in 0.061204 seconds
+Compute: Matrix pair 179 computed in 0.007035 seconds (18.19 TFLOPS)
+Compute: Result transferred in 0.055401 seconds
+Compute: Matrix pair 180 computed in 0.007020 seconds (18.23 TFLOPS)
+Compute: Result transferred in 0.054159 seconds
+Compute: Matrix pair 181 computed in 0.007082 seconds (18.07 TFLOPS)
+Compute: Result transferred in 0.054258 seconds
+Compute: Matrix pair 182 computed in 0.007127 seconds (17.96 TFLOPS)
+Compute: Result transferred in 0.059895 seconds
+Compute: Matrix pair 183 computed in 0.120744 seconds (1.06 TFLOPS)
+Compute: Result transferred in 0.231008 seconds
+Compute: Matrix pair 184 computed in 0.266811 seconds (0.48 TFLOPS)
+Compute: Result transferred in 0.054251 seconds
+Compute: Matrix pair 185 computed in 0.007407 seconds (17.28 TFLOPS)
+Compute: Result transferred in 0.054951 seconds
+Compute: Matrix pair 186 computed in 0.007411 seconds (17.27 TFLOPS)
+Compute: Result transferred in 0.055073 seconds
+Compute: Matrix pair 187 computed in 0.007425 seconds (17.24 TFLOPS)
+Compute: Result transferred in 0.054547 seconds
+Compute: Matrix pair 188 computed in 0.007412 seconds (17.27 TFLOPS)
+Compute: Result transferred in 0.055028 seconds
+Compute: Matrix pair 189 computed in 0.007541 seconds (16.97 TFLOPS)
+Compute: Result transferred in 0.054985 seconds
+Compute: Matrix pair 190 computed in 0.007578 seconds (16.89 TFLOPS)
+Compute: Result transferred in 0.054981 seconds
+Compute: Matrix pair 191 computed in 0.007482 seconds (17.11 TFLOPS)
+Compute: Result transferred in 0.055175 seconds
+Compute: Matrix pair 192 computed in 0.007497 seconds (17.07 TFLOPS)
+Compute: Result transferred in 0.059405 seconds
+Compute: Matrix pair 193 computed in 0.007458 seconds (17.16 TFLOPS)
+Compute: Result transferred in 0.058568 seconds
+Compute: Matrix pair 194 computed in 0.007529 seconds (17.00 TFLOPS)
+Compute: Result transferred in 0.060174 seconds
+Compute: Matrix pair 195 computed in 0.007485 seconds (17.10 TFLOPS)
+Compute: Result transferred in 0.054466 seconds
+Compute: Matrix pair 196 computed in 0.007446 seconds (17.19 TFLOPS)
+Compute: Result transferred in 0.060641 seconds
+Compute: Matrix pair 197 computed in 0.007550 seconds (16.95 TFLOPS)
+Compute: Result transferred in 0.055210 seconds
+Compute: Matrix pair 198 computed in 0.007447 seconds (17.19 TFLOPS)
+Compute: Result transferred in 0.061144 seconds
+Compute: Matrix pair 199 computed in 0.007481 seconds (17.11 TFLOPS)
+Compute: Result transferred in 0.055041 seconds
+Compute: Matrix pair 200 computed in 0.007535 seconds (16.99 TFLOPS)
+Compute: Result transferred in 0.055418 seconds
+
+=== Enhanced Matrix Multiplication Summary ===
+Total time for 200 matrix pairs: 53.591880 seconds
+Average time per matrix pair: 0.267959 seconds
+Average input transfer time: 0.054749 seconds
+Average execution time: 0.202269 seconds
+Average result transfer time: 0.059217 seconds
+Average performance: 16.76 TFLOPS
+
+Estimated sequential time: 63.247126 seconds
+Actual overlapped time: 53.591880 seconds
+Speedup from overlapping: 1.18x
+Epoch 0:
+  Learning rate: 0.01000
+  Total epoch time: 122.2268 sec
+  Training computation time: 58.6273 sec
+  Evaluation time: 49.4277 sec
+  Number of batches: 390
+  Test set accuracy: 0.014200 (1.42%)
+  Best test accuracy so far: 0.014200 (1.42%)
+
+Epoch 1: test_acc=0.0168, time=12.99s
+Epoch 2: test_acc=0.0226, time=1.00s
+Epoch 3: test_acc=0.0250, time=0.91s
+Epoch 4: test_acc=0.0294, time=0.91s
+Epoch 5: test_acc=0.0308, time=0.91s
+Epoch 6: test_acc=0.0388, time=0.91s
+Epoch 7: test_acc=0.0364, time=0.91s
+Epoch 8: test_acc=0.0448, time=1.46s
+Epoch 9: test_acc=0.0494, time=0.91s
+Epoch 10:
+  Learning rate: 0.00500
+  Total epoch time: 0.9133 sec
+  Training computation time: 0.9036 sec
+  Evaluation time: 0.0094 sec
+  Number of batches: 390
+  Test set accuracy: 0.048000 (4.80%)
+  Best test accuracy so far: 0.049400 (4.94%)
+
+Epoch 11: test_acc=0.0514, time=1.98s
+Epoch 12: test_acc=0.0524, time=0.92s
+Epoch 13: test_acc=0.0526, time=0.91s
+Epoch 14: test_acc=0.0562, time=0.91s
+Epoch 15: test_acc=0.0606, time=0.91s
+Epoch 16: test_acc=0.0586, time=0.91s
+Epoch 17: test_acc=0.0568, time=0.96s
+Epoch 18: test_acc=0.0614, time=0.93s
+Epoch 19: test_acc=0.0602, time=0.91s
+Epoch 20:
+  Learning rate: 0.00100
+  Total epoch time: 0.9151 sec
+  Training computation time: 0.9055 sec
+  Evaluation time: 0.0093 sec
+  Number of batches: 390
+  Test set accuracy: 0.063200 (6.32%)
+  Best test accuracy so far: 0.063200 (6.32%)
+
+Epoch 21: test_acc=0.0592, time=0.92s
+Epoch 22: test_acc=0.0604, time=0.91s
+Epoch 23: test_acc=0.0634, time=2.03s
+Epoch 24: test_acc=0.0618, time=0.92s
+Epoch 25: test_acc=0.0612, time=0.91s
+Epoch 26: test_acc=0.0592, time=0.92s
+Epoch 27: test_acc=0.0628, time=1.44s
+Epoch 28: test_acc=0.0584, time=0.95s
+Epoch 29: test_acc=0.0644, time=0.91s
+Epoch 30:
+  Learning rate: 0.00100
+  Total epoch time: 0.9166 sec
+  Training computation time: 0.9071 sec
+  Evaluation time: 0.0092 sec
+  Number of batches: 390
+  Test set accuracy: 0.058800 (5.88%)
+  Best test accuracy so far: 0.064400 (6.44%)
+
+Epoch 31: test_acc=0.0656, time=0.92s
+Epoch 32: test_acc=0.0666, time=0.92s
+Epoch 33: test_acc=0.0622, time=0.92s
+Epoch 34: test_acc=0.0650, time=2.37s
+Epoch 35: test_acc=0.0660, time=0.91s
+Epoch 36: test_acc=0.0694, time=0.92s
+Epoch 37: test_acc=0.0644, time=1.29s
+Epoch 38: test_acc=0.0640, time=0.93s
+Epoch 39: test_acc=0.0698, time=0.91s
+Epoch 40:
+  Learning rate: 0.00100
+  Total epoch time: 0.9181 sec
+  Training computation time: 0.9085 sec
+  Evaluation time: 0.0093 sec
+  Number of batches: 390
+  Test set accuracy: 0.067800 (6.78%)
+  Best test accuracy so far: 0.069800 (6.98%)
+
+Epoch 41: test_acc=0.0664, time=0.92s
+Epoch 42: test_acc=0.0678, time=0.92s
+Epoch 43: test_acc=0.0634, time=0.91s
+Epoch 44: test_acc=0.0638, time=0.91s
+Epoch 45: test_acc=0.0658, time=2.26s
+Epoch 46: test_acc=0.0646, time=0.93s
+Epoch 47: test_acc=0.0658, time=0.94s
+Epoch 48: test_acc=0.0680, time=0.94s
+Epoch 49: test_acc=0.0664, time=0.91s
+Epoch 50:
+  Learning rate: 0.00100
+  Total epoch time: 0.9132 sec
+  Training computation time: 0.9035 sec
+  Evaluation time: 0.0094 sec
+  Number of batches: 390
+  Test set accuracy: 0.066000 (6.60%)
+  Best test accuracy so far: 0.069800 (6.98%)
+
+Epoch 51: test_acc=0.0688, time=0.91s
+Epoch 52: test_acc=0.0680, time=0.92s
+Epoch 53: test_acc=0.0664, time=0.91s
+Epoch 54: test_acc=0.0706, time=0.91s
+Epoch 55: test_acc=0.0736, time=0.91s
+Epoch 56: test_acc=0.0674, time=0.93s
+Epoch 57: test_acc=0.0702, time=1.76s
+Epoch 58: test_acc=0.0730, time=1.76s
+Epoch 59: test_acc=0.0668, time=0.93s
+Epoch 60:
+  Learning rate: 0.00100
+  Total epoch time: 0.9146 sec
+  Training computation time: 0.9049 sec
+  Evaluation time: 0.0094 sec
+  Number of batches: 390
+  Test set accuracy: 0.068000 (6.80%)
+  Best test accuracy so far: 0.073600 (7.36%)
+
+Epoch 61: test_acc=0.0688, time=0.91s
+Epoch 62: test_acc=0.0688, time=0.92s
+Epoch 63: test_acc=0.0718, time=0.91s
+Epoch 64: test_acc=0.0710, time=0.92s
+Epoch 65: test_acc=0.0718, time=0.91s
+Epoch 66: test_acc=0.0740, time=0.92s
+Epoch 67: test_acc=0.0724, time=1.11s
+Epoch 68: test_acc=0.0764, time=1.68s
+Epoch 69: test_acc=0.0722, time=0.92s
+Epoch 70:
+  Learning rate: 0.00100
+  Total epoch time: 0.9159 sec
+  Training computation time: 0.9062 sec
+  Evaluation time: 0.0094 sec
+  Number of batches: 390
+  Test set accuracy: 0.075400 (7.54%)
+  Best test accuracy so far: 0.076400 (7.64%)
+
+Epoch 71: test_acc=0.0766, time=0.91s
+Epoch 72: test_acc=0.0762, time=0.92s
+Epoch 73: test_acc=0.0702, time=0.91s
+Epoch 74: test_acc=0.0714, time=1.00s
+Epoch 75: test_acc=0.0742, time=0.91s
+Epoch 76: test_acc=0.0770, time=1.72s
+Epoch 77: test_acc=0.0820, time=0.91s
+Epoch 78: test_acc=0.0804, time=0.93s
+Epoch 79: test_acc=0.0740, time=1.60s
+Epoch 80:
+  Learning rate: 0.00100
+  Total epoch time: 0.9152 sec
+  Training computation time: 0.9054 sec
+  Evaluation time: 0.0094 sec
+  Number of batches: 390
+  Test set accuracy: 0.073600 (7.36%)
+  Best test accuracy so far: 0.082000 (8.20%)
+
+Epoch 81: test_acc=0.0772, time=0.92s
+Epoch 82: test_acc=0.0758, time=0.91s
+Epoch 83: test_acc=0.0746, time=0.91s
+Epoch 84: test_acc=0.0782, time=0.98s
+Epoch 85: test_acc=0.0806, time=0.91s
+Epoch 86: test_acc=0.0788, time=0.92s
+Epoch 87: test_acc=0.0840, time=1.25s
+Epoch 88: test_acc=0.0814, time=1.68s
+Epoch 89: test_acc=0.0724, time=0.92s
+Epoch 90:
+  Learning rate: 0.00100
+  Total epoch time: 0.9153 sec
+  Training computation time: 0.9056 sec
+  Evaluation time: 0.0093 sec
+  Number of batches: 390
+  Test set accuracy: 0.076600 (7.66%)
+  Best test accuracy so far: 0.084000 (8.40%)
+
+Epoch 91: test_acc=0.0780, time=0.91s
+Epoch 92: test_acc=0.0768, time=0.92s
+Epoch 93: test_acc=0.0784, time=0.95s
+Epoch 94: test_acc=0.0794, time=0.92s
+Epoch 95: test_acc=0.0784, time=0.91s
+Epoch 96: test_acc=0.0796, time=0.92s
+Epoch 97: test_acc=0.0776, time=0.91s
+Epoch 98: test_acc=0.0774, time=0.92s
+Epoch 99: test_acc=0.0866, time=0.93s
+Epoch 100:
+  Learning rate: 0.00100
+  Total epoch time: 2.3922 sec
+  Training computation time: 1.8652 sec
+  Evaluation time: 0.3863 sec
+  Number of batches: 390
+  Test set accuracy: 0.080200 (8.02%)
+  Best test accuracy so far: 0.086600 (8.66%)
+
+Epoch 101: test_acc=0.0806, time=0.92s
+Epoch 102: test_acc=0.0806, time=0.92s
+Epoch 103: test_acc=0.0804, time=0.97s
+Epoch 104: test_acc=0.0850, time=0.96s
+Epoch 105: test_acc=0.0858, time=0.91s
+Epoch 106: test_acc=0.0778, time=1.82s
+Epoch 107: test_acc=0.0776, time=0.97s
+Epoch 108: test_acc=0.0800, time=0.91s
+Epoch 109: test_acc=0.0856, time=0.91s
+Epoch 110:
+  Learning rate: 0.00100
+  Total epoch time: 0.9163 sec
+  Training computation time: 0.9065 sec
+  Evaluation time: 0.0094 sec
+  Number of batches: 390
+  Test set accuracy: 0.078200 (7.82%)
+  Best test accuracy so far: 0.086600 (8.66%)
+
+Epoch 111: test_acc=0.0848, time=1.72s
+Epoch 112: test_acc=0.0842, time=0.92s
+Epoch 113: test_acc=0.0830, time=0.91s
+Epoch 114: test_acc=0.0832, time=0.91s
+Epoch 115: test_acc=0.0870, time=0.91s
+Epoch 116: test_acc=0.0826, time=0.91s
+Epoch 117: test_acc=0.0762, time=0.91s
+Epoch 118: test_acc=0.0848, time=0.92s
+Epoch 119: test_acc=0.0838, time=0.91s
+Epoch 120:
+  Learning rate: 0.00100
+  Total epoch time: 1.7168 sec
+  Training computation time: 1.5903 sec
+  Evaluation time: 0.1085 sec
+  Number of batches: 390
+  Test set accuracy: 0.083000 (8.30%)
+  Best test accuracy so far: 0.087000 (8.70%)
+
+Epoch 121: test_acc=0.0858, time=0.96s
+Epoch 122: test_acc=0.0796, time=0.92s
+Epoch 123: test_acc=0.0882, time=0.92s
+Epoch 124: test_acc=0.0870, time=0.93s
+Epoch 125: test_acc=0.0854, time=0.91s
+Epoch 126: test_acc=0.0872, time=1.66s
+Epoch 127: test_acc=0.0854, time=0.95s
+Epoch 128: test_acc=0.0882, time=0.92s
+Epoch 129: test_acc=0.0858, time=0.91s
+Epoch 130:
+  Learning rate: 0.00100
+  Total epoch time: 2.3225 sec
+  Training computation time: 1.8063 sec
+  Evaluation time: 0.4722 sec
+  Number of batches: 390
+  Test set accuracy: 0.087800 (8.78%)
+  Best test accuracy so far: 0.088200 (8.82%)
+
+Epoch 131: test_acc=0.0898, time=0.95s
+Epoch 132: test_acc=0.0852, time=0.92s
+Epoch 133: test_acc=0.0852, time=0.91s
+Epoch 134: test_acc=0.0854, time=0.92s
+Epoch 135: test_acc=0.0848, time=1.45s
+Epoch 136: test_acc=0.0824, time=0.92s
+Epoch 137: test_acc=0.0844, time=0.91s
+Epoch 138: test_acc=0.0850, time=0.91s
+Epoch 139: test_acc=0.0902, time=1.81s
+Epoch 140:
+  Learning rate: 0.00100
+  Total epoch time: 0.9162 sec
+  Training computation time: 0.9065 sec
+  Evaluation time: 0.0093 sec
+  Number of batches: 390
+  Test set accuracy: 0.083000 (8.30%)
+  Best test accuracy so far: 0.090200 (9.02%)
+
+Epoch 141: test_acc=0.0882, time=1.77s
+Epoch 142: test_acc=0.0858, time=0.92s
+Epoch 143: test_acc=0.0866, time=0.91s
+Epoch 144: test_acc=0.0880, time=0.91s
+Epoch 145: test_acc=0.0876, time=1.34s
+Epoch 146: test_acc=0.0856, time=0.92s
+Epoch 147: test_acc=0.0866, time=0.91s
+Epoch 148: test_acc=0.0908, time=0.91s
+Epoch 149: test_acc=0.0880, time=1.25s
+Epoch 150:
+  Learning rate: 0.00100
+  Total epoch time: 0.9328 sec
+  Training computation time: 0.9231 sec
+  Evaluation time: 0.0093 sec
+  Number of batches: 390
+  Test set accuracy: 0.087600 (8.76%)
+  Best test accuracy so far: 0.090800 (9.08%)
+
+Epoch 151: test_acc=0.0890, time=0.93s
+Epoch 152: test_acc=0.0920, time=0.91s
+Epoch 153: test_acc=0.0894, time=0.91s
+Epoch 154: test_acc=0.0928, time=0.91s
+Epoch 155: test_acc=0.0862, time=0.91s
+Epoch 156: test_acc=0.0904, time=0.91s
+Epoch 157: test_acc=0.0956, time=0.91s
+Epoch 158: test_acc=0.0896, time=0.91s
+Epoch 159: test_acc=0.0880, time=0.91s
+Epoch 160:
+  Learning rate: 0.00100
+  Total epoch time: 0.9152 sec
+  Training computation time: 0.9052 sec
+  Evaluation time: 0.0096 sec
+  Number of batches: 390
+  Test set accuracy: 0.092400 (9.24%)
+  Best test accuracy so far: 0.095600 (9.56%)
+
+Epoch 161: test_acc=0.0910, time=0.91s
+Epoch 162: test_acc=0.0896, time=1.72s
+Epoch 163: test_acc=0.0910, time=0.91s
+Epoch 164: test_acc=0.0956, time=0.91s
+Epoch 165: test_acc=0.0896, time=0.91s
+Epoch 166: test_acc=0.0870, time=1.99s
+Epoch 167: test_acc=0.0902, time=0.91s
+Epoch 168: test_acc=0.0910, time=0.91s
+Epoch 169: test_acc=0.0898, time=1.72s
+Epoch 170:
+  Learning rate: 0.00100
+  Total epoch time: 0.9263 sec
+  Training computation time: 0.9020 sec
+  Evaluation time: 0.0239 sec
+  Number of batches: 390
+  Test set accuracy: 0.089400 (8.94%)
+  Best test accuracy so far: 0.095600 (9.56%)
+
+Epoch 171: test_acc=0.0950, time=0.91s
+Epoch 172: test_acc=0.0918, time=2.01s
+Epoch 173: test_acc=0.0932, time=0.91s
+Epoch 174: test_acc=0.0950, time=0.91s
+Epoch 175: test_acc=0.0896, time=1.25s
+Epoch 176: test_acc=0.0928, time=0.92s
+Epoch 177: test_acc=0.0896, time=0.91s
+Epoch 178: test_acc=0.0946, time=0.91s
+Epoch 179: test_acc=0.0932, time=1.40s
+Epoch 180:
+  Learning rate: 0.00100
+  Total epoch time: 0.9227 sec
+  Training computation time: 0.8987 sec
+  Evaluation time: 0.0237 sec
+  Number of batches: 390
+  Test set accuracy: 0.097000 (9.70%)
+  Best test accuracy so far: 0.097000 (9.70%)
+
+Epoch 181: test_acc=0.0930, time=0.91s
+Epoch 182: test_acc=0.0902, time=0.91s
+Epoch 183: test_acc=0.0884, time=1.70s
+Epoch 184: test_acc=0.0946, time=0.91s
+Epoch 185: test_acc=0.0944, time=0.91s
+Epoch 186: test_acc=0.0944, time=0.91s
+Epoch 187: test_acc=0.0950, time=0.91s
+Epoch 188: test_acc=0.0942, time=1.00s
+Epoch 189: test_acc=0.0966, time=0.93s
+Epoch 190:
+  Learning rate: 0.00100
+  Total epoch time: 1.2677 sec
+  Training computation time: 1.1692 sec
+  Evaluation time: 0.0359 sec
+  Number of batches: 390
+  Test set accuracy: 0.099800 (9.98%)
+  Best test accuracy so far: 0.099800 (9.98%)
+
+Epoch 191: test_acc=0.0914, time=0.91s
+Epoch 192: test_acc=0.0966, time=0.91s
+Epoch 193: test_acc=0.0968, time=0.91s
+Epoch 194: test_acc=0.0978, time=0.91s
+Epoch 195: test_acc=0.0936, time=2.01s
+Epoch 196: test_acc=0.0980, time=0.91s
+Epoch 197: test_acc=0.0972, time=0.93s
+Epoch 198: test_acc=0.0924, time=0.91s
+Warning: No cache file for epoch 200
+Epoch 199:
+  Learning rate: 0.00100
+  Total epoch time: 0.9415 sec
+  Training computation time: 0.9249 sec
+  Evaluation time: 0.0162 sec
+  Number of batches: 390
+  Test set accuracy: 0.093000 (9.30%)
+  Best test accuracy so far: 0.099800 (9.98%)
+
+Batch loader shut down
+Matrix computations completed successfully
+Average matrix multiplication performance: 16.76 TFLOPS
+
+=== Training Summary ===
+Model initialization time: 128.1539 seconds
+Dataset loading time: 79.8599 seconds
+Function compilation time: 73.3985 seconds
+Training loop time: 351.6593 seconds
+  - Computation time: 263.3224 seconds
+  - Evaluation time: 55.9880 seconds
+Total time: 559.6732 seconds
+Final test accuracy: 0.093000 (9.30%)
+Best test accuracy: 0.099800 (9.98%)
+main executed in 571.110848 seconds
